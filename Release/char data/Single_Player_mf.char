@@ -1,0 +1,1373 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: mf
+
+#stash#
+
+0;,0;,1;,1;,dragonslayer;,;,;
+<quest>Mark of the Dragonslayer
+<jedr>Jewel
+<b>Required Level: 90
+<b>Item Level: 99
+<m>0.06% Deadly Strike (Based on Vitality)
+<m>+25% Enhanced Damage
+<m>20% Bonus to Attack Rating
+<m>Magic Resist +3%
+<m>Damage Reduced by 3%
+
+1;,0;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+2;,0;,1;,1;,invamu3;,;,;
+<set>Tal Rasha's Adjudication
+<amu>Amulet
+<b>Required Level: 67
+<b>Item Level: 68
+<m>+2 to Sorceress Skill Levels
+<m>5% Increased Chance of Blocking
+<m>+40 to Life
+<m>+40 to Mana
+<m>All Resistances +28
+
+3;,0;,1;,2;,mythoskey;,;,;
+<quest>Bad Unique ID
+<mke2>Key of Nightmares
+<b>Item Level: 99
+
+4;,0;,1;,2;,invtax;,;,;
+<unique>Gimmershred
+<7ta>Flying Axe
+<b>Throw Damage: 58 to 258
+<b>One-Hand Damage: 66 to 254
+<b>Quantity: 203
+<b>Required Dexterity: 108
+<b>Required Strength: 88
+<b>Required Level: 70
+<b>Axe Class [10]
+<b>Item Level: 99
+<m>+60% Increased Attack Speed
+<m>+291% Enhanced Damage
+<m>Adds 255-511 fire damage
+<m>Adds 63-1000 fire damage
+<m>Adds 255-511 cold damage
+<m>Increased Stack Size
+<m>Cold Length:  100
+
+5;,0;,1;,3;,invkrsu;,invkrsu;,invkrsu;
+<unique>Blackbog's Sharp
+<9kr>Cinquedeas
+<b>One-Hand Damage: 30 to 76
+<b>Durability: 20 of 24
+<b>Required Dexterity: 88
+<b>Required Strength: 25
+<b>Required Level: 38
+<b>Dagger Class [-20]
+<b>Item Level: 99
+<m>+60% Increased Attack Speed
+<m>Adds 15-45 damage
+<m>+999 poison damage over 10 seconds
+<m>-16% to Enemy Poison Resistance
+<m>+15% to Poison Skill Damage
+<m>+4 to Poison Nova (Necromancer Only)
+<m>+4 to Poison Explosion (Necromancer Only)
+<m>+5 to Poison Dagger (Necromancer Only)
+<m>Slows Target by 60%
+<m>+50 Defense
+<m>Poison Length:  250
+<m>Poison Count: 1
+
+6;,0;,2;,4;,invhxbu;,invhxbu;,invhxbu;
+<unique>Hellrack
+<6hx>Colossus Crossbow
+<b>Two-Hand Damage: 105 to 299
+<b>Durability: 32 of 50
+<b>Required Dexterity: 77
+<b>Required Strength: 163
+<b>Required Level: 76
+<b>Crossbow Class [10]
+<b>Item Level: 99
+<m>+80% Increased Attack Speed
+<m>+229% Enhanced Damage
+<m>299% Bonus to Attack Rating
+<m>Adds 255-511 fire damage
+<m>Adds 63-1000 fire damage
+<m>Adds 255-511 cold damage
+<m>Socketed (2)
+<m>Cold Length:  33
+
+8;,0;,2;,4;,invwsc;,;,;
+<unique>Stormspire
+<7wc>Giant Thresher
+<b>Two-Hand Damage: 191 to 544
+<b>Durability: 55 of 55
+<b>Required Dexterity: 140
+<b>Required Strength: 188
+<b>Required Level: 70
+<b>Polearm Class [-10]
+<b>Item Level: 99
+<m>50% Chance to cast level 30 Nova on striking
+<m>50% Chance to cast level 10 Static Field on striking
+<m>Level 10 Holy Shock Aura When Equipped
+<m>+30% Increased Attack Speed
+<m>+378% Enhanced Damage
+<m>Adds 1-1023 fire damage
+<m>-50% to Enemy Lightning Resistance
+<m>+1 to Whirlwind
+<m>+18 to all Attributes
+<m>All Resistances +60
+<m>Attacker Takes Lightning Damage of 31
+<m>Socketed (2)
+
+0;,2;,1;,1;,invrin3;,;,;
+<unique>Constricting Ring
+<rin>Ring
+<b>Required Level: 95
+<b>Item Level: 99
+<m>Drain Life -30
+<m>+5% to Maximum Poison Resist
+<m>+5% to Maximum Cold Resist
+<m>+5% to Maximum Lightning Resist
+<m>+5% to Maximum Fire Resist
+<m>All Resistances +100
+<m>100% Better Chance of Getting Magic Items
+
+1;,2;,1;,1;,invamu1;,;,;
+<unique>Atma's Scarab
+<amu>Amulet
+<b>Required Level: 60
+<b>Item Level: 99
+<m>5% Chance to cast level 2 Lower Resist on striking
+<m>80% Bonus to Attack Rating
+<m>+999 poison damage over 10 seconds
+<m>-11% to Enemy Poison Resistance
+<m>+14% to Poison Skill Damage
+<m>+7 to Venom
+<m>Poison Resist +75%
+<m>Attacker Takes Damage of 5
+<m>+3 to Light Radius
+<m>Poison Length:  250
+<m>Poison Count: 1
+
+2;,2;,2;,3;,invkitu;,invkitu;,invkitu;
+<unique>Stormshield
+<uit>Monarch
+<b>Defense: 145
+<b>Chance to Block:  47%
+<b>Durability: 79 of 86
+<b>Required Strength: 156
+<b>Required Level: 73
+<b>Item Level: 99
+<m>Indestructible
+<m>+1 to All Skills
+<m>+35% Faster Block Rate
+<m>25% Increased Chance of Blocking
+<m>+3.75 Defense (Based on Character Level)
+<m>+30 to Strength
+<m>All Resistances +40
+<m>Damage Reduced by 35%
+<m>Attacker Takes Lightning Damage of 31
+
+4;,2;,1;,1;,invjw5;,;,;
+<unique>King's Jewel of Blazing
+<jew>Jewel
+<b>Required Level: 48
+<b>Item Level: 99
+<m>+1 to Necromancer Skill Levels
+
+0;,3;,2;,3;,invspl;,;,;
+<unique>Arkaine's Valor
+<upl>Balrog Skin
+<b>Defense: 1388
+<b>Durability: 27 of 30
+<b>Required Strength: 165
+<b>Required Level: 85
+<b>Item Level: 99
+<b>Velocity:  -5
+<m>+1 to All Skills
+<m>+1 to Necromancer Skill Levels
+<m>+30% Faster Hit Recovery
+<m>+168% Enhanced Defense
+<m>+2.50 to Vitality (Based on Character Level)
+<m>All Resistances +20
+<m>Damage Reduced by 17
+<m>15% Increased Vitality
+<m>Socketed (4)
+
+6;,4;,2;,2;,purflame;,;,;
+<quest>Purifying Flame
+<pufl>Crusader Gauntlets
+<b>Defense: 60
+<b>Durability: 17 of 18
+<b>Required Strength: 60
+<b>Required Level: 90
+<b>Item Level: 99
+<m>20% Chance to cast level 40 Volcano when struck
+<m>Level 7 Cleansing Aura When Equipped
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+1 to Lower Resist
+<m>Replenish Life +10
+<m>+100 to Mana
+<m>Fire Resist +35%
+<m>Fire Absorb 9%
+<m>Requirements -60%
+
+8;,4;,1;,1;,dragonslayer;,;,;
+<quest>Mark of the Dragonslayer
+<jedr>Jewel
+<b>Required Level: 90
+<b>Item Level: 99
+<m>0.06% Deadly Strike (Based on Vitality)
+<m>+27% Enhanced Damage
+<m>16% Bonus to Attack Rating
+<m>Magic Resist +3%
+<m>Damage Reduced by 3%
+
+9;,4;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+2;,5;,2;,2;,invci3;,;,;
+<unique>Griffon's Eye
+<ci3>Diadem
+<b>Defense: 167
+<b>Durability: 20 of 20
+<b>Required Level: 76
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+25% Faster Cast Rate
+<m>+13% to Lightning Skill Damage
+<m>-20% to Enemy Lightning Resistance
+<m>+112 Defense
+
+8;,5;,1;,1;,invrin1;,;,;
+<unique>Constricting Ring
+<rin>Ring
+<b>Required Level: 95
+<b>Item Level: 99
+<m>Drain Life -30
+<m>+5% to Maximum Poison Resist
+<m>+5% to Maximum Cold Resist
+<m>+5% to Maximum Lightning Resist
+<m>+5% to Maximum Fire Resist
+<m>All Resistances +100
+<m>100% Better Chance of Getting Magic Items
+
+9;,5;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+0;,6;,2;,2;,invlbt;,;,;
+<unique>Merman's Sprocket
+<ulb>Wyrmhide Boots
+<b>Defense: 476
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 69
+<b>Item Level: 99
+<m>+65% Faster Run/Walk
+<m>+416 Defense
+<m>+310 Defense vs. Missile
+<m>Replenish Life +5
+<m>+0.75 to Mana (Based on Character Level)
+<m>Regenerate Mana 8%
+<m>+71 Magic Absorb
+<m>Poison Resist 0.75% (Based on Character Level)
+<m>+55 Cold Absorb
+<m>Cannot Be Frozen
+
+7;,6;,1;,1;,inveye;,;,;
+<quest>Othuyeg's Eyeball
+<otey>Small Charm
+<b>Required Level: 90
+<b>Item Level: 99
+<m>+7% to Lightning Skill Damage
+<m>+3% to Fire Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+2% to Maximum Poison Resist
+<m>+4% to Maximum Cold Resist
+<m>+3% to Maximum Lightning Resist
+<m>+5% to Maximum Fire Resist
+<m>+10 to Light Radius
+
+8;,6;,1;,1;,invrin4;,;,;
+<rare>Order Whorl
+<rin>Ring
+<b>Required Level: 13
+<b>Item Level: 99
+<m>+18% Faster Cast Rate
+<m>+2 to Dexterity
+<m>+12 to Life
+<m>Fire Resist +20%
+<m>+1 to Mana after each Kill
+
+9;,6;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+2;,7;,2;,3;,invplt;,;,;
+<unique>Boneflesh
+<plt>Plate Mail
+<b>Defense: 255
+<b>Durability: 49 of 60
+<b>Required Strength: 65
+<b>Required Level: 26
+<b>Item Level: 99
+<b>Velocity:  -10
+<m>+35 to Attack Rating
+<m>+20 poison damage over 4 seconds
+<m>5% Life stolen per hit
+<m>25% Chance of Open Wounds
+<m>Slows Target by 25%
+<m>+118% Enhanced Defense
+<m>Poison Length:  100
+<m>Poison Count: 1
+
+4;,7;,2;,3;,invlsdu;,invlsdu;,invlsdu;
+<unique>Hellplague
+<lsd>Long Sword
+<b>One-Hand Damage: 5 to 32
+<b>Durability: 40 of 44
+<b>Required Dexterity: 39
+<b>Required Strength: 55
+<b>Required Level: 22
+<b>Sword Class [-10]
+<b>Item Level: 99
+<m>+2 to Fire Skills
+<m>+73% Enhanced Damage
+<m>Adds 25-75 fire damage
+<m>Adds 28-56 poison damage over 6 seconds
+<m>5% Mana stolen per hit
+<m>5% Life stolen per hit
+<m>Poison Length:  150
+<m>Poison Count: 1
+
+6;,7;,2;,3;,inv9lsu;,inv9lsu;,inv9lsu;
+<unique>Plague Bearer
+<9ls>Rune Sword
+<b>One-Hand Damage: 98 to 247
+<b>Durability: 37 of 44
+<b>Required Dexterity: 79
+<b>Required Strength: 103
+<b>Required Level: 41
+<b>Sword Class [-10]
+<b>Item Level: 99
+<m>15% Chance to cast level 10 Poison Nova on striking
+<m>+250% Enhanced Damage
+<m>Adds 63-100 damage
+<m>+999 poison damage over 10 seconds
+<m>-20% to Enemy Poison Resistance
+<m>+7 to Rabies (Druid Only)
+<m>Poison Resist +45%
+<m>Poison Length:  250
+<m>Poison Count: 1
+
+8;,7;,2;,3;,invwax;,;,;
+<unique>Rakescar
+<wax>War Axe
+<b>One-Hand Damage: 18 to 33
+<b>Durability: 19 of 26
+<b>Required Strength: 67
+<b>Required Level: 27
+<b>Axe Class [0]
+<b>Item Level: 99
+<m>+30% Increased Attack Speed
+<m>+88% Enhanced Damage
+<m>+50 to Attack Rating
+<m>+38 poison damage over 3 seconds
+<m>Poison Resist +50%
+<m>Poison Length:  75
+<m>Poison Count: 1
+
+#body#
+
+1;,-1;,2;,2;,invcap;,;,;
+<unique>Harlequin Crest
+<uap>Shako
+<b>Defense: 126
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 62
+<b>Item Level: 99
+<m>+3 to All Skills
+<m>+8% Faster Cast Rate
+<m>+10% Faster Hit Recovery
+<m>+5 to Strength
+<m>+9 to Dexterity
+<m>+8 to Vitality
+<m>+6 to Energy
+<m>+3.00 to Life (Based on Character Level)
+<m>+3.00 to Mana (Based on Character Level)
+<m>Damage Reduced by 10%
+<m>50% Better Chance of Getting Magic Items
+
+2;,-1;,1;,1;,invamu2;,;,;
+<unique>Mara's Kaleidoscope
+<amu>Amulet
+<b>Required Level: 67
+<b>Item Level: 99
+<m>+2 to All Skills
+<m>+5% Faster Cast Rate
+<m>+7 to all Attributes
+<m>Increase Maximum Life 4%
+<m>Increase Maximum Mana 3%
+<m>All Resistances +30
+
+3;,-1;,2;,3;,invfld;,;,;
+<ethereal/socketed>Superior Kraken Shell
+<uld>Kraken Shell
+<b>Defense: 10
+<b>Required Strength: 174
+<b>Required Level: 61
+<b>Item Level: 90
+<b>Velocity:  -5
+<m>127% Chance to cast level 63 Poison Nova when struck
+<m>127% Chance to cast level 63 Lower Resist when struck
+<m>+107% Increased Attack Speed
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+491% Damage to Demons
+<m>+491% Damage to Undead
+<m>+461% to Fire Skill Damage
+<m>127% Deadly Strike
+<m>+63 to Burst of Speed
+<m>+63 to Poison Nova
+<m>+63 to Poison Explosion
+<m>Cannot Be Frozen
+<m>775% Better Chance of Getting Magic Items
+<m>Socketed (4)
+
+4;,-1;,1;,3;,invsbr;,invsbru;,invsbru;
+<rare>Blood Bite
+<9sb>Shamshir
+<b>One-Hand Damage: 61 to 146
+<b>Durability: 15 of 20
+<b>Required Dexterity: 58
+<b>Required Strength: 58
+<b>Required Level: 23
+<b>Sword Class [-10]
+<b>Item Level: 1
+<m>4194302(p:269 f:18) Enhanced Defense
+<m>Level 31 Conviction Aura When Equipped
+<m>+107% Increased Attack Speed
+<m>+107% Faster Cast Rate
+<m>+107% Faster Hit Recovery
+<m>+511% Enhanced Damage
+<m>Damage +491
+<m>+491% Damage to Demons
+<m>+491% Damage to Undead
+<m>+461% to Fire Skill Damage
+<m>+1 to Fire Bolt (Sorceress Only)
+<m>+511% Enhanced Defense
+<m>+2037 Defense
+<m>+95 to all Attributes
+<m>Increase Maximum Life 53%
+<m>Increase Maximum Mana 53%
+<m>+31% to Maximum Poison Resist
+<m>+31% to Maximum Cold Resist
+<m>+31% to Maximum Lightning Resist
+<m>+31% to Maximum Fire Resist
+<m>All Resistances +205
+<m>Damage Reduced by 255%
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>Poison Length Reduced by 235%
+<m>1240% Better Chance of Getting Magic Items
+<m>Socketed (2)
+<m>Unknown property 194: +15
+
+5;,-1;,2;,2;,bulwark;,;,;
+<quest>Dragon's Bulwark
+<drbu>Hyperion
+<b>Defense: 390
+<b>Chance to Block:  44%
+<b>Durability: 80 of 82
+<b>Required Strength: 127
+<b>Required Level: 90
+<b>Item Level: 99
+<b>Velocity:  -5
+<m>30% Chance to cast level 35 Diablo Prison when struck
+<m>Level 10 Bulwark Aura When Equipped
+<m>(Nearby allies have 10% Increased Damage Reduction and Block Chance)
+<m>+30% Faster Cast Rate
+<m>+30% Faster Block Rate
+<m>20% Increased Chance of Blocking
+<m>Damage +57
+<m>+187% Enhanced Defense
+<m>All Resistances +40
+<m>Damage Reduced by 10%
+<m>Socketed (2)
+
+6;,-1;,1;,1;,invrin4;,;,;
+<rare>Blood Gyre
+<rin>Ring
+<b>Required Level: 48
+<b>Item Level: 99
+<m>+19% Faster Cast Rate
+<m>+31 to Attack Rating
+<m>+28 to Life
+<m>Cold Resist +25%
+<m>Lightning Resist +11%
+<m>Level 3 Confuse (27/27 Charges)
+
+7;,-1;,1;,1;,invrin3;,;,;
+<rare>Grim Hold
+<rin>Ring
+<b>Required Level: 41
+<b>Item Level: 99
+<m>+18% Faster Cast Rate
+<m>+83 to Attack Rating
+<m>Replenish Life +8
+<m>+80 to Mana
+<m>Cold Resist +6%
+<m>Magic Damage Reduced by 1
+
+8;,-1;,2;,1;,invtbl;,;,;
+<set>Trang-Oul's Girth
+<utc>Troll Belt
+<b>Defense: 163
+<b>Durability: 18 of 18
+<b>Required Strength: 90
+<b>Required Level: 62
+<b>Item Level: 99
+<m>+20% Faster Cast Rate
+<m>+100 Defense
+<m>+66 to Life
+<m>Replenish Life +15
+<m>+50 to Mana
+<m>+30 Maximum Stamina
+<m>Cannot Be Frozen
+<m>Requirements -40%
+
+9;,-1;,2;,2;,invhbt;,;,;
+<unique>Shadow Dancer
+<uhb>Myrmidon Greaves
+<b>Defense: 128
+<b>Durability: 24 of 24
+<b>Required Strength: 124
+<b>Required Level: 71
+<b>Item Level: 99
+<m>+2 to Shadow Disciplines (Assassin Only)
+<m>+30% Faster Run/Walk
+<m>+30% Faster Hit Recovery
+<m>+78% Enhanced Defense
+<m>+21 to Dexterity
+<m>Requirements -40%
+
+10;,-1;,2;,2;,purflame;,;,;
+<quest>Purifying Flame
+<pufl>Crusader Gauntlets
+<b>Defense: 61
+<b>Durability: 18 of 18
+<b>Required Strength: 60
+<b>Required Level: 90
+<b>Item Level: 99
+<m>20% Chance to cast level 40 Volcano when struck
+<m>Level 7 Cleansing Aura When Equipped
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+1 to Lower Resist
+<m>Replenish Life +10
+<m>+100 to Mana
+<m>Fire Resist +35%
+<m>Fire Absorb 9%
+<m>Requirements -60%
+
+11;,-1;,1;,3;,invwsd;,;,;
+<quest>Sss'haa's Primordial Fang
+<sfan>Mythical Sword
+<b>One-Hand Damage: 185 to 231
+<b>Durability: 44 of 44
+<b>Required Dexterity: 124
+<b>Required Strength: 147
+<b>Required Level: 90
+<b>Sword Class [0]
+<b>Item Level: 99
+<m>2% Chance to cast level 60 Eviscerate on striking
+<m>15% Chance to cast level 5 Mind Blast on striking
+<m>Melee attacks deal splash damage
+<m>Level 18 Armor Penetration Aura When Equipped
+<m>(Nearby enemies have 18% Reduced Physical Resistance)
+<m>+50% Increased Attack Speed
+<m>+363% Enhanced Damage
+<m>+2.50 to Maximum Damage (Based on Character Level)
+<m>Damage +98
+<m>0.50% Bonus to Attack Rating (Based on Character Level)
+<m>25% Life stolen per hit
+<m>+6 to Zeal
+<m>Socketed (2)
+
+#inventory#
+
+0;,0;,1;,2;,invbbk;,;,;
+<normal>Tome of Town Portal
+<tbk>Tome of Town Portal
+_14: 1455
+<b>Quantity: 499
+<b>Item Level: 99
+<m>Replenishes quantity
+
+1;,0;,1;,2;,invrbk;,;,;
+<normal>Tome of Identify
+<ibk>Tome of Identify
+_14: 1455
+<b>Quantity: 500
+<b>Item Level: 99
+<m>Replenishes quantity
+
+4;,0;,1;,2;,invtrch;,;,;
+<unique>Hellfire Torch
+<cm2>Large Charm
+<b>Required Level: 75
+<b>Item Level: 99
+<m>5% Chance to cast level 10 Firestorm on striking
+<m>+3 to Barbarian Skill Levels
+<m>+13 to all Attributes
+<m>All Resistances +13
+<m>+8 to Light Radius
+<m>Level 30 Hydra (8/10 Charges)
+
+5;,0;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+6;,0;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+7;,0;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+8;,0;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+9;,0;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+5;,1;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+6;,1;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+7;,1;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+8;,1;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+9;,1;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+0;,2;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 82
+
+4;,2;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+3 to Phoenix Strike (Assassin Only)
+<m>+3 to Fury (Druid Only)
+<m>+3 to Mace Mastery (Barbarian Only)
+<m>+3 to Defiance (Paladin Only)
+<m>+3 to Bone Spear (Necromancer Only)
+<m>+3 to Chilling Armor (Sorceress Only)
+<m>+3 to Guided Arrow (Amazon Only)
+<m>+14 to all Attributes
+<m>All Resistances +18
+<m>+6% to Experience Gained
+
+5;,2;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+6;,2;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+7;,2;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+8;,2;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+9;,2;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+4;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+5;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+6;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+7;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+8;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+511% Enhanced Damage
+<m>Adds 63-127 damage
+<m>Damage +491
+<m>+461% to Lightning Skill Damage
+<m>-205% to Enemy Lightning Resistance
+<m>-205% to Enemy Fire Resistance
+<m>-255% to Enemy Lightning Resistance
+<m>-255% to Enemy Fire Resistance
+<m>+511% Enhanced Defense
+<m>+127 Magic Absorb
+<m>+127 Cold Absorb
+<m>+127 Lightning Absorb
+<m>+127 Fire Absorb
+<m>Damage Reduced by 63
+<m>Magic Damage Reduced by 63
+<m>+127 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+
+9;,3;,1;,1;,invch4;,;,;
+<unique>Siggard's Stealth
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+107% Faster Cast Rate
+<m>+107% Faster Hit Recovery
+<m>+511% Enhanced Damage
+<m>Damage +491
+<m>+461% to Fire Skill Damage
+<m>+511% Enhanced Defense
+<m>+2037 Defense
+<m>+479 to Life
+<m>Increase Maximum Life 53%
+<m>+223 to Mana
+<m>Increase Maximum Mana 53%
+<m>All Resistances +205
+<m>155% Better Chance of Getting Magic Items
+
+#cube#
+
+0;,0;,2;,4;,invwsc;,;,;
+<unique>Stormspire
+<7wc>Giant Thresher
+<b>Two-Hand Damage: 173 to 494
+<b>Durability: 34 of 55
+<b>Required Dexterity: 140
+<b>Required Strength: 188
+<b>Required Level: 70
+<b>Polearm Class [-10]
+<b>Item Level: 99
+<m>50% Chance to cast level 30 Nova on striking
+<m>50% Chance to cast level 10 Static Field on striking
+<m>Level 10 Holy Shock Aura When Equipped
+<m>+30% Increased Attack Speed
+<m>+334% Enhanced Damage
+<m>Adds 1-1023 fire damage
+<m>-50% to Enemy Lightning Resistance
+<m>+1 to Whirlwind
+<m>+30 to all Attributes
+<m>All Resistances +59
+<m>Attacker Takes Lightning Damage of 31
+<m>Socketed (2)
+
+2;,0;,2;,4;,acidinject;,;,;
+<quest>Acid Injector
+<acij>Spider Bow
+<b>Two-Hand Damage: 59 to 128
+<b>Durability: 12 of 20
+<b>Required Dexterity: 143
+<b>Required Strength: 64
+<b>Required Level: 90
+<b>Bow Class [5]
+<b>Item Level: 99
+<m>10% Chance to cast level 1 Inject Acid on striking
+<m>0.19% Faster Run/Walk (Based on Dexterity)
+<m>+50% Increased Attack Speed
+<m>+157% Enhanced Damage
+<m>Damage +75
+<m>25% Chance of Open Wounds
+<m>Slows Target by 75%
+<m>+87 to Dexterity
+<m>Socketed (2)
+
+#mercenary#
+
+#character stats#
+
+wp:111111111111111111111111111111111111111011111111111111111111111111111111111111101111111111111111111111111111111111111110
+-1:1//character class
+0:1157//+1157 to Strength
+1:1158//+1158 to Energy
+2:1182//+1182 to Dexterity
+3:1160//+1160 to Vitality
+6:18973//Current Life: 18973
+7:18973//+18973 to Life
+8:18630//Current Mana: 18630
+9:18630//+18630 to Mana
+10:8357//Current Stamina: 8357
+11:8357//+8357 Maximum Stamina
+12:99//Level: 99
+13:-774482042//Experience: -774482042
+14:238//Gold: 238
+15:2318897//Gold in Stash: 2318897
+16:11242//+11242% Enhanced Defense
+17:11242//Enhanced Maximum Damage
+18:11242//Enhanced Minimum Damage
+19:114//+114 to Attack Rating
+20:75//Chance to Block: 75%
+21:1384//+1384 to Minimum Damage
+22:2813//+2813 to Maximum Damage
+27:1206//Regenerate Mana 1206%
+31:42933//+42933 Defense
+34:1323//Damage Reduced by 1323
+35:1324//Magic Damage Reduced by 1324
+36:285//Damage Reduced by 285%
+39:576//Fire Resist +576%
+40:31//+31% to Maximum Fire Resist
+41:552//Lightning Resist +552%
+42:31//+31% to Maximum Lightning Resist
+43:572//Cold Resist +572%
+44:31//+31% to Maximum Cold Resist
+45:541//Poison Resist +541%
+46:31//+31% to Maximum Poison Resist
+67:90//Unknown property 67: +90
+68:110//+110% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+71:21//Unknown property 71: +21
+72:167//Unknown property 72: +167
+73:174//Maximum Durability: +174
+74:33//Replenish Life +33
+76:110//Increase Maximum Life 110%
+77:109//Increase Maximum Mana 109%
+80:5320//5320% Better Chance of Getting Magic Items
+83:3//+3 to Barbarian Skill Levels
+85:6//+6% to Experience Gained
+86:2540//+2540 Life after each Kill
+89:8//+8 to Light Radius
+91:-140//Requirements -140%
+93:214//+214% Increased Attack Speed
+96:2170//+2170% Faster Run/Walk
+97:63//+63 to Poison Explosion
+97:1//+1 to Lower Resist
+97:63//+63 to Poison Nova
+97:63//+63 to Burst of Speed
+99:254//+254% Faster Hit Recovery
+102:30//+30% Faster Block Rate
+105:2464//+2464% Faster Cast Rate
+107:3//+3 to Guided Arrow (Amazon Only)
+107:1//+1 to Fire Bolt (Sorceress Only)
+107:3//+3 to Chilling Armor (Sorceress Only)
+107:3//+3 to Bone Spear (Necromancer Only)
+107:3//+3 to Defiance (Paladin Only)
+107:3//+3 to Mace Mastery (Barbarian Only)
+107:3//+3 to Fury (Druid Only)
+107:3//+3 to Phoenix Strike (Assassin Only)
+110:235//Poison Length Reduced by 235%
+111:11350//Damage +11350
+121:982//+982% Damage to Demons
+122:982//+982% Damage to Undead
+127:7//+7 to All Skills
+141:127//127% Deadly Strike
+142:9//Fire Absorb 9%
+143:2540//+2540 Fire Absorb
+145:2540//+2540 Lightning Absorb
+147:2540//+2540 Magic Absorb
+149:2540//+2540 Cold Absorb
+151:7//Level 7 Cleansing Aura When Equipped
+151:31//Level 31 Conviction Aura When Equipped
+151:10//Level 10 Bulwark Aura When Equipped
+153:2//Cannot Be Frozen
+172:2//Unknown property 172: +2
+188:2//+2 to Shadow Disciplines (Assassin Only)
+194:23//Unknown property 194: +23
+198:5//5% Chance to cast level 10 Firestorm on striking
+201:127//127% Chance to cast level 63 Lower Resist when struck
+201:127//127% Chance to cast level 63 Poison Nova when struck
+201:30//30% Chance to cast level 35 Diablo Prison when struck
+201:20//20% Chance to cast level 40 Volcano when struck
+204:2568//Level 30 Hydra (8/10 Charges)
+204:6939//Level 3 Confuse (27/27 Charges)
+306:4100//-4100% to Enemy Fire Resistance
+307:4100//-4100% to Enemy Lightning Resistance
+328:839//Unknown property 328: +839
+329:2099//+2099% to Fire Skill Damage
+330:10446//+10446% to Lightning Skill Damage
+333:5100//-5100% to Enemy Fire Resistance
+334:5100//-5100% to Enemy Lightning Resistance
+335:255//-255% to Enemy Cold Resistance
+350:828//Unknown property 350: +828
+351:444//Unknown property 351: +444
+378:10//(Nearby allies have 10% Increased Damage Reduction and Block Chance)
+37:0//Magic Resist +0%
+38:0//+0% to Maximum Magic Resist
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow

@@ -1,0 +1,18 @@
+﻿Build started 7/12/2015 6:18:25 PM.
+     1>Project "C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\TokenChestDll\TokenChestDll.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TOKENCHESTDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DllDump.cpp
+         DllDump.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\Debug\TokenChestDll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='requireAdministrator' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\Debug\TokenChestDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\Debug\TokenChestDll.lib" /MACHINE:X86 /DLL Debug\common.obj
+         Debug\Dllmain.obj
+         Debug\DllDump.obj
+         Debug\Dllstringtbl.obj
+         Debug\Registry.obj
+            Creating library C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\Debug\TokenChestDll.lib and object C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\Debug\TokenChestDll.exp
+         TokenChestDll.vcxproj -> C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\Debug\TokenChestDll.dll
+     1>Done Building Project "C:\Users\Josh_2.Josh-PC\documents\visual studio 2013\Projects\TokenChest\TokenChestDll\TokenChestDll.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.69

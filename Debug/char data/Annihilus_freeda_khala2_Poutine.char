@@ -1,0 +1,189 @@
+Realm: Annihilus
+Account: freeda_khala2
+Character name: Poutine
+
+#stash#
+
+0;,0;,2;,4;,invpax;,;,;
+<unique>Tomb Reaver
+<7pa>Cryptic Axe
+<b>Two-Hand Damage: 199 to 915
+<b>Durability: 65 of 65
+<b>Required Dexterity: 93
+<b>Required Strength: 155
+<b>Required Level: 84
+<b>Polearm Class [10]
+<b>Item Level: 98
+<m>+60% Increased Attack Speed
+<m>+307% Enhanced Damage
+<m>+185% Damage to Undead
+<m>+264 to Attack Rating against Undead
+<m>All Resistances +48
+<m>50% Reanimate as: Returned
+<m>+10 Life after each Kill
+<m>155% Better Chance of Getting Magic Items
+<m>+4 to Light Radius
+<m>Repairs 1 durability in 4 seconds
+<m>Ethereal (Cannot be Repaired), Socketed (3)
+
+2;,0;,1;,4;,invglv;,;,;
+<unique>Wraith Flight
+<7gl>Ghost Glaive
+<b>Throw Damage: 152 to 430
+<b>One-Hand Damage: 94 to 305
+<b>Quantity: 300
+<b>Required Dexterity: 127
+<b>Required Strength: 79
+<b>Required Level: 76
+<b>Javelin Class [20]
+<b>Item Level: 99
+<m>Level 8 Might Aura When Equipped
+<m>+30% Increased Attack Speed
+<m>+239% Enhanced Damage
+<m>11% Life stolen per hit
+<m>+7 to Throwing Mastery (Barbarian Only)
+<m>+15 to Mana after each Kill
+<m>Replenishes quantity
+<m>Ethereal (Cannot be Repaired)
+
+4;,0;,1;,1;,invamu2;,;,;
+<set>Tal Rasha's Adjudication
+<amu>Amulet
+<b>Required Level: 67
+<b>Item Level: 98
+<m>+2 to Sorceress Skill Levels
+<m>5% Increased Chance of Blocking
+<m>+40 to Life
+<m>+40 to Mana
+<m>All Resistances +28
+
+5;,0;,1;,2;,invob2;,;,;
+<unique>Eschuta's Temper
+<obc>Eldritch Orb
+<b>One-Hand Damage: 18 to 50
+<b>Durability: 16 of 30
+<b>(Sorceress Only)
+<b>Required Level: 72
+<b>Staff Class [-10]
+<b>Item Level: 98
+<m>+3 to Sorceress Skill Levels
+<m>+40% Faster Cast Rate
+<m>+20% to Lightning Skill Damage
+<m>+22% to Fire Skill Damage
+<m>+80 to Mana
+
+6;,0;,1;,1;,invamu2;,;,;
+<unique>Highlord's Wrath
+<amu>Amulet
+<b>Required Level: 65
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+20% Increased Attack Speed
+<m>Adds 1-1000 fire damage
+<m>0.38% Deadly Strike (Based on Character Level)
+<m>Cold Resist +35%
+<m>Lightning Resist +70%
+<m>Fire Resist +35%
+<m>Poison Resist +35%
+<m>Attacker Takes Lightning Damage of 15
+
+7;,0;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+3 to Dragon Talon (Assassin Only)
+<m>+3 to Summon Spirit Wolf (Druid Only)
+<m>+3 to Mace Mastery (Barbarian Only)
+<m>+3 to Holy Shield (Paladin Only)
+<m>+3 to Dim Vision (Necromancer Only)
+<m>+3 to Charged Bolt (Sorceress Only)
+<m>+3 to Avoid (Amazon Only)
+<m>+20 to all Attributes
+<m>All Resistances +11
+<m>+10% to Experience Gained
+
+#body#
+
+#inventory#
+
+3;,0;,1;,3;,invskru;,invskru;,invskru;
+<set>Natalya's Mark
+<7qr>Scissors Suwayyah
+<b>One-Hand Damage: 175 to 223
+<b>Durability: 49 of 68
+<b>(Assassin Only)
+<b>Required Dexterity: 118
+<b>Required Strength: 118
+<b>Required Level: 79
+<b>Claw Class [0]
+<b>Item Level: 98
+<m>+3 to Assassin Skills
+<m>+60% Increased Attack Speed
+<m>+338% Enhanced Damage
+<m>Ignore Target's Defense
+<m>80% Bonus to Attack Rating
+<m>+200% Damage to Demons
+<m>+200% Damage to Undead
+<m>+30% to Poison Skill Damage
+<m>All Resistances +30
+<m>Socketed (2)
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
+wp:100010000100000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:3//character class
+0:25//+25 to Strength
+1:15//+15 to Energy
+2:20//+20 to Dexterity
+3:25//+25 to Vitality
+4:105//New Stats: 105
+5:21//New Skill: 21
+7:97//+97 to Life
+8:46//Current Mana: 46
+9:46//+46 to Mana
+10:110//Current Stamina: 110
+11:110//+110 Maximum Stamina
+12:22//Level: 22
+13:935064//Experience: 935064
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+172:2//Unknown property 172: +2
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+39:0//Fire Resist +0%
+43:0//Cold Resist +0%
+41:0//Lightning Resist +0%
+45:0//Poison Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

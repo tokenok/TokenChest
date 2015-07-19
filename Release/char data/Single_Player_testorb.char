@@ -1,0 +1,450 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: testorb
+
+#stash#
+
+1;,0;,2;,2;,invhgl;,;,;
+<unique>Frostburn
+<hgl>Gauntlets
+<b>Defense: 48
+<b>Durability: 24 of 24
+<b>Required Strength: 60
+<b>Required Level: 29
+<b>Item Level: 90
+<m>+5% Enhanced Damage
+<m>Adds 1-6 cold damage
+<m>+15% Enhanced Defense
+<m>+30 Defense
+<m>+20 to Life
+<m>Increase Maximum Mana 40%
+<m>Cold Length:  50
+
+3;,2;,2;,1;,invlbl;,;,;
+<unique>Arachnid Mesh
+<ulc>Spiderweb Sash
+<b>Defense: 138
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 80
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+20% Faster Cast Rate
+<m>+5% to Poison Skill Damage
+<m>Slows Target by 15%
+<m>+120% Enhanced Defense
+<m>+0.50 to Energy (Based on Character Level)
+<m>Increase Maximum Mana 5%
+<m>Level 3 Venom (11/11 Charges)
+
+#body#
+
+1;,-1;,2;,2;,invghm;,;,invuhms;
+<unique>Nightwing's Veil
+<uhm>Spired Helm
+<b>Ber
+<b>Defense: 352
+<b>Durability: 29 of 40
+<b>Required Strength: 96
+<b>Required Level: 67
+<b>Item Level: 90
+<m>+2 to All Skills
+<m>+10% Faster Cast Rate
+<m>+15% to Cold Skill Damage
+<m>+120% Enhanced Defense
+<m>+9 Cold Absorb
+<m>Damage Reduced by 8%
+<m>Half Freeze Duration
+<m>Requirements -50%
+<m>Socketed (1)
+
+2;,-1;,1;,1;,invamu1;,;,;
+<crafted>Storm Circlet
+<amu>Amulet
+<b>Required Level: 10
+<b>Item Level: 90
+<m>+2 to Necromancer Skill Levels
+<m>+2 to Sorceress Skill Levels
+<m>+20% Faster Cast Rate
+<m>+18 to Strength
+<m>+60 to Life
+<m>+60 to Mana
+<m>Cold Resist +23%
+<m>Lightning Resist +23%
+<m>Fire Resist +23%
+
+3;,-1;,2;,3;,invstu;,;,;
+<unique>The Gladiator's Bane
+<utu>Wire Fleece
+<b>Ber
+<b>Defense: 2369
+<b>Durability: 32 of 32
+<b>Required Strength: 101
+<b>Required Level: 85
+<b>Item Level: 90
+<m>+30% Faster Hit Recovery
+<m>20% Increased Chance of Blocking
+<m>+200% Enhanced Defense
+<m>+200 Defense
+<m>Magic Resist +15%
+<m>Damage Reduced by 20
+<m>Damage Reduced by 23%
+<m>Magic Damage Reduced by 20
+<m>Cannot Be Frozen
+<m>Poison Length Reduced by 50%
+<m>Repairs 1 durability in 25 seconds
+<m>Ethereal (Cannot be Repaired), Socketed (1)
+
+4;,-1;,1;,3;,invob5;,;,;
+<unique>Death's Fathom
+<obf>Dimensional Shard
+<b>One-Hand Damage: 30 to 53
+<b>Durability: 50 of 50
+<b>(Sorceress Only)
+<b>Required Level: 73
+<b>Staff Class [10]
+<b>Item Level: 90
+<m>+3 to Sorceress Skill Levels
+<m>+25% Faster Cast Rate
+<m>+30% to Cold Skill Damage
+<m>+3 to Cold Mastery (Sorceress Only)
+<m>Cold Resist +40%
+<m>Lightning Resist +40%
+<m>Fire Resist +40%
+<m>Poison Resist +40%
+<m>Socketed (2)
+
+5;,-1;,2;,3;,invtowu;,invtowu;,invtowu;
+<unique>Gerke's Sanctuary
+<xow>Pavise
+<b>Hel
+<b>Defense: 268
+<b>Chance to Block:  64%
+<b>Durability: 166 of 172
+<b>Required Strength: 99
+<b>Required Level: 44
+<b>Item Level: 90
+<b>Velocity:  -10
+<m>+20% Faster Block Rate
+<m>40% Increased Chance of Blocking
+<m>+240% Enhanced Defense
+<m>Replenish Life +20
+<m>Cold Resist +30%
+<m>Lightning Resist +30%
+<m>Fire Resist +30%
+<m>Poison Resist +30%
+<m>Damage Reduced by 16
+<m>Damage Reduced by 10%
+<m>Magic Damage Reduced by 18
+<m>Requirements -25%
+<m>Socketed (1)
+
+6;,-1;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>+10% to Lightning Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+10% to Cold Skill Damage
+<m>+10% to Fire Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+7;,-1;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>+10% to Lightning Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+10% to Cold Skill Damage
+<m>+10% to Fire Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+8;,-1;,2;,1;,invtbl;,;,;
+<set>Trang-Oul's Girth
+<utc>Troll Belt
+<b>Defense: 158
+<b>Durability: 9 of 18
+<b>Required Strength: 90
+<b>Required Level: 62
+<b>Item Level: 90
+<m>+20% Faster Cast Rate
+<m>+98 Defense
+<m>+66 to Life
+<m>Replenish Life +15
+<m>+50 to Mana
+<m>+30 Maximum Stamina
+<m>Cannot Be Frozen
+<m>Requirements -40%
+
+9;,-1;,2;,2;,invlbt;,;,;
+<unique>Merman's Sprocket
+<ulb>Wyrmhide Boots
+<b>Defense: 482
+<b>Durability: 4 of 12
+<b>Required Strength: 50
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+65% Faster Run/Walk
+<m>+420 Defense
+<m>+310 Defense vs. Missile
+<m>Replenish Life +5
+<m>+0.75 to Mana (Based on Character Level)
+<m>Regenerate Mana 8%
+<m>Poison Resist 0.75% (Based on Character Level)
+<m>+68 Magic Absorb
+<m>+55 Cold Absorb
+<m>Cannot Be Frozen
+
+10;,-1;,2;,2;,invmgl;,;,;
+<set>Trang-Oul's Claws
+<xmg>Heavy Bracers
+<b>Defense: 72
+<b>Durability: 11 of 16
+<b>Required Strength: 58
+<b>Required Level: 45
+<b>Item Level: 90
+<m>+2 to Curses (Necromancer Only)
+<m>+20% Faster Cast Rate
+<m>+60% to Poison Skill Damage
+<m>+30 Defense
+<m>Cold Resist +30%
+
+11;,-1;,2;,3;,invcrs;,invcrsu;,invcrsu;
+<runeword>Call to Arms
+<crs>Crystal Sword
+<b>AmnRalMalIstOhm
+<b>One-Hand Damage: 20 to 60
+<b>Durability: 20 of 20
+<b>Required Strength: 43
+<b>Required Level: 57
+<b>Sword Class [0]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+305% Enhanced Damage
+<m>+3 to Attack Rating
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+6 to Battle Command
+<m>+6 to Battle Orders
+<m>+4 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>Socketed (5)
+
+12;,-1;,2;,3;,invxshu;,invxshu;,invxshu;
+<unique>Lidless Wall
+<xsh>Grim Shield
+<b>Defense: 347
+<b>Chance to Block:  20%
+<b>Durability: 70 of 70
+<b>Required Strength: 58
+<b>Required Level: 41
+<b>Item Level: 90
+<m>+2 to All Skills
+<m>+20% Faster Cast Rate
+<m>+130% Enhanced Defense
+<m>+10 to Energy
+<m>Increase Maximum Mana 10%
+<m>+4 to Mana after each Kill
+<m>+1 to Light Radius
+<m>Socketed (1)
+
+#inventory#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 1
+
+6;,0;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+7;,0;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+8;,0;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+9;,0;,1;,2;,invtrch;,;,;
+<unique>Hellfire Torch
+<cm2>Large Charm
+<b>Required Level: 75
+<b>Item Level: 90
+<m>5% Chance to cast level 10 an evil force on striking
+<m>+3 to Sorceress Skill Levels
+<m>+20 to Strength
+<m>+20 to Dexterity
+<m>+20 to Vitality
+<m>+20 to Energy
+<m>Cold Resist +20%
+<m>Lightning Resist +20%
+<m>Fire Resist +20%
+<m>Poison Resist +20%
+<m>+8 to Light Radius
+<m>Level 30 Hydra (10/10 Charges)
+
+3;,1;,1;,1;,invdias;,;,;
+<quest>Diablo's Soulstone
+<dias>Diablo's Soulstone
+<b>Item Level: 1
+
+6;,1;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+7;,1;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+8;,1;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+6;,2;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+7;,2;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+8;,2;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+9;,2;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+3 to Energy Shield (Sorceress Only)
+<m>+20 to Strength
+<m>+20 to Dexterity
+<m>+20 to Vitality
+<m>+20 to Energy
+<m>Cold Resist +20%
+<m>Lightning Resist +20%
+<m>Fire Resist +20%
+<m>Poison Resist +20%
+
+6;,3;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+7;,3;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+8;,3;,1;,1;,invflag;,;,;
+<quest>Standard of Heroes
+<std>Standard of Heroes
+<b>Item Level: 1
+
+9;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
++101 to Strength
++454 to Energy
++158 to Dexterity
++50 to Vitality
+Current Life: 178
++419 to Life
+Current Mana: 1966
++1966 to Mana
+Current Stamina: 242
++242 Maximum Stamina
+Level: 99
+Experience: -774482042
+Gold in Stash: 11697
+84% Increased Chance of Blocking
++30 to Minimum Damage
++53 to Maximum Damage
+Regenerate Mana 118%
++3701 Defense
++310 Defense vs. Missile
+Damage Reduced by 36
+Magic Damage Reduced by 38
+Damage Reduced by 41%
+Magic Resist +15%
+Fire Resist +163%
+Lightning Resist +163%
+Cold Resist +193%
+Poison Resist +214%
+Unknown property 67: +90
+Unknown property 68: +90
+Unknown property 69: +100
+Unknown property 71: +21
+Unknown property 72: +301
+Maximum Durability: +340
+Replenish Life +40
+Increase Maximum Mana 50%
++10 to Sorceress Skill Levels
++2 to Necromancer Skill Levels
++10% to Experience Gained
++8 to Light Radius
+Requirements -115%
++95% Faster Run/Walk
++30% Faster Hit Recovery
++20% Faster Block Rate
++105% Faster Cast Rate
++3 to Energy Shield (Sorceress Only)
++3 to Cold Mastery (Sorceress Only)
+Poison Length Reduced by 50%
+Half Freeze Duration
++5 to All Skills
++68 Magic Absorb
++64 Cold Absorb
+Cannot Be Frozen
+Unknown property 172: +2
++2 to Curses (Necromancer Only)
+Unknown property 194: +5
+5% Chance to cast level 10 an evil force on striking
+Level 30 Hydra (10/10 Charges)
+Repairs 1 durability in 25 seconds
+Unknown property 328: +1
++20% to Fire Skill Damage
++20% to Lightning Skill Damage
++65% to Cold Skill Damage
++80% to Poison Skill Damage
+-205% to Enemy Cold Resistance
+Unknown property 350: +102
+Unknown property 351: +39

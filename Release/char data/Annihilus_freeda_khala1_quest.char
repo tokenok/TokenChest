@@ -1,0 +1,312 @@
+Realm: Annihilus
+Account: freeda_khala1
+Character name: quest
+
+#stash#
+
+0;,0;,1;,2;,invmph;,;,;
+<normal>Key of Terror
+<pk1>Key of Terror
+<b>Item Level: 82
+
+1;,0;,1;,2;,invmph;,;,;
+<normal>Key of Hate
+<pk2>Key of Hate
+<b>Item Level: 80
+
+2;,0;,1;,2;,invmph;,;,;
+<normal>Key of Destruction
+<pk3>Key of Destruction
+<b>Item Level: 95
+
+4;,0;,1;,2;,invmph;,;,;
+<normal>Key of Hate
+<pk2>Key of Hate
+<b>Item Level: 80
+
+8;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 86
+
+0;,2;,1;,2;,invmph;,;,;
+<normal>Key of Terror
+<pk1>Key of Terror
+<b>Item Level: 98
+
+1;,2;,1;,2;,invmph;,;,;
+<normal>Key of Hate
+<pk2>Key of Hate
+<b>Item Level: 80
+
+2;,2;,1;,2;,invmph;,;,;
+<normal>Key of Destruction
+<pk3>Key of Destruction
+<b>Item Level: 95
+
+1;,4;,1;,2;,invmph;,;,;
+<normal>Key of Hate
+<pk2>Key of Hate
+<b>Item Level: 80
+
+2;,4;,1;,2;,invmph;,;,;
+<normal>Key of Destruction
+<pk3>Key of Destruction
+<b>Item Level: 95
+
+1;,6;,1;,2;,invmph;,;,;
+<normal>Key of Hate
+<pk2>Key of Hate
+<b>Item Level: 80
+
+1;,8;,1;,2;,invmph;,;,;
+<normal>Key of Hate
+<pk2>Key of Hate
+<b>Item Level: 80
+
+#body#
+
+#inventory#
+
+#cube#
+
+0;,0;,1;,1;,invfed;,;,;
+<normal>Festering Essence of Destruction
+<fed>Festering Essence of Destruction
+<b>Item Level: 99
+
+1;,0;,1;,1;,invfed;,;,;
+<normal>Festering Essence of Destruction
+<fed>Festering Essence of Destruction
+<b>Item Level: 99
+
+2;,0;,1;,1;,invfed;,;,;
+<normal>Festering Essence of Destruction
+<fed>Festering Essence of Destruction
+<b>Item Level: 99
+
+3;,0;,1;,1;,invfed;,;,;
+<normal>Festering Essence of Destruction
+<fed>Festering Essence of Destruction
+<b>Item Level: 99
+
+4;,0;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+5;,0;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+6;,0;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+7;,0;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+8;,0;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+9;,0;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+0;,1;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+1;,1;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+2;,1;,1;,1;,invceh;,;,;
+<normal>Charged Essence of Hatred
+<ceh>Charged Essence of Hatred
+<b>Item Level: 86
+
+3;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 90
+
+4;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+5;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+6;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+7;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+8;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+9;,1;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+0;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+1;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 90
+
+2;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 90
+
+3;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+4;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+5;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+6;,2;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+7;,2;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 1
+
+8;,2;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 1
+
+9;,2;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 1
+
+0;,3;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 1
+
+1;,3;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 1
+
+2;,3;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 1
+
+9;,4;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+9;,5;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 90
+
+9;,6;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+9;,7;,1;,1;,invtes;,;,;
+<normal>Twisted Essence of Suffering
+<tes>Twisted Essence of Suffering
+<b>Item Level: 80
+
+#mercenary#
+
+#character stats#
+
+wp:001011010000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:5//character class
+0:15//+15 to Strength
+1:20//+20 to Energy
+2:20//+20 to Dexterity
+3:25//+25 to Vitality
+4:95//New Stats: 95
+6:83//Current Life: 83
+7:83//+83 to Life
+8:58//Current Mana: 58
+9:58//+58 to Mana
+10:103//Current Stamina: 103
+11:103//+103 Maximum Stamina
+12:20//Level: 20
+13:561096//Experience: 561096
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+172:2//Unknown property 172: +2
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+39:0//Fire Resist +0%
+43:0//Cold Resist +0%
+41:0//Lightning Resist +0%
+45:0//Poison Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

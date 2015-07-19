@@ -1,0 +1,732 @@
+Realm: Annihilus
+Account: freeda_khala1
+Character name: rune
+
+#stash#
+
+0;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+1;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+2;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+3;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+4;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+5;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+6;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+7;,0;,1;,1;,invrEl;,;,;
+<normal>El Rune
+<r01>El Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+8;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 13
+
+0;,1;,1;,1;,invrEld;,;,;
+<normal>Eld Rune
+<r02>Eld Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+1;,1;,1;,1;,invrEld;,;,;
+<normal>Eld Rune
+<r02>Eld Rune
+<b>Required Level: 11
+<b>Item Level: 1
+
+0;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+1;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+2;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+3;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+4;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+5;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+6;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+7;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+8;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+9;,2;,1;,1;,invrTir;,;,;
+<normal>Tir Rune
+<r03>Tir Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+0;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+1;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+2;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+3;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+4;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+5;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+6;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+7;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+8;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+9;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+0;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+1;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+2;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+3;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+4;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+5;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+6;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+7;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+8;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+9;,4;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+0;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+1;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+2;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+3;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+4;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+5;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+6;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+7;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+8;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+9;,5;,1;,1;,invrIth;,;,;
+<normal>Ith Rune
+<r06>Ith Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+0;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+1;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+2;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+3;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+4;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+5;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+6;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+7;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+8;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+9;,6;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+0;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+1;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+2;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+3;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+4;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+5;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+6;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+7;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+8;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+9;,7;,1;,1;,invrRal;,;,;
+<normal>Ral Rune
+<r08>Ral Rune
+<b>Required Level: 19
+<b>Item Level: 1
+
+0;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+1;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+2;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+3;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+4;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+5;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+6;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+7;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+8;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+9;,8;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+0;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+1;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+2;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+3;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+4;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+5;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+6;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+7;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+8;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+9;,9;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+#body#
+
+#inventory#
+
+1;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+2;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+3;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+4;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+5;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+6;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+7;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+8;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+9;,0;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+1;,1;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+2;,1;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+3;,1;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+4;,1;,1;,1;,invrThul;,;,;
+<normal>Thul Rune
+<r10>Thul Rune
+<b>Required Level: 23
+<b>Item Level: 1
+
+9;,1;,1;,1;,invrTal;,;,;
+<normal>Tal Rune
+<r07>Tal Rune
+<b>Required Level: 17
+<b>Item Level: 1
+
+0;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+1;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+2;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+3;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+4;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+5;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+6;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+7;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+8;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+9;,2;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+8;,3;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+9;,3;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
++25 to Strength
++15 to Energy
++20 to Dexterity
++25 to Vitality
+Current Life: 55
++55 to Life
+Current Mana: 15
++15 to Mana
+Current Stamina: 89
++89 Maximum Stamina
+Level: 1
+Unknown property 67: +100
+Unknown property 68: +100
+Unknown property 69: +100
+Unknown property 172: +2

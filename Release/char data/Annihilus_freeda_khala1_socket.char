@@ -1,0 +1,262 @@
+Realm: Annihilus
+Account: freeda_khala1
+Character name: socket
+
+#stash#
+
+0;,0;,2;,2;,invpa5;,;,;
+<normal>Royal Shield
+<paa>Royal Shield
+_14: 1445
+<b>Defense: 166
+<b>Chance to Block:  25%
+<b>Durability: 47 of 60
+<b>(Paladin Only)
+<b>Required Strength: 114
+<b>Required Level: 41
+<b>Item Level: 87
+<m>All Resistances +39
+
+2;,0;,2;,4;,invam2;,;,;
+<superior>Superior Reflex Bow
+<am2>Reflex Bow
+_14: 1421
+<b>Two-Hand Damage: 9 to 19
+<b>Durability: 47 of 55
+<b>(Amazon Only)
+<b>Required Dexterity: 60
+<b>Required Strength: 35
+<b>Required Level: 20
+<b>Bow Class [10]
+<b>Item Level: 75
+<m>+3 to Bow and Crossbow Skills (Amazon Only)
+<m>+2 to Attack Rating
+
+4;,0;,2;,3;,invful;,;,;
+<ethereal/socketed>Chaos Armor
+<xul>Chaos Armor
+<b>Defense: 472
+<b>Durability: 36 of 36
+<b>Required Strength: 130
+<b>Required Level: 25
+<b>Item Level: 86
+<b>Velocity:  -10
+<m>Ethereal (Cannot be Repaired), Socketed (4)
+
+0;,3;,2;,3;,invkit;,invkitu;,invkitu;
+<superior>Superior Monarch
+<uit>Monarch
+<b>Defense: 166
+<b>Chance to Block:  22%
+<b>Durability: 46 of 86
+<b>Required Strength: 156
+<b>Required Level: 54
+<b>Item Level: 86
+<m>+12% Enhanced Defense
+
+2;,4;,2;,2;,invpa2;,;,;
+<normal>Sacred Rondache
+<pac>Sacred Rondache
+_14: 1445
+<b>Defense: 144
+<b>Chance to Block:  28%
+<b>Durability: 41 of 68
+<b>(Paladin Only)
+<b>Required Strength: 109
+<b>Required Level: 52
+<b>Item Level: 86
+<m>All Resistances +42
+
+0;,6;,2;,4;,invvou;,;,;
+<ethereal/socketed>Superior Voulge
+<vou>Voulge
+<b>Two-Hand Damage: 9 to 32
+<b>Durability: 26 of 26
+<b>Required Strength: 40
+<b>Polearm Class [0]
+<b>Item Level: 86
+<m>+5% Enhanced Damage
+<m>Ethereal (Cannot be Repaired), Socketed (4)
+
+3;,7;,2;,3;,invcrs;,invcrsu;,invcrsu;
+<runeword>Call to Arms
+<crs>Crystal Sword
+<b>AmnRalMalIstOhm
+<b>One-Hand Damage: 17 to 52
+<b>Durability: 17 of 20
+<b>Required Strength: 43
+<b>Required Level: 57
+<b>Sword Class [0]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+253% Enhanced Damage
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+5 to Battle Command
+<m>+6 to Battle Orders
+<m>+1 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>Socketed (5)
+
+5;,7;,2;,3;,invcrs;,invcrsu;,invcrsu;
+<runeword>Call to Arms
+<crs>Crystal Sword
+<b>AmnRalMalIstOhm
+<b>One-Hand Damage: 17 to 52
+<b>Durability: 17 of 20
+<b>Required Strength: 43
+<b>Required Level: 57
+<b>Sword Class [0]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+253% Enhanced Damage
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+5 to Battle Command
+<m>+6 to Battle Orders
+<m>+1 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>Socketed (5)
+
+9;,7;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 95
+
+7;,8;,1;,2;,invbwn;,invbwnu;,invbwnu;
+<normal>Bone Wand
+<bwn>Bone Wand
+<b>One-Hand Damage: 3 to 7
+<b>Durability: 12 of 15
+<b>Staff Class [-20]
+<b>Item Level: 79
+<m>+1 to Attract (Necromancer Only)
+<m>+2 to Bone Spear (Necromancer Only)
+<m>+50% Damage to Undead
+
+8;,8;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+6% to Fire Skill Damage
+<m>+8% to Lightning Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+8;,9;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+6% to Fire Skill Damage
+<m>+8% to Lightning Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+9;,9;,1;,1;,invscrg;,;,;
+<quest>Bad Unique ID
+<scwu>Scroll of Weapon Upgrade
+<b>Item Level: 36
+
+#body#
+
+#inventory#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 13
+
+#cube#
+
+9;,7;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+6% to Fire Skill Damage
+<m>+8% to Lightning Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+#mercenary#
+
+#character stats#
+
+wp:000100110100000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:5//character class
+0:15//+15 to Strength
+1:20//+20 to Energy
+2:20//+20 to Dexterity
+3:25//+25 to Vitality
+6:55//Current Life: 55
+7:55//+55 to Life
+8:20//Current Mana: 20
+9:20//+20 to Mana
+10:84//Current Stamina: 84
+11:84//+84 Maximum Stamina
+12:1//Level: 1
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+172:2//Unknown property 172: +2
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+39:0//Fire Resist +0%
+43:0//Cold Resist +0%
+41:0//Lightning Resist +0%
+45:0//Poison Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

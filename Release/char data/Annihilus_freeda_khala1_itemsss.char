@@ -1,0 +1,1136 @@
+Realm: Annihilus
+Account: freeda_khala1
+Character name: itemsss
+
+#stash#
+
+0;,0;,2;,2;,invci2;,;,;
+<rare>Dread Brow
+<ci2>Tiara
+<b>Defense: 48
+<b>Durability: 15 of 25
+<b>Required Level: 67
+<b>Item Level: 86
+<m>+2 to Paladin Skill Levels
+<m>+26 to Strength
+<m>+6 to Energy
+<m>+37 to Life
+<m>+34 to Mana
+
+2;,0;,2;,2;,invne5;,;,;
+<unique>Homunculus
+<nea>Hierophant Trophy
+<b>Defense: 209
+<b>Chance to Block:  52%
+<b>Durability: 15 of 20
+<b>(Necromancer Only)
+<b>Required Strength: 58
+<b>Required Level: 42
+<b>Item Level: 89
+<m>+3 to Necromancer Skill Levels
+<m>+30% Faster Block Rate
+<m>40% Increased Chance of Blocking
+<m>+195% Enhanced Defense
+<m>+13 to all Attributes
+<m>Regenerate Mana 50%
+<m>All Resistances +40
+<m>+5 to Mana after each Kill
+<m>Socketed (2)
+
+4;,0;,2;,2;,invbhmu;,invbhmu;,invbhmu;
+<unique>Vampire Gaze
+<xh9>Grim Helm
+<b>Defense: 252
+<b>Durability: 36 of 40
+<b>Required Strength: 58
+<b>Required Level: 41
+<b>Item Level: 86
+<m>Adds 50-100 cold damage
+<m>6% Mana stolen per hit
+<m>7% Life stolen per hit
+<m>+100% Enhanced Defense
+<m>+8 to all Attributes
+<m>50% Slower Stamina Drain
+<m>Damage Reduced by 35%
+<m>Magic Damage Reduced by 12
+<m>44% Better Chance of Getting Magic Items
+<m>Cold Length:  100
+
+6;,0;,2;,3;,invxshu;,invxshu;,invxshu;
+<unique>Lidless Wall
+<xsh>Grim Shield
+<b>Defense: 332
+<b>Chance to Block:  20%
+<b>Durability: 58 of 70
+<b>Required Strength: 58
+<b>Required Level: 41
+<b>Item Level: 99
+<m>+2 to All Skills
+<m>+20% Faster Cast Rate
+<m>+120% Enhanced Defense
+<m>+10 to Energy
+<m>Increase Maximum Mana 10%
+<m>+4 to Mana after each Kill
+<m>+1 to Light Radius
+
+8;,0;,2;,3;,invrng;,;,;
+<runeword>Enigma
+<rng>Ring Mail
+<b>JahIthBer
+<b>Defense: 815
+<b>Durability: 22 of 26
+<b>Required Strength: 36
+<b>Required Level: 65
+<b>Item Level: 79
+<b>Velocity:  -5
+<m>+2 to All Skills
+<m>+45% Faster Run/Walk
+<m>+1 to Teleport
+<m>+770 Defense
+<m>+0.75 to Strength (Based on Character Level)
+<m>Increase Maximum Life 5%
+<m>Damage Reduced by 8%
+<m>+14 Life after each Kill
+<m>15% Damage Taken Goes To Mana
+<m>1.00% Better Chance of Getting Magic Items (Based on Character Level)
+<m>Socketed (3)
+
+0;,2;,2;,3;,invswbu;,invswbu;,invswbu;
+<unique>Widowmaker
+<6sw>Ward Bow
+<b>Two-Hand Damage: 60 to 159
+<b>Durability: 27 of 48
+<b>Required Dexterity: 146
+<b>Required Strength: 72
+<b>Required Level: 65
+<b>Bow Class [0]
+<b>Item Level: 86
+<m>5% Chance to cast level 8 Amplify Damage on striking
+<m>+40% Increased Attack Speed
+<m>Fires Magic Arrows
+<m>+201% Enhanced Damage
+<m>Ignore Target's Defense
+<m>66% Deadly Strike
+<m>+5 to Guided Arrow
+
+2;,2;,2;,4;,invspt;,;,;
+<unique>Hone Sundan
+<9st>Yari
+<b>Two-Hand Damage: 213 to 413
+<b>Durability: 28 of 28
+<b>Required Strength: 91
+<b>Required Level: 37
+<b>Spear Class [0]
+<b>Item Level: 86
+<m>+256% Enhanced Damage
+<m>50% Chance of Crushing Blow
+<m>Repairs 1 durability in 10 seconds
+<m>Ethereal (Cannot be Repaired), Socketed (4)
+
+4;,2;,2;,2;,invlbt;,;,;
+<unique>Infernostride
+<xlb>Demonhide Boots
+<b>Defense: 101
+<b>Durability: 6 of 12
+<b>Required Strength: 20
+<b>Required Level: 29
+<b>Item Level: 86
+<m>5% Chance to cast level 8 Blaze when struck
+<m>+20% Faster Run/Walk
+<m>Adds 12-33 fire damage
+<m>+140% Enhanced Defense
+<m>+15 Defense
+<m>+10% to Maximum Fire Resist
+<m>Fire Resist +30%
+<m>30% Better Chance of Getting Magic Items
+<m>+2 to Light Radius
+
+6;,3;,2;,3;,inv9gmu;,inv9gmu;,inv9gmu;
+<unique>The Gavel of Pain
+<9gm>Martel de Fer
+<b>Two-Hand Damage: 242 to 393
+<b>Durability: 45 of 60
+<b>Required Strength: 169
+<b>Required Level: 45
+<b>Mace Class [20]
+<b>Item Level: 86
+<m>Indestructible
+<m>5% Chance to cast level 1 Amplify Damage on striking
+<m>5% Chance to cast level 1 Iron Maiden when struck
+<m>+20% Increased Attack Speed
+<m>+297% Enhanced Damage
+<m>Damage +102
+<m>Attacker Takes Damage of 26
+<m>Level 8 Amplify Damage (5/10 Charges)
+<m>+50% Damage to Undead
+
+8;,3;,1;,3;,invflc;,;,;
+<unique>Blade of Ali Baba
+<9fc>Tulwar
+<b>IstIst
+<b>One-Hand Damage: 55 to 121
+<b>Durability: 32 of 32
+<b>Required Dexterity: 42
+<b>Required Strength: 70
+<b>Required Level: 51
+<b>Sword Class [20]
+<b>Item Level: 82
+<m>+20% Increased Attack Speed
+<m>+20% Faster Cast Rate
+<m>+246% Enhanced Damage
+<m>+14 to all Attributes
+<m>+200 to Mana
+<m>60% Better Chance of Getting Magic Items
+<m>1.25% Better Chance of Getting Magic Items (Based on Character Level)
+<m>Socketed (2)
+
+9;,3;,1;,1;,invamu2;,;,;
+<unique>Nokozan Relic
+<amu>Amulet
+<b>Required Level: 10
+<b>Item Level: 15
+<m>+1 to Fire Skills
+<m>+20% Faster Hit Recovery
+<m>10% Increased Chance of Blocking
+<m>Adds 5-10 fire damage
+<m>+1 to Enchant
+<m>+10% to Maximum Fire Resist
+<m>Fire Resist +70%
+<m>+3 to Light Radius
+
+4;,4;,2;,2;,invcap;,;,;
+<unique>Harlequin Crest
+<uap>Shako
+<b>Defense: 103
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 62
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+10% Faster Hit Recovery
+<m>+7 to Strength
+<m>+10 to Dexterity
+<m>+4 to Vitality
+<m>+6 to Energy
+<m>+2.00 to Life (Based on Character Level)
+<m>+2.00 to Mana (Based on Character Level)
+<m>Damage Reduced by 10%
+<m>50% Better Chance of Getting Magic Items
+
+9;,4;,1;,3;,invob5;,;,;
+<unique>The Oculus
+<oba>Swirling Crystal
+<b>One-Hand Damage: 18 to 42
+<b>Durability: 47 of 50
+<b>(Sorceress Only)
+<b>Required Level: 42
+<b>Staff Class [10]
+<b>Item Level: 94
+<m>+3 to Sorceress Skill Levels
+<m>+30% Faster Cast Rate
+<m>+20% Enhanced Defense
+<m>+20 to Vitality
+<m>+20 to Energy
+<m>All Resistances +20
+<m>+5 to Mana after each Kill
+<m>50% Better Chance of Getting Magic Items
+<m>Socketed (3)
+
+0;,5;,2;,3;,invful;,;,;
+<unique>Steel Carapace
+<uul>Shadow Plate
+<b>HelHel
+<b>Defense: 1618
+<b>Durability: 70 of 70
+<b>Required Strength: 161
+<b>Required Level: 66
+<b>Item Level: 84
+<b>Velocity:  -10
+<m>20% Chance to cast level 6 Iron Maiden when struck
+<m>Level 9 Defiance Aura When Equipped
+<m>+20% Faster Hit Recovery
+<m>+10 to Fade
+<m>+190% Enhanced Defense
+<m>Regenerate Mana 27%
+<m>All Resistances +48
+<m>Damage Reduced by 16%
+<m>Repairs 1 durability in 20 seconds
+<m>Requirements -30%
+<m>Socketed (2)
+
+2;,6;,2;,2;,invci2;,;,;
+<unique>Kira's Guardian
+<ci2>Tiara
+<b>Defense: 132
+<b>Durability: 25 of 25
+<b>Required Level: 77
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+20% Faster Hit Recovery
+<m>+90 Defense
+<m>All Resistances +58
+<m>Cannot Be Frozen
+<m>24% Better Chance of Getting Magic Items
+<m>Socketed (1)
+
+4;,6;,2;,2;,invmsk;,;,;
+<unique>Andariel's Visage
+<usk>Demonhead
+<b>Defense: 451
+<b>Durability: 16 of 20
+<b>Required Strength: 102
+<b>Required Level: 83
+<b>Item Level: 86
+<m>10% Chance to cast level 4 Lower Resist on striking
+<m>15% Chance to cast level 15 Poison Nova when struck
+<m>+2 to All Skills
+<m>+20% Increased Attack Speed
+<m>8% Life stolen per hit
+<m>+191% Enhanced Defense
+<m>+48 to all Attributes
+<m>+10% to Maximum Poison Resist
+<m>Fire Resist -30%
+<m>Poison Resist +52%
+<m>Level 8 Venom (29/80 Charges)
+
+6;,6;,2;,2;,invmsk;,;,;
+<unique>Andariel's Visage
+<usk>Demonhead
+<b>Defense: 420
+<b>Durability: 13 of 20
+<b>Required Strength: 102
+<b>Required Level: 83
+<b>Item Level: 95
+<m>10% Chance to cast level 4 Lower Resist on striking
+<m>15% Chance to cast level 15 Poison Nova when struck
+<m>+2 to All Skills
+<m>+20% Increased Attack Speed
+<m>9% Life stolen per hit
+<m>+171% Enhanced Defense
+<m>+31 to all Attributes
+<m>+10% to Maximum Poison Resist
+<m>Fire Resist -30%
+<m>Poison Resist +45%
+<m>Level 8 Venom (22/80 Charges)
+
+8;,6;,1;,3;,invspcu;,invspcu;,invspcu;
+<unique>Demon Limb
+<7sp>Tyrant Club
+<b>One-Hand Damage: 100 to 181
+<b>Durability: 65 of 65
+<b>Required Strength: 133
+<b>Required Level: 63
+<b>Mace Class [0]
+<b>Item Level: 86
+<m>+40% Increased Attack Speed
+<m>+213% Enhanced Damage
+<m>+200% Damage to Demons
+<m>Adds 255-511 fire damage
+<m>8% Life stolen per hit
+<m>+5 to Fire Mastery
+<m>+15 to Enchant
+<m>Fire Resist +38%
+<m>Repairs 1 durability in 20 seconds
+<m>+50% Damage to Undead
+<m>Socketed (2)
+
+9;,7;,1;,3;,invch9;,;,;
+<magic>Lion Branded Grand Charm
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 86
+<m>+1 to Combat Skills (Paladin Only)
+
+0;,8;,2;,2;,invcap;,;,;
+<unique>Harlequin Crest
+<uap>Shako
+<b>Defense: 105
+<b>Durability: 9 of 12
+<b>Required Strength: 50
+<b>Required Level: 62
+<b>Item Level: 80
+<m>+2 to All Skills
+<m>+10% Faster Hit Recovery
+<m>+5 to Strength
+<m>+4 to Dexterity
+<m>+4 to Vitality
+<m>+9 to Energy
+<m>+2.00 to Life (Based on Character Level)
+<m>+2.00 to Mana (Based on Character Level)
+<m>Damage Reduced by 10%
+<m>50% Better Chance of Getting Magic Items
+
+2;,8;,2;,2;,invhgl;,;,;
+<unique>Frostburn
+<hgl>Gauntlets
+<b>Defense: 48
+<b>Durability: 22 of 24
+<b>Required Strength: 60
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+5% Enhanced Damage
+<m>Adds 1-6 cold damage
+<m>+18% Enhanced Defense
+<m>+30 Defense
+<m>+20 to Life
+<m>Increase Maximum Mana 40%
+<m>Cold Length:  50
+
+4;,8;,2;,2;,invmbt;,;,;
+<set>Natalya's Soul
+<xmb>Mesh Boots
+<b>Defense: 40
+<b>Durability: 16 of 16
+<b>Required Strength: 65
+<b>Required Level: 25
+<b>Item Level: 80
+<m>+40% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+5 to all Attributes
+<m>Heal Stamina Plus +0.25% (Based on Character Level)
+<m>All Resistances +29
+
+6;,8;,2;,2;,invbhm;,invbhmu;,invbhmu;
+<unique>Giant Skull
+<uh9>Bone Visage
+<b>Defense: 468
+<b>Durability: 30 of 40
+<b>Required Strength: 106
+<b>Required Level: 65
+<b>Item Level: 86
+<m>15% Chance of Crushing Blow
+<m>Knockback
+<m>+317 Defense
+<m>+25 to Strength
+<m>+16 to Dexterity
+<m>Socketed (3)
+
+8;,9;,1;,1;,invrin5;,;,;
+<unique>Nagelring
+<rin>Ring
+<b>Required Level: 7
+<b>Item Level: 80
+<m>+64 to Attack Rating
+<m>+20 to Mana
+<m>Magic Damage Reduced by 3
+<m>Attacker Takes Damage of 3
+<m>36% Better Chance of Getting Magic Items
+
+#body#
+
+#inventory#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 82
+
+2;,0;,1;,2;,invtk3;,invtk3;,;
+<unique>Warshrike
+<7bk>Winged Knife
+<b>Throw Damage: 146 to 250
+<b>One-Hand Damage: 172 to 224
+<b>Quantity: 300
+<b>Required Dexterity: 132
+<b>Required Strength: 35
+<b>Required Level: 75
+<b>Dagger Class [-20]
+<b>Item Level: 95
+<m>+50% Increased Attack Speed
+<m>Piercing Attack
+<m>+332% Enhanced Damage
+<m>50% Deadly Strike
+<m>+5 to Burst of Speed
+<m>Replenishes quantity
+<m>Ethereal (Cannot be Repaired)
+
+3;,0;,1;,3;,invktr;,;,;
+<unique>Jade Talon
+<7wb>Wrist Sword
+<b>One-Hand Damage: 140 to 185
+<b>Durability: 51 of 56
+<b>(Assassin Only)
+<b>Required Dexterity: 105
+<b>Required Strength: 105
+<b>Required Level: 66
+<b>Claw Class [-10]
+<b>Item Level: 99
+<m>+2 to Shadow Disciplines (Assassin Only)
+<m>+1 to Assassin Skills
+<m>+30% Faster Hit Recovery
+<m>+312% Enhanced Damage
+<m>12% Mana stolen per hit
+<m>14% Life stolen per hit
+<m>All Resistances +66
+<m>Socketed (1)
+
+4;,0;,2;,2;,invvbt;,;,;
+<unique>Sandstorm Trek
+<uvb>Scarabshell Boots
+<b>Defense: 166
+<b>Durability: 14 of 14
+<b>Required Strength: 91
+<b>Required Level: 64
+<b>Item Level: 99
+<m>+20% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+153% Enhanced Defense
+<m>+14 to all Attributes
+<m>+1.00 Maximum Stamina (Based on Character Level)
+<m>50% Slower Stamina Drain
+<m>Cold Resist +20%
+<m>Lightning Resist +20%
+<m>Fire Resist +20%
+<m>Poison Resist +57%
+<m>Repairs 1 durability in 20 seconds
+
+6;,0;,1;,2;,invtk3;,invtk3;,;
+<unique>Warshrike
+<7bk>Winged Knife
+<b>Throw Damage: 138 to 235
+<b>One-Hand Damage: 162 to 211
+<b>Quantity: 300
+<b>Required Dexterity: 132
+<b>Required Strength: 35
+<b>Required Level: 75
+<b>Dagger Class [-20]
+<b>Item Level: 99
+<m>+50% Increased Attack Speed
+<m>Piercing Attack
+<m>+306% Enhanced Damage
+<m>50% Deadly Strike
+<m>+5 to Burst of Speed
+<m>Replenishes quantity
+<m>Ethereal (Cannot be Repaired)
+
+7;,0;,1;,3;,invob5;,;,;
+<unique>The Oculus
+<oba>Swirling Crystal
+<b>One-Hand Damage: 18 to 42
+<b>Durability: 28 of 50
+<b>(Sorceress Only)
+<b>Required Level: 42
+<b>Staff Class [10]
+<b>Item Level: 99
+<m>+3 to Sorceress Skill Levels
+<m>+30% Faster Cast Rate
+<m>+20% Enhanced Defense
+<m>+20 to Vitality
+<m>+20 to Energy
+<m>All Resistances +20
+<m>+5 to Mana after each Kill
+<m>50% Better Chance of Getting Magic Items
+<m>Socketed (2)
+
+8;,0;,2;,1;,invmbl;,;,;
+<unique>Gloom's Trap
+<zmb>Mesh Belt
+<b>Defense: 90
+<b>Durability: 11 of 16
+<b>Required Strength: 58
+<b>Required Level: 36
+<b>Item Level: 95
+<m>5% Mana stolen per hit
+<m>5% Life stolen per hit
+<m>+121% Enhanced Defense
+<m>+50 to Life
+<m>+30 to Mana
+<m>Increase Maximum Mana 15%
+<m>Regenerate Mana 35%
+<m>Damage Reduced by 7
+<m>-3 to Light Radius
+
+8;,1;,2;,2;,invtbt;,;,;
+<unique>War Traveler
+<xtb>Battle Boots
+<b>Defense: 198
+<b>Defense: 40 of 40
+<b>Required Strength: 85
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+25% Faster Run/Walk
+<m>Adds 15-25 damage
+<m>+175% Enhanced Defense
+<m>+10 to Strength
+<m>+10 to Vitality
+<m>40% Slower Stamina Drain
+<m>Attacker Takes Damage of 10
+<m>37% Better Chance of Getting Magic Items
+<m>Ethereal (Cannot be Repaired)
+<m>Maximum Durability: +30
+<m>+15 to Minimum Throw Damage
+<m>+25 to Maximum Throw Damage
+
+0;,2;,2;,2;,invlbt;,;,;
+<unique>Merman's Sprocket
+<ulb>Wyrmhide Boots
+<b>Defense: 473
+<b>Durability: 8 of 12
+<b>Required Strength: 50
+<b>Required Level: 69
+<b>Item Level: 99
+<m>+65% Faster Run/Walk
+<m>+412 Defense
+<m>+310 Defense vs. Missile
+<m>Replenish Life +5
+<m>+0.75 to Mana (Based on Character Level)
+<m>Regenerate Mana 8%
+<m>+64 Magic Absorb
+<m>Poison Resist 0.75% (Based on Character Level)
+<m>+55 Cold Absorb
+<m>Cannot Be Frozen
+
+2;,2;,1;,1;,invamu2;,;,;
+<unique>Highlord's Wrath
+<amu>Amulet
+<b>Required Level: 65
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+20% Increased Attack Speed
+<m>Adds 1-1000 fire damage
+<m>0.38% Deadly Strike (Based on Character Level)
+<m>Cold Resist +35%
+<m>Lightning Resist +70%
+<m>Fire Resist +35%
+<m>Poison Resist +35%
+<m>Attacker Takes Lightning Damage of 15
+
+4;,2;,2;,2;,invvbt;,;,;
+<unique>Waterwalk
+<xvb>Sharkskin Boots
+<b>Defense: 119
+<b>Durability: 9 of 14
+<b>Required Strength: 47
+<b>Required Level: 32
+<b>Item Level: 99
+<m>+30% Faster Run/Walk
+<m>+198% Enhanced Defense
+<m>+100 Defense vs. Missile
+<m>+11 to all Attributes
+<m>+52 to Life
+<m>+40 Maximum Stamina
+<m>Heal Stamina Plus 50%
+<m>+5% to Maximum Fire Resist
+
+6;,2;,1;,1;,invrin4;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>10% Increased Chance of Blocking
+<m>+153 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-14% to Enemy Cold Resistance
+<m>+17 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+2;,3;,1;,1;,invrin4;,;,;
+<unique>Dwarf Star
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 86
+<m>+2 to Fire Skills
+<m>-8% to Enemy Fire Resistance
+<m>+40 to Life
+<m>+40 Maximum Stamina
+<m>Heal Stamina Plus 15%
+<m>Fire Absorb 15%
+<m>Magic Damage Reduced by 15
+
+6;,3;,1;,1;,invrin5;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>6% Increased Chance of Blocking
+<m>+195 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-7% to Enemy Cold Resistance
+<m>+18 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+7;,3;,2;,1;,invvbl;,;,;
+<unique>Nosferatu's Coil
+<uvc>Vampirefang Belt
+<b>Defense: 61
+<b>Durability: 10 of 14
+<b>Required Strength: 50
+<b>Required Level: 51
+<b>Item Level: 99
+<m>+10% Faster Run/Walk
+<m>+10% Increased Attack Speed
+<m>5% Mana stolen per hit
+<m>7% Life stolen per hit
+<m>Slows Target by 20%
+<m>+12 to all Attributes
+<m>+2 to Mana after each Kill
+<m>-3 to Light Radius
+
+9;,3;,1;,1;,invrin1;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 95
+<m>5% Increased Chance of Blocking
+<m>+244 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-10% to Enemy Cold Resistance
+<m>+19 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+#cube#
+
+0;,0;,2;,4;,invbar;,;,;
+<unique>Bonehew
+<7o7>Ogre Axe
+<b>Two-Hand Damage: 180 to 930
+<b>Durability: 26 of 26
+<b>Required Dexterity: 65
+<b>Required Strength: 185
+<b>Required Level: 64
+<b>Polearm Class [0]
+<b>Item Level: 86
+<m>50% Chance to cast level 40 Bone Spirit on striking
+<m>50% Chance to cast level 40 Bone Spear on striking
+<m>+50% Increased Attack Speed
+<m>+329% Enhanced Damage
+<m>Prevent Monster Heal
+<m>Level 14 Corpse Explosion (22/30 Charges)
+<m>Ethereal (Cannot be Repaired), Socketed (2)
+
+2;,0;,2;,4;,invvou;,;,;
+<runeword>Infinity
+<7vo>Colossus Voulge
+<b>BerMalBerIst
+<b>Two-Hand Damage: 70 to 679
+<b>Durability: 50 of 50
+<b>Required Dexterity: 55
+<b>Required Strength: 210
+<b>Required Level: 63
+<b>Polearm Class [10]
+<b>Item Level: 86
+<m>50% Chance to cast level 20 Chain Lightning when you Kill an Enemy
+<m>Level 12 Conviction Aura When Equipped
+<m>+35% Faster Run/Walk
+<m>+312% Enhanced Damage
+<m>-52% to Enemy Lightning Resistance
+<m>40% Chance of Crushing Blow
+<m>Prevent Monster Heal
+<m>+0.50 to Vitality (Based on Character Level)
+<m>30% Better Chance of Getting Magic Items
+<m>Level 21 Cyclone Armor (30/30 Charges)
+<m>Socketed (4)
+
+4;,0;,1;,3;,invqvr;,;,;
+<unique>Flavie's Bullseye
+<aqv3>Hellfire Arrows
+<b>Quantity: 510
+<b>Required Level: 72
+<b>Item Level: 90
+<m>10% Chance to cast level 5 Amplify Damage on striking
+<m>+13% Faster Run/Walk
+<m>+32% Increased Attack Speed
+<m>Damage +30
+<m>35% Life stolen per hit
+<m>+1% to Maximum Poison Resist
+<m>+1% to Maximum Cold Resist
+<m>+1% to Maximum Lightning Resist
+<m>+1% to Maximum Fire Resist
+<m>Replenishes quantity
+
+5;,0;,1;,3;,invam5;,;,;
+<unique>Thunderstroke
+<amf>Matriarchal Javelin
+<b>Throw Damage: 101 to 191
+<b>One-Hand Damage: 87 to 156
+<b>Quantity: 151
+<b>(Amazon Only)
+<b>Required Dexterity: 151
+<b>Required Strength: 107
+<b>Required Level: 69
+<b>Javelin Class [-10]
+<b>Item Level: 99
+<m>20% Chance to cast level 3 Static Field on striking
+<m>+3 to Javelin and Spear Skills (Amazon Only)
+<m>+25% Increased Attack Speed
+<m>+190% Enhanced Damage
+<m>Adds 1-511 fire damage
+<m>-15% to Enemy Lightning Resistance
+<m>+15% to Lightning Skill Damage
+<m>+3 to Lightning Fury (Amazon Only)
+
+6;,0;,1;,1;,invrin5;,;,;
+<rare>Grim Finger
+<rin>Ring
+<b>Required Level: 10
+<b>Item Level: 30
+<m>+10% Faster Cast Rate
+<m>4% Life stolen per hit
+<m>Cold Resist +14%
+<m>Fire Resist +19%
+<m>Poison Resist +6%
+<m>Poison Length Reduced by 25%
+
+7;,0;,1;,2;,invob2;,;,;
+<unique>Eschuta's Temper
+<obc>Eldritch Orb
+<b>One-Hand Damage: 18 to 50
+<b>Durability: 25 of 30
+<b>(Sorceress Only)
+<b>Required Level: 72
+<b>Staff Class [-10]
+<b>Item Level: 86
+<m>+3 to Sorceress Skill Levels
+<m>+40% Faster Cast Rate
+<m>+23% to Fire Skill Damage
+<m>+21% to Lightning Skill Damage
+<m>+80 to Mana
+
+8;,0;,2;,2;,invsmlu;,invsmlu;,invsmlu;
+<unique>Blackoak Shield
+<uml>Luna
+<b>Defense: 355
+<b>Chance to Block:  40%
+<b>Defense: 42 of 129
+<b>Required Strength: 100
+<b>Required Level: 61
+<b>Item Level: 99
+<m>4% Chance to cast level 5 Weaken when struck
+<m>+50% Faster Block Rate
+<m>20% Increased Chance of Blocking
+<m>+187% Enhanced Defense
+<m>+0.50 to Dexterity (Based on Character Level)
+<m>+2.00 to Life (Based on Character Level)
+<m>+0.63 Absorbs Cold Damage (Based on Character Level)
+<m>Cannot Be Frozen
+<m>Socketed (1)
+<m>Maximum Durability: +45
+
+6;,1;,1;,1;,invrin5;,;,;
+<unique>Nagelring
+<rin>Ring
+<b>Required Level: 7
+<b>Item Level: 80
+<m>+65 to Attack Rating
+<m>+20 to Mana
+<m>Magic Damage Reduced by 3
+<m>Attacker Takes Damage of 3
+<m>38% Better Chance of Getting Magic Items
+
+6;,2;,2;,2;,invskp;,;,;
+<unique>Tarnhelm
+<skp>Skull Cap
+<b>Defense: 8
+<b>Durability: 10 of 18
+<b>Required Strength: 15
+<b>Required Level: 15
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+5% to Experience Gained
+<m>43% Better Chance of Getting Magic Items
+
+8;,2;,2;,2;,invxmlu;,invxmlu;,invxmlu;
+<unique>Moser's Blessed Circle
+<xml>Round Shield
+<b>Defense: 175
+<b>Chance to Block:  37%
+<b>Durability: 32 of 64
+<b>Required Strength: 53
+<b>Required Level: 31
+<b>Item Level: 90
+<m>+30% Faster Block Rate
+<m>25% Increased Chance of Blocking
+<m>+214% Enhanced Defense
+<m>Replenish Life +10
+<m>All Resistances +30
+<m>Cannot Be Frozen
+<m>Socketed (2)
+
+4;,3;,1;,1;,invrin1;,;,;
+<unique>Dwarf Star
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>+2 to Fire Skills
+<m>-9% to Enemy Fire Resistance
+<m>+40 to Life
+<m>+40 Maximum Stamina
+<m>Heal Stamina Plus 15%
+<m>Fire Absorb 15%
+<m>Magic Damage Reduced by 13
+
+5;,3;,1;,1;,invamu3;,;,;
+<rare>Shadow Heart
+<amu>Amulet
+<b>Required Level: 66
+<b>Item Level: 99
+<m>+2 to Warcries (Barbarian Only)
+<m>+12% Faster Cast Rate
+<m>7% Mana stolen per hit
+<m>Cold Resist +20%
+<m>Damage Reduced by 2
+
+0;,4;,2;,2;,invlbt;,;,;
+<unique>Infernostride
+<xlb>Demonhide Boots
+<b>Defense: 144
+<b>Durability: 7 of 7
+<b>Required Strength: 10
+<b>Required Level: 29
+<b>Item Level: 99
+<m>5% Chance to cast level 8 Blaze when struck
+<m>+20% Faster Run/Walk
+<m>Adds 12-33 fire damage
+<m>+140% Enhanced Defense
+<m>+15 Defense
+<m>+10% to Maximum Fire Resist
+<m>Fire Resist +30%
+<m>30% Better Chance of Getting Magic Items
+<m>+2 to Light Radius
+<m>Ethereal (Cannot be Repaired)
+
+2;,4;,2;,3;,inv9gmu;,inv9gmu;,inv9gmu;
+<unique>The Gavel of Pain
+<9gm>Martel de Fer
+<b>Two-Hand Damage: 217 to 353
+<b>Durability: 56 of 60
+<b>Required Strength: 169
+<b>Required Level: 45
+<b>Mace Class [20]
+<b>Item Level: 86
+<m>Indestructible
+<m>5% Chance to cast level 1 Amplify Damage on striking
+<m>5% Chance to cast level 1 Iron Maiden when struck
+<m>+20% Increased Attack Speed
+<m>+257% Enhanced Damage
+<m>Damage +78
+<m>Attacker Takes Damage of 26
+<m>Level 8 Amplify Damage (8/10 Charges)
+<m>+50% Damage to Undead
+
+4;,4;,2;,3;,invstu;,;,;
+<unique>The Gladiator's Bane
+<utu>Wire Fleece
+<b>Defense: 2273
+<b>Durability: 32 of 32
+<b>Required Strength: 101
+<b>Required Level: 85
+<b>Item Level: 99
+<m>+30% Faster Hit Recovery
+<m>20% Increased Chance of Blocking
+<m>+190% Enhanced Defense
+<m>+177 Defense
+<m>Magic Resist +10%
+<m>Damage Reduced by 9%
+<m>Damage Reduced by 17
+<m>Magic Damage Reduced by 15
+<m>Cannot Be Frozen
+<m>Poison Length Reduced by 50%
+<m>Repairs 1 durability in 25 seconds
+<m>Ethereal (Cannot be Repaired)
+
+6;,4;,2;,2;,invlbt;,;,;
+<unique>Merman's Sprocket
+<ulb>Wyrmhide Boots
+<b>Defense: 471
+<b>Durability: 7 of 12
+<b>Required Strength: 50
+<b>Required Level: 69
+<b>Item Level: 98
+<m>+65% Faster Run/Walk
+<m>+414 Defense
+<m>+310 Defense vs. Missile
+<m>Replenish Life +5
+<m>+0.75 to Mana (Based on Character Level)
+<m>Regenerate Mana 8%
+<m>+60 Magic Absorb
+<m>Poison Resist 0.75% (Based on Character Level)
+<m>+55 Cold Absorb
+<m>Cannot Be Frozen
+
+8;,4;,2;,2;,invbhm;,invbhmu;,invbhmu;
+<unique>Giant Skull
+<uh9>Bone Visage
+<b>Defense: 426
+<b>Durability: 34 of 40
+<b>Required Strength: 106
+<b>Required Level: 65
+<b>Item Level: 99
+<m>19% Chance of Crushing Blow
+<m>Knockback
+<m>+312 Defense
+<m>+29 to Strength
+<m>+19 to Dexterity
+<m>Socketed (3)
+
+0;,6;,2;,2;,invdr5;,;,;
+<unique>Jalal's Mane
+<dra>Totemic Mask
+<b>Defense: 265
+<b>Durability: 10 of 20
+<b>(Druid Only)
+<b>Required Strength: 65
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+2 to Shape Shifting Skills (Druid Only)
+<m>+3 to Druid Skills
+<m>+30% Faster Hit Recovery
+<m>20% Bonus to Attack Rating
+<m>+168% Enhanced Defense
+<m>+20 to Strength
+<m>+20 to Vitality
+<m>All Resistances +30
+<m>+5 to Mana after each Kill
+<m>Socketed (2)
+
+6;,6;,2;,2;,invhgl;,;,;
+<unique>Steelrend
+<uhg>Ogre Gauntlets
+<b>Defense: 248
+<b>Durability: 14 of 24
+<b>Required Strength: 111
+<b>Required Level: 70
+<b>Item Level: 95
+<m>Melee attacks deal splash damage
+<m>+30% Enhanced Damage
+<m>15% Chance of Crushing Blow
+<m>+181 Defense
+<m>+14 to all Attributes
+<m>Requirements -40%
+
+8;,6;,2;,2;,invmsk;,;,;
+<unique>Blackhorn's Face
+<xsk>Death Mask
+<b>Defense: 268
+<b>Durability: 13 of 20
+<b>Required Strength: 55
+<b>Required Level: 41
+<b>Item Level: 99
+<m>Adds 1-1000 fire damage
+<m>Prevent Monster Heal
+<m>Slows Target by 20%
+<m>+209% Enhanced Defense
+<m>Cold Resist +18%
+<m>Lightning Resist +40%
+<m>Fire Resist +18%
+<m>Poison Resist +18%
+<m>+20 Lightning Absorb
+<m>Attacker Takes Lightning Damage of 25
+
+2;,7;,1;,1;,invrin4;,;,;
+<unique>Bul-Kathos' Wedding Band
+<rin>Ring
+<b>Required Level: 58
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+10% Increased Attack Speed
+<m>3% Life stolen per hit
+<m>10% Deadly Strike
+<m>+0.50 to Life (Based on Character Level)
+<m>+50 Maximum Stamina
+
+3;,7;,1;,1;,invrin5;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 81
+<m>5% Increased Chance of Blocking
+<m>+223 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-15% to Enemy Cold Resistance
+<m>+17 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+4;,7;,1;,1;,invamu2;,;,;
+<unique>Mara's Kaleidoscope
+<amu>Amulet
+<b>Required Level: 67
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+5% Faster Cast Rate
+<m>+10 to all Attributes
+<m>Increase Maximum Life 1%
+<m>Increase Maximum Mana 2%
+<m>All Resistances +28
+
+5;,7;,1;,1;,invrin3;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>9% Increased Chance of Blocking
+<m>+220 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-6% to Enemy Cold Resistance
+<m>+16 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+#mercenary#
+
+#character stats#
+
+wp:000100110100000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:3//character class
+0:25//+25 to Strength
+1:15//+15 to Energy
+2:20//+20 to Dexterity
+3:25//+25 to Vitality
+6:55//Current Life: 55
+7:55//+55 to Life
+8:15//Current Mana: 15
+9:15//+15 to Mana
+10:89//Current Stamina: 89
+11:89//+89 Maximum Stamina
+12:1//Level: 1
+67:150//Unknown property 67: +150
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+172:2//Unknown property 172: +2
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+39:0//Fire Resist +0%
+43:0//Cold Resist +0%
+41:0//Lightning Resist +0%
+45:0//Poison Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

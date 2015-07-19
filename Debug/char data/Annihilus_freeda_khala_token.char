@@ -1,0 +1,839 @@
+Realm: Annihilus
+Account: freeda_khala
+Character name: token
+
+#stash#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 13
+
+5;,0;,1;,2;,invbwnu;,invbwnu;,invbwnu;
+<unique>Boneshade
+<7bw>Lich Wand
+<b>One-Hand Damage: 10 to 31
+<b>Durability: 17 of 17
+<b>Required Strength: 25
+<b>Required Level: 79
+<b>Staff Class [-20]
+<b>Item Level: 99
+<m>+2 to Summoning Skills (Necromancer Only)
+<m>+3 to Curses (Necromancer Only)
+<m>+2 to Necromancer Skill Levels
+<m>+30% Faster Cast Rate
+<m>+3 to Bone Spirit (Necromancer Only)
+<m>+3 to Bone Spear (Necromancer Only)
+<m>+3 to Bone Wall (Necromancer Only)
+<m>+5 to Bone Armor (Necromancer Only)
+<m>+4 to Teeth (Necromancer Only)
+<m>+50% Damage to Undead
+
+6;,0;,2;,2;,invlbt;,;,;
+<unique>Hotspur
+<lbt>Boots
+<b>Defense: 10
+<b>Durability: 12 of 12
+<b>Required Level: 5
+<b>Item Level: 65
+<m>Adds 10-20 fire damage
+<m>+19% Enhanced Defense
+<m>+6 Defense
+<m>+25 to Life
+<m>+15% to Maximum Fire Resist
+<m>Fire Resist +45%
+
+8;,0;,2;,1;,invhbl;,;,;
+<unique>Thundergod's Vigor
+<zhb>War Belt
+<b>Defense: 151
+<b>Durability: 20 of 24
+<b>Required Strength: 110
+<b>Required Level: 47
+<b>Item Level: 86
+<m>5% Chance to cast level 7 Fist of the Heavens when struck
+<m>Adds 1-50 fire damage
+<m>+3 to Lightning Fury (Amazon Only)
+<m>+3 to Lightning Strike (Amazon Only)
+<m>+185% Enhanced Defense
+<m>+20 to Strength
+<m>+20 to Vitality
+<m>+10% to Maximum Lightning Resist
+<m>+20 Lightning Absorb
+
+0;,2;,1;,2;,invbbk;,;,;
+<normal>Tome of Town Portal
+<tbk>Tome of Town Portal
+_14: 1455
+<b>Quantity: 500
+<b>Item Level: 99
+<m>Replenishes quantity
+
+1;,2;,1;,2;,invrbk;,;,;
+<normal>Tome of Identify
+<ibk>Tome of Identify
+_14: 1455
+<b>Quantity: 500
+<b>Item Level: 99
+<m>Replenishes quantity
+
+5;,2;,1;,2;,invtk3;,invtk3;,;
+<unique>Warshrike
+<7bk>Winged Knife
+<b>Throw Damage: 146 to 249
+<b>One-Hand Damage: 172 to 224
+<b>Quantity: 300
+<b>Required Dexterity: 132
+<b>Required Strength: 35
+<b>Required Level: 75
+<b>Dagger Class [-20]
+<b>Item Level: 86
+<m>+50% Increased Attack Speed
+<m>Piercing Attack
+<m>+331% Enhanced Damage
+<m>50% Deadly Strike
+<m>+5 to Burst of Speed
+<m>Replenishes quantity
+<m>Ethereal (Cannot be Repaired)
+
+6;,2;,2;,1;,invtbl;,;,;
+<set>Trang-Oul's Girth
+<utc>Troll Belt
+<b>Defense: 166
+<b>Durability: 9 of 18
+<b>Required Strength: 90
+<b>Required Level: 62
+<b>Item Level: 86
+<m>+20% Faster Cast Rate
+<m>+100 Defense
+<m>+66 to Life
+<m>Replenish Life +15
+<m>+50 to Mana
+<m>+30 Maximum Stamina
+<m>Cannot Be Frozen
+<m>Requirements -40%
+
+8;,2;,2;,2;,invtbt;,;,;
+<unique>Wraith Brand
+<tbt>Light Plated Boots
+<b>Defense: 11
+<b>Durability: 16 of 18
+<b>Required Strength: 50
+<b>Required Level: 41
+<b>Item Level: 98
+<m>+30% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+17 to Strength
+<m>Cold Resist +45%
+<m>Lightning Resist +42%
+<m>Fire Resist +42%
+
+6;,3;,2;,2;,invmgl;,;,;
+<set>Trang-Oul's Claws
+<xmg>Heavy Bracers
+<b>Defense: 74
+<b>Durability: 16 of 16
+<b>Required Strength: 58
+<b>Required Level: 45
+<b>Item Level: 99
+<m>+2 to Curses (Necromancer Only)
+<m>+20% Faster Cast Rate
+<m>+60% to Poison Skill Damage
+<m>+30 Defense
+<m>Cold Resist +30%
+
+8;,4;,2;,2;,invlbt;,;,;
+<unique>Merman's Sprocket
+<ulb>Wyrmhide Boots
+<b>Defense: 467
+<b>Durability: 8 of 12
+<b>Required Strength: 50
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+65% Faster Run/Walk
+<m>+413 Defense
+<m>+310 Defense vs. Missile
+<m>Replenish Life +5
+<m>+0.75 to Mana (Based on Character Level)
+<m>Regenerate Mana 8%
+<m>+67 Magic Absorb
+<m>Poison Resist 0.75% (Based on Character Level)
+<m>+55 Cold Absorb
+<m>Cannot Be Frozen
+
+6;,5;,2;,3;,invxshu;,invxshu;,invxshu;
+<unique>Lidless Wall
+<xsh>Grim Shield
+<b>Defense: 295
+<b>Chance to Block:  20%
+<b>Durability: 60 of 70
+<b>Required Strength: 58
+<b>Required Level: 41
+<b>Item Level: 98
+<m>+2 to All Skills
+<m>+20% Faster Cast Rate
+<m>+96% Enhanced Defense
+<m>+10 to Energy
+<m>Increase Maximum Mana 10%
+<m>+4 to Mana after each Kill
+<m>+1 to Light Radius
+
+1;,6;,1;,2;,invywn;,;,;
+<normal>Ghost Wand
+<7yw>Ghost Wand
+<b>One-Hand Damage: 20 to 40
+<b>Durability: 13 of 14
+<b>Required Strength: 25
+<b>Required Level: 48
+<b>Staff Class [10]
+<b>Item Level: 86
+<m>+1 to Bone Spirit (Necromancer Only)
+<m>+1 to Attract (Necromancer Only)
+<m>+2 to Bone Spear (Necromancer Only)
+<m>+50% Damage to Undead
+
+8;,6;,1;,1;,invkey;,;,;
+<normal>Key
+<key>Key
+<b>Quantity: 475
+<b>Item Level: 98
+
+9;,6;,1;,1;,invamu2;,;,;
+<unique>Storm Circlet
+<amu>Amulet
+<b>Required Level: 34
+<b>Item Level: 98
+<m>+2 to Necromancer Skill Levels
+<m>+2 to Sorceress Skill Levels
+<m>+20% Faster Cast Rate
+<m>+18 to Strength
+<m>+51 to Life
+<m>+53 to Mana
+<m>Cold Resist +23%
+<m>Lightning Resist +23%
+<m>Fire Resist +23%
+
+2;,7;,2;,1;,invhbl;,;,;
+<set>Sigon's Wrap
+<hbl>Plated Belt
+<b>Defense: 9
+<b>Durability: 12 of 24
+<b>Required Strength: 60
+<b>Required Level: 6
+<b>Item Level: 86
+<m>+10% Faster Run/Walk
+<m>+20 to Life
+<m>+20 to Mana
+<m>All Resistances +20
+
+8;,7;,1;,1;,invrin2;,;,;
+<unique>Constricting Ring
+<rin>Ring
+<b>Required Level: 95
+<b>Item Level: 98
+<m>Drain Life -30
+<m>+5% to Maximum Poison Resist
+<m>+5% to Maximum Cold Resist
+<m>+5% to Maximum Lightning Resist
+<m>+5% to Maximum Fire Resist
+<m>All Resistances +100
+<m>100% Better Chance of Getting Magic Items
+
+9;,7;,1;,1;,invrin3;,;,;
+<unique>Constricting Ring
+<rin>Ring
+<b>Required Level: 95
+<b>Item Level: 99
+<m>Drain Life -30
+<m>+5% to Maximum Poison Resist
+<m>+5% to Maximum Cold Resist
+<m>+5% to Maximum Lightning Resist
+<m>+5% to Maximum Fire Resist
+<m>All Resistances +100
+<m>100% Better Chance of Getting Magic Items
+
+6;,8;,2;,2;,invne3;,;,;
+<runeword>Rathma's Prayer
+<ned>Overseer Skull
+<b>SurCham
+_14: 1452
+<b>Defense: 154
+<b>Chance to Block:  33%
+<b>Durability: 20 of 20
+<b>(Necromancer Only)
+<b>Required Strength: 91
+<b>Required Level: 79
+<b>Item Level: 90
+<m>Level 1 Meditation Aura When Equipped
+<m>+2 to Necromancer Skill Levels
+<m>+20% Faster Cast Rate
+<m>+35% Faster Block Rate
+<m>25% Increased Chance of Blocking
+<m>Adds 5-14 poison damage over 3 seconds
+<m>+1 to Fire Golem (Necromancer Only)
+<m>+3 to Bone Spear (Necromancer Only)
+<m>+13% Enhanced Defense
+<m>+50 to Mana
+<m>All Resistances +35
+<m>Damage Reduced by 15%
+<m>Cannot Be Frozen
+<m>Socketed (2)
+<m>Poison Length:  75
+<m>Level Requirement: +12
+<m>Poison Count: 1
+
+8;,8;,2;,2;,invne3;,;,;
+<rare>Bramble Aegis
+<ne3>Unraveller Head
+_14: 1453
+<b>Defense: 10
+<b>Chance to Block:  28%
+<b>Durability: 45 of 60
+<b>(Necromancer Only)
+<b>Required Strength: 18
+<b>Required Level: 30
+<b>Item Level: 99
+<m>+2 to Poison and Bone Skills (Necromancer Only)
+<m>+30% Faster Block Rate
+<m>20% Increased Chance of Blocking
+<m>Adds 13-28 poison damage over 4 seconds
+<m>+3 to Poison Nova (Necromancer Only)
+<m>+1 to Lower Resist (Necromancer Only)
+<m>+21 to Life
+<m>All Resistances +11
+<m>Poison Length Reduced by 25%
+<m>Poison Length:  100
+<m>Poison Count: 1
+
+#body#
+
+1;,-1;,2;,2;,shriekinglich;,;,;
+<quest>The Shrieking Lich
+<shrl>Hydraskull
+<b>ShaelShael
+<b>Defense: 103
+<b>Durability: 13 of 18
+<b>Required Strength: 84
+<b>Required Level: 90
+<b>Item Level: 99
+<m>10% Chance to cast level 10 Cloak of Shadows when struck
+<m>25% Chance to cast level 40 Bone Armor when struck
+<m>+0.03 to All Skills (Based on Faster Cast Rate)
+<m>+30% Faster Cast Rate
+<m>+40% Faster Hit Recovery
+<m>+3% to Lightning Skill Damage
+<m>+2% to Fire Skill Damage
+<m>+4% to Cold Skill Damage
+<m>You can summon 3.00 Additional Golems
+<m>Magic Resist +11%
+<m>All Resistances +39
+<m>Socketed (2)
+
+2;,-1;,1;,1;,horror;,;,;
+<set>Horror
+<s1am>Amulet
+<b>Required Level: 93
+<b>Item Level: 99
+<m>+2 to All Skills
+<m>0.06% Faster Cast Rate (Based on Vitality)
+<m>+30 to Strength
+<m>All Resistances +21
+<m>Damage Reduced by 5%
+
+3;,-1;,2;,3;,invltp;,;,;
+<runeword>Enigma
+<xtp>Mage Plate
+<b>JahIthBer
+<b>Defense: 1029
+<b>Durability: 57 of 60
+<b>Required Strength: 55
+<b>Required Level: 65
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+45% Faster Run/Walk
+<m>+1 to Teleport
+<m>+770 Defense
+<m>+0.75 to Strength (Based on Character Level)
+<m>Increase Maximum Life 5%
+<m>Damage Reduced by 8%
+<m>+14 Life after each Kill
+<m>15% Damage Taken Goes To Mana
+<m>1.00% Better Chance of Getting Magic Items (Based on Character Level)
+<m>Socketed (3)
+
+4;,-1;,2;,3;,invwax;,;,;
+<runeword>Silence
+<7wa>Berserker Axe
+<b>DolEldHelIstTirVex
+<b>One-Hand Damage: 87 to 259
+<b>Durability: 25 of 26
+<b>Required Dexterity: 47
+<b>Required Strength: 110
+<b>Required Level: 64
+<b>Axe Class [0]
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+40% Increased Attack Speed
+<m>+50% Faster Cast Rate
+<m>+30% Faster Hit Recovery
+<m>+265% Enhanced Damage
+<m>+75% Damage to Undead
+<m>+50 to Attack Rating against Undead
+<m>35% Mana stolen per hit
+<m>Hit Causes Monster to Flee 25%
+<m>All Resistances +75
+<m>+2 to Mana after each Kill
+<m>30% Better Chance of Getting Magic Items
+<m>Requirements -20%
+<m>Socketed (6)
+
+5;,-1;,2;,2;,invne5;,;,;
+<unique>Homunculus
+<nef>Bloodlord Skull
+<b>EldEld
+<b>Defense: 350
+<b>Chance to Block:  66%
+<b>Durability: 9 of 20
+<b>(Necromancer Only)
+<b>Required Strength: 106
+<b>Required Level: 72
+<b>Item Level: 80
+<m>+3 to Necromancer Skill Levels
+<m>+30% Faster Block Rate
+<m>54% Increased Chance of Blocking
+<m>+150% Enhanced Defense
+<m>+16 to all Attributes
+<m>Regenerate Mana 50%
+<m>All Resistances +40
+<m>+5 to Mana after each Kill
+<m>Socketed (2)
+<m>Level Requirement: +7
+
+6;,-1;,1;,1;,invrin3;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 50
+<m>+1 to All Skills
+<m>+1 to Necromancer Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+5% to Lightning Skill Damage
+<m>+7% to Fire Skill Damage
+<m>+5% to Cold Skill Damage
+<m>+6% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+10% to Experience Gained
+
+7;,-1;,1;,1;,invrin3;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 50
+<m>+1 to All Skills
+<m>+1 to Necromancer Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+5% to Lightning Skill Damage
+<m>+7% to Fire Skill Damage
+<m>+5% to Cold Skill Damage
+<m>+6% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+10% to Experience Gained
+
+8;,-1;,2;,1;,invlbl;,;,;
+<unique>Arachnid Mesh
+<ulc>Spiderweb Sash
+<b>Defense: 136
+<b>Durability: 10 of 12
+<b>Required Strength: 50
+<b>Required Level: 80
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+20% Faster Cast Rate
+<m>+5% to Poison Skill Damage
+<m>Slows Target by 14%
+<m>+116% Enhanced Defense
+<m>+0.50 to Energy (Based on Character Level)
+<m>Increase Maximum Mana 5%
+<m>Level 3 Venom (11/11 Charges)
+
+9;,-1;,2;,2;,invmbt;,;,;
+<set>Natalya's Soul
+<xmb>Mesh Boots
+<b>Defense: 40
+<b>Durability: 8 of 16
+<b>Required Strength: 65
+<b>Required Level: 25
+<b>Item Level: 99
+<m>+40% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+5 to all Attributes
+<m>Heal Stamina Plus +0.25% (Based on Character Level)
+<m>All Resistances +29
+
+10;,-1;,2;,2;,purflame;,;,;
+<quest>Purifying Flame
+<pufl>Crusader Gauntlets
+<b>Defense: 66
+<b>Durability: 10 of 18
+<b>Required Strength: 60
+<b>Required Level: 90
+<b>Item Level: 99
+<m>20% Chance to cast level 40 Volcano when struck
+<m>Level 6 Cleansing Aura When Equipped
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+1 to Lower Resist
+<m>Replenish Life +10
+<m>+100 to Mana
+<m>Fire Resist +35%
+<m>Fire Absorb 6%
+<m>Requirements -60%
+
+11;,-1;,2;,3;,invcrs;,invcrsu;,invcrsu;
+<runeword>Call to Arms
+<crs>Crystal Sword
+<b>AmnRalMalIstOhm
+<b>One-Hand Damage: 17 to 52
+<b>Durability: 20 of 20
+<b>Required Strength: 43
+<b>Required Level: 57
+<b>Sword Class [0]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+253% Enhanced Damage
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+5 to Battle Command
+<m>+6 to Battle Orders
+<m>+1 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>Socketed (5)
+
+12;,-1;,2;,3;,invkit;,invkitu;,invkitu;
+<runeword>Spirit
+<uit>Monarch
+<b>TalThulOrtAmn
+<b>Defense: 135
+<b>Chance to Block:  22%
+<b>Durability: 86 of 86
+<b>Required Strength: 156
+<b>Required Level: 54
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+34% Faster Cast Rate
+<m>+55% Faster Hit Recovery
+<m>+250 Defense vs. Missile
+<m>+22 to Vitality
+<m>+105 to Mana
+<m>Cold Resist +35%
+<m>Lightning Resist +35%
+<m>Poison Resist +35%
+<m>+7 Magic Absorb
+<m>Attacker Takes Damage of 14
+<m>Socketed (4)
+
+#inventory#
+
+0;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Vita
+<cm3>Grand Charm
+<b>Required Level: 69
+<b>Item Level: 86
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+39 to Life
+
+1;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+2;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+3;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+4;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+5;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+6;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+7;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+8;,0;,1;,3;,invch3;,;,;
+<magic>Fungal Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 99
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+27 to Life
+
+9;,0;,1;,2;,invtrch;,;,;
+<unique>Hellfire Torch
+<cm2>Large Charm
+<b>Required Level: 75
+<b>Item Level: 99
+<m>5% Chance to cast level 10 Firestorm on striking
+<m>+3 to Necromancer Skill Levels
+<m>+16 to all Attributes
+<m>All Resistances +17
+<m>+8 to Light Radius
+<m>Level 30 Hydra (1/10 Charges)
+
+9;,2;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+3 to Blade Sentinel (Assassin Only)
+<m>+3 to Poison Creeper (Druid Only)
+<m>+3 to Increased Speed (Barbarian Only)
+<m>+3 to Salvation (Paladin Only)
+<m>+3 to Bone Spear (Necromancer Only)
+<m>+3 to Thunder Storm (Sorceress Only)
+<m>+3 to Immolation Arrow (Amazon Only)
+<m>+18 to all Attributes
+<m>All Resistances +17
+<m>+8% to Experience Gained
+
+0;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+1;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+2;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+3;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+4;,3;,1;,1;,invch4;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 80
+<m>+15 to Life
+<m>+70 to Mana
+
+5;,3;,1;,1;,invch4;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 80
+<m>+15 to Life
+<m>+70 to Mana
+
+6;,3;,1;,1;,invch4;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 80
+<m>+15 to Life
+<m>+70 to Mana
+
+7;,3;,1;,1;,invch4;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 80
+<m>+15 to Life
+<m>+70 to Mana
+
+8;,3;,1;,1;,invch1;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 99
+<m>+15 to Life
+<m>+70 to Mana
+
+9;,3;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 99
+<m>+15 to Life
+<m>+70 to Mana
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
+wp:101011000110000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:2//character class
+0:174//+174 to Strength
+1:129//+129 to Energy
+2:188//+188 to Dexterity
+3:467//+467 to Vitality
+6:3123//Current Life: 3123
+7:3123//+3123 to Life
+8:2207//Current Mana: 2207
+9:2207//+2207 to Mana
+10:1208//Current Stamina: 1208
+11:1208//+1208 Maximum Stamina
+12:99//Level: 99
+13:-774482042//Experience: -774482042
+14:6665//Gold: 6665
+20:75//Chance to Block: 75%
+21:87//+87 to Minimum Damage
+22:259//+259 to Maximum Damage
+27:50//Regenerate Mana 50%
+28:24//Heal Stamina Plus 24%
+31:1724//+1724 Defense
+36:13//Damage Reduced by 13%
+37:11//Magic Resist +11%
+39:315//Fire Resist +315%
+41:280//Lightning Resist +280%
+43:280//Cold Resist +280%
+45:280//Poison Resist +280%
+50:2//+2 to Minimum Lightning Damage
+51:100//+100 to Maximum Lightning Damage
+62:35//35% Mana stolen per hit
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+71:48//Unknown property 71: +48
+72:132//Unknown property 72: +132
+73:170//Maximum Durability: +170
+74:10//Replenish Life +10
+76:106//Increase Maximum Life 106%
+77:156//Increase Maximum Mana 156%
+80:129//129% Better Chance of Getting Magic Items
+83:8//+8 to Necromancer Skill Levels
+85:28//+28% to Experience Gained
+86:14//+14 Life after each Kill
+89:8//+8 to Light Radius
+91:-80//Requirements -80%
+92:7//Level Requirement: +7
+93:40//+40% Increased Attack Speed
+96:85//+85% Faster Run/Walk
+97:1//+1 to Teleport
+97:1//+1 to Lower Resist
+99:90//+90% Faster Hit Recovery
+102:30//+30% Faster Block Rate
+105:149//+149% Faster Cast Rate
+107:3//+3 to Immolation Arrow (Amazon Only)
+107:3//+3 to Thunder Storm (Sorceress Only)
+107:3//+3 to Bone Spear (Necromancer Only)
+107:3//+3 to Salvation (Paladin Only)
+107:3//+3 to Increased Speed (Barbarian Only)
+107:3//+3 to Poison Creeper (Druid Only)
+107:3//+3 to Blade Sentinel (Assassin Only)
+112:32//Hit Causes Monster to Flee 25%
+114:15//15% Damage Taken Goes To Mana
+122:75//+75% Damage to Undead
+124:50//+50 to Attack Rating against Undead
+127:16//+16 to All Skills
+132:243200//Unknown property 132: +243200
+133:243200//Unknown property 133: +243200
+138:7//+7 to Mana after each Kill
+142:6//Fire Absorb 6%
+150:14//Slows Target by 14%
+151:6//Level 6 Cleansing Aura When Equipped
+172:2//Unknown property 172: +2
+188:9//+9 to Poison and Bone Skills (Necromancer Only)
+194:13//Unknown property 194: +13
+198:5//5% Chance to cast level 10 Firestorm on striking
+201:25//25% Chance to cast level 40 Bone Armor when struck
+201:20//20% Chance to cast level 40 Volcano when struck
+201:10//10% Chance to cast level 10 Cloak of Shadows when struck
+204:2561//Level 30 Hydra (1/10 Charges)
+204:2827//Level 3 Venom (11/11 Charges)
+328:32//Unknown property 328: +32
+329:16//+16% to Fire Skill Damage
+330:13//+13% to Lightning Skill Damage
+331:14//+14% to Cold Skill Damage
+332:17//+17% to Poison Skill Damage
+349:28//Unknown property 349: +28
+350:345//Unknown property 350: +345
+351:42//Unknown property 351: +42
+355:3//Unknown property 355: +3
+367:1//+0.03 to All Skills (Based on Faster Cast Rate)
+368:3//You can summon 3.00 Additional Golems
+371:2//0.06% Faster Cast Rate (Based on Vitality)
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

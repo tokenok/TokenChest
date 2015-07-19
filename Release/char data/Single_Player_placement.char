@@ -1,0 +1,151 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: placement
+
+#stash#
+
+0;,1;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 36
+
+#body#
+
+#inventory#
+
+0;,0;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 36
+
+5;,0;,1;,1;,DyeGold;,;,;
+<normal>Gold Dye
+<dy4>Gold Dye
+<b>Item Level: 36
+
+6;,0;,1;,1;,invorba;,;,;
+<quest>Bad Unique ID
+<orba>Orb of Alchemy
+<b>Item Level: 36
+
+7;,0;,1;,1;,invscrg;,;,;
+<quest>Bad Unique ID
+<scwu>Scroll of Weapon Upgrade
+<b>Item Level: 36
+
+8;,0;,1;,1;,DyePurple;,;,;
+<normal>Purple Dye
+<dy7>Purple Dye
+<b>Item Level: 36
+
+9;,0;,1;,1;,invrPul;,;,;
+<normal>Pul Rune
+<r21>Pul Rune
+<b>Required Level: 45
+<b>Item Level: 1
+
+5;,1;,1;,1;,DyeBlue;,;,;
+<normal>Blue Dye
+<dy3>Blue Dye
+<b>Item Level: 36
+
+6;,1;,1;,1;,invdice;,invdice;,;
+<quest>Lucky Dice
+<cm4>Small Charm
+<b>Item Level: 36
+<m>20% Better Chance of Getting Magic Items
+
+7;,1;,1;,1;,invrrsc;,;,;
+<quest>Bad Unique ID
+<rrsc>Scroll of Reroll
+<b>Item Level: 36
+
+8;,1;,1;,1;,DyeOrange;,;,;
+<normal>Orange Dye
+<dy6>Orange Dye
+<b>Item Level: 36
+
+9;,1;,1;,1;,invrLum;,;,;
+<normal>Lum Rune
+<r17>Lum Rune
+<b>Required Level: 37
+<b>Item Level: 1
+
+5;,2;,1;,1;,DyeBlack;,;,;
+<normal>Black Dye
+<dy2>Black Dye
+<b>Item Level: 36
+
+6;,2;,1;,1;,invtoa;,;,;
+<normal>Token of Absolution
+<toa>Token of Absolution
+<b>Item Level: 36
+
+7;,2;,1;,1;,ACE;,;,;
+<normal>Bleach
+<blc>Bleach
+<b>Item Level: 36
+
+8;,2;,1;,1;,DyeGreen;,;,;
+<normal>Green Dye
+<dy5>Green Dye
+<b>Item Level: 36
+
+9;,2;,1;,1;,invrEth;,;,;
+<normal>Eth Rune
+<r05>Eth Rune
+<b>Required Level: 15
+<b>Item Level: 1
+
+5;,3;,1;,1;,DyeWhite;,;,;
+<normal>White Dye
+<dy1>White Dye
+<b>Item Level: 36
+
+6;,3;,1;,1;,invscrp;,;,;
+<quest>Bad Unique ID
+<scau>Scroll of Armor Upgrade
+<b>Item Level: 36
+
+7;,3;,1;,1;,DyeRed;,;,;
+<normal>Red Dye
+<dy8>Red Dye
+<b>Item Level: 36
+
+8;,3;,1;,1;,invrCham;,;,;
+<normal>Cham Rune
+<r32>Cham Rune
+<b>Required Level: 67
+<b>Item Level: 1
+
+9;,3;,1;,1;,invrNef;,;,;
+<normal>Nef Rune
+<r04>Nef Rune
+<b>Required Level: 13
+<b>Item Level: 1
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
++1023 to Strength
++1023 to Energy
++1023 to Dexterity
++1023 to Vitality
+Current Life: 54
++54 to Life
+Current Mana: 10
++10 to Mana
+Current Stamina: 92
++92 Maximum Stamina
+Level: 99
+Experience: -774482042
+Gold: 982135
+Gold in Stash: 2500000
+Unknown property 67: +100
+Unknown property 68: +100
+Unknown property 69: +100
+20% Better Chance of Getting Magic Items
+Unknown property 172: +2

@@ -1,0 +1,573 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: carrot
+
+#stash#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 1
+
+3;,0;,1;,3;,invflcu;,;,;
+<unique>Gleamscythe
+<7tw>Runic Talons
+<b>One-Hand Damage: 144 to 264
+<b>Durability: 52 of 52
+<b>(Assassin Only)
+<b>Required Dexterity: 89
+<b>Required Strength: 89
+<b>Required Level: 60
+<b>Claw Class [-30]
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+40% Increased Attack Speed
+<m>+7% Faster Hit Recovery
+<m>+300% Enhanced Damage
+<m>+3 to Lightning Sentry (Assassin Only)
+<m>+2 to Weapon Block (Assassin Only)
+<m>+3 to Fire Blast (Assassin Only)
+<m>+9 to Dexterity
+<m>Replenish Life +13
+<m>Cold Resist +70%
+<m>Lightning Resist +10%
+<m>Fire Resist +10%
+<m>Poison Resist +10%
+<m>Repairs 1 durability in 10 seconds
+<m>Requirements -15%
+<m>Ethereal (Cannot be Repaired), Socketed (2)
+
+4;,0;,1;,3;,invflcu;,invaxfu;,invaxfu;
+<unique>Gleamscythe
+<7xf>War Fist
+<b>One-Hand Damage: 264 to 316
+<b>Durability: 64 of 64
+<b>(Assassin Only)
+<b>Required Dexterity: 98
+<b>Required Strength: 98
+<b>Required Level: 51
+<b>Claw Class [10]
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+300% Enhanced Damage
+<m>+68% Damage to Undead
+<m>Adds 9-50 cold damage
+<m>+100 poison damage over 7 seconds
+<m>+3 to Lightning Sentry (Assassin Only)
+<m>+3 to Weapon Block (Assassin Only)
+<m>+2 to Dragon Claw (Assassin Only)
+<m>Replenish Life +5
+<m>Repairs 1 durability in 12 seconds
+<m>Ethereal (Cannot be Repaired), Socketed (2)
+<m>Cold Length:  125
+<m>Poison Length:  179
+<m>Poison Count: 1
+
+5;,0;,1;,3;,invch3;,;,;
+<superior>Superior Grand Charm
+<cm3>Grand Charm
+<b>Item Level: 90
+<m>+1 to Traps (Assassin Only)
+<m>+45 to Life
+
+0;,2;,1;,1;,invamu1;,;,;
+<superior>Superior Amulet
+<amu>Amulet
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+20% Faster Cast Rate
+<m>+16 to Dexterity
+<m>Replenish Life +10
+<m>+20 to Mana
+<m>Regenerate Mana 10%
+
+0;,3;,2;,2;,invmbt;,;,;
+<superior>Superior Boneweave Boots
+<umb>Boneweave Boots
+<b>Defense: 60
+<b>Durability: 16 of 16
+<b>Required Strength: 118
+<b>Required Level: 54
+<b>Item Level: 90
+<m>+20% Faster Run/Walk
+<m>+2 to Skeleton Mastery (Necromancer Only)
+<m>+200% Enhanced Defense
+<m>+20 to Strength
+<m>+17 to Dexterity
+<m>Regenerate Mana 10%
+<m>Heal Stamina Plus 10%
+<m>Half Freeze Duration
+<m>Level 33 Bone Prison (33/33 Charges)
+<m>Level 12 Life Tap (12/12 Charges)
+
+2;,3;,2;,2;,invci3;,;,;
+<rare>Hailstone Mask
+<ci3>Diadem
+<b>Defense: 60
+<b>Durability: 11 of 20
+<b>Required Level: 64
+<b>Item Level: 99
+<m>+2 to Assassin Skills
+<m>+30% Faster Run/Walk
+<m>+20% Faster Cast Rate
+<m>Replenish Life +10
+<m>All Resistances +20
+<m>Socketed (2)
+
+4;,3;,2;,2;,invci3;,;,;
+<rare>Rune Brow
+<ci3>Diadem
+<b>Defense: 60
+<b>Durability: 12 of 20
+<b>Required Level: 64
+<b>Item Level: 99
+<m>+2 to Assassin Skills
+<m>+30% Faster Run/Walk
+<m>+20% Faster Cast Rate
+<m>Replenish Life +10
+<m>All Resistances +20
+<m>Socketed (2)
+
+1;,5;,1;,3;,invflcu;,;,;
+<unique>Gleamscythe
+<7lw>Feral Claws
+<b>One-Hand Damage: 132 to 316
+<b>Durability: 52 of 52
+<b>(Assassin Only)
+<b>Required Dexterity: 87
+<b>Required Strength: 87
+<b>Required Level: 58
+<b>Claw Class [-20]
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+40% Increased Attack Speed
+<m>+300% Enhanced Damage
+<m>+0.50 to Maximum Damage (Based on Character Level)
+<m>+16.50 to Attack Rating (Based on Character Level)
+<m>+3 to Lightning Sentry (Assassin Only)
+<m>+2 to Weapon Block (Assassin Only)
+<m>+3 to Fire Blast (Assassin Only)
+<m>+9 to Dexterity
+<m>Replenish Life +9
+<m>Cold Resist +30%
+<m>Repairs 1 durability in 10 seconds
+<m>Requirements -15%
+<m>Ethereal (Cannot be Repaired), Socketed (1)
+
+2;,5;,1;,3;,invflcu;,;,;
+<unique>Gleamscythe
+<7tw>Runic Talons
+<b>One-Hand Damage: 144 to 264
+<b>Durability: 52 of 52
+<b>(Assassin Only)
+<b>Required Dexterity: 89
+<b>Required Strength: 89
+<b>Required Level: 60
+<b>Claw Class [-30]
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+40% Increased Attack Speed
+<m>+7% Faster Hit Recovery
+<m>+300% Enhanced Damage
+<m>+0.50 to Maximum Damage (Based on Character Level)
+<m>+16.50 to Attack Rating (Based on Character Level)
+<m>+3 to Lightning Sentry (Assassin Only)
+<m>+2 to Weapon Block (Assassin Only)
+<m>+3 to Fire Blast (Assassin Only)
+<m>+9 to Dexterity
+<m>Replenish Life +3
+<m>Cold Resist +30%
+<m>Repairs 1 durability in 10 seconds
+<m>Requirements -15%
+<m>Ethereal (Cannot be Repaired), Socketed (1)
+
+4;,5;,2;,2;,invci3;,;,;
+<rare>Bone Circlet
+<ci3>Diadem
+<b>Defense: 60
+<b>Durability: 17 of 20
+<b>Required Level: 64
+<b>Item Level: 99
+<m>+2 to Assassin Skills
+<m>+30% Faster Run/Walk
+<m>+20% Faster Cast Rate
+<m>Replenish Life +10
+<m>All Resistances +20
+<m>Socketed (2)
+
+3;,7;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+4;,7;,1;,1;,invch7;,;,;
+<magic>Serpent's Small Charm
+<cm1>Small Charm
+<b>Required Level: 40
+<b>Item Level: 99
+<m>+17 to Mana
+
+#body#
+
+1;,-1;,2;,2;,invci3;,;,;
+<ethereal/socketed>Superior Diadem
+<ci3>Diadem
+<b>ChamShael
+<b>Defense: 60
+<b>Durability: 20 of 20
+<b>Required Level: 67
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+30% Faster Run/Walk
+<m>+20% Faster Cast Rate
+<m>+20% Faster Hit Recovery
+<m>Replenish Life +10
+<m>All Resistances +20
+<m>Cannot Be Frozen
+<m>Socketed (2)
+
+2;,-1;,1;,1;,invamu1;,;,;
+<superior>Superior Amulet
+<amu>Amulet
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+20% Faster Cast Rate
+<m>+30 to Strength
+<m>Replenish Life +10
+<m>+20 to Mana
+<m>Regenerate Mana 10%
+
+3;,-1;,2;,3;,invgth;,;,;
+<rare>CLANFREDSLAM's Rift Gothic Plate
+<gth>Gothic Plate
+<b>Defense: 1076
+<b>Durability: 60 of 60
+<b>Required Strength: 54
+<b>Required Level: 75
+<b>Item Level: 90
+<b>Velocity:  0
+<m>+2 to All Skills
+<m>+45% Faster Run/Walk
+<m>+1 to Teleport
+<m>+15% Enhanced Defense
+<m>+775 Defense
+<m>+0.75 to Strength (Based on Character Level)
+<m>Increase Maximum Life 5%
+<m>Damage Reduced by 8%
+<m>+14 Life after each Kill
+<m>15% Damage Taken Goes To Mana
+<m>1.00% Better Chance of Getting Magic Items (Based on Character Level)
+<m>Requirements -22%
+<m>Socketed (1)
+<m>Unknown property 67: +5
+
+4;,-1;,2;,3;,invcrsu;,invcrsu;,invcrsu;
+<unique>Odium
+<crs>Crystal Sword
+<b>One-Hand Damage: 27 to 85
+<b>Required Strength: 33
+<b>Required Level: 82
+<b>Sword Class [0]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+290% Enhanced Damage
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+6 to Battle Command
+<m>+6 to Battle Orders
+<m>+4 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>Ethereal (Cannot be Repaired)
+
+5;,-1;,2;,3;,invkitu;,invkitu;,invkitu;
+<unique>Treads of Cthon
+<uit>Monarch
+<b>Defense: 170
+<b>Chance to Block:  22%
+<b>Durability: 62 of 62
+<b>Required Strength: 156
+<b>Required Level: 54
+<b>Item Level: 99
+<m>+2 to All Skills
+<m>+35% Faster Cast Rate
+<m>+55% Faster Hit Recovery
+<m>+15% Enhanced Defense
+<m>+250 Defense vs. Missile
+<m>+22 to Vitality
+<m>+112 to Mana
+<m>Cold Resist +35%
+<m>Lightning Resist +35%
+<m>Poison Resist +35%
+<m>+8 Magic Absorb
+<m>Attacker Takes Damage of 14
+
+6;,-1;,1;,1;,invrin5;,;,;
+<unique>Bul-Kathos' Wedding Band
+<rin>Ring
+<b>Required Level: 58
+<b>Item Level: 97
+<m>+1 to All Skills
+<m>5% Life stolen per hit
+<m>+0.50 to Life (Based on Character Level)
+<m>+50 Maximum Stamina
+
+7;,-1;,1;,1;,invrin5;,;,;
+<unique>Bul-Kathos' Wedding Band
+<rin>Ring
+<b>Required Level: 58
+<b>Item Level: 97
+<m>+1 to All Skills
+<m>5% Life stolen per hit
+<m>+0.50 to Life (Based on Character Level)
+<m>+50 Maximum Stamina
+
+8;,-1;,2;,1;,invlbl;,;,;
+<unique>Arachnid Mesh
+<ulc>Spiderweb Sash
+<b>Defense: 138
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 80
+<b>Item Level: 97
+<m>+1 to All Skills
+<m>+20% Faster Cast Rate
+<m>Slows Target by 10%
+<m>+120% Enhanced Defense
+<m>Increase Maximum Mana 5%
+<m>Level 3 Venom (11/11 Charges)
+
+9;,-1;,2;,2;,invhbt;,;,;
+<unique>Shadow Dancer
+<uhb>Myrmidon Greaves
+<b>Defense: 144
+<b>Durability: 24 of 24
+<b>Required Strength: 166
+<b>Required Level: 71
+<b>Item Level: 99
+<m>+2 to Shadow Disciplines (Assassin Only)
+<m>+30% Faster Run/Walk
+<m>+30% Faster Hit Recovery
+<m>+100% Enhanced Defense
+<m>+25 to Dexterity
+<m>Requirements -20%
+
+10;,-1;,2;,2;,invtgl;,;,;
+<superior>Superior Light Gauntlets
+<tgl>Light Gauntlets
+<b>Defense: 10
+<b>Required Strength: 45
+<b>Item Level: 90
+<m>+50% Faster Cast Rate
+<m>Increase Maximum Mana 15%
+<m>+2.00 to Mana (Based on Character Level)
+<m>Regenerate Mana 15%
+<m>All Resistances +75
+
+11;,-1;,1;,3;,invflcu;,invaxfu;,invaxfu;
+<unique>Gleamscythe
+<7xf>War Fist
+<b>One-Hand Damage: 264 to 316
+<b>Durability: 64 of 64
+<b>(Assassin Only)
+<b>Required Dexterity: 98
+<b>Required Strength: 98
+<b>Required Level: 51
+<b>Claw Class [10]
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+7% Faster Hit Recovery
+<m>+300% Enhanced Damage
+<m>+0.50 to Maximum Damage (Based on Character Level)
+<m>+16.50 to Attack Rating (Based on Character Level)
+<m>Adds 9-50 cold damage
+<m>+3 to Lightning Sentry (Assassin Only)
+<m>+3 to Weapon Block (Assassin Only)
+<m>+2 to Dragon Claw (Assassin Only)
+<m>Replenish Life +9
+<m>Cold Resist +40%
+<m>Lightning Resist +10%
+<m>Fire Resist +10%
+<m>Poison Resist +10%
+<m>Repairs 1 durability in 12 seconds
+<m>Ethereal (Cannot be Repaired), Socketed (1)
+<m>Cold Length:  125
+
+12;,-1;,1;,3;,invflcu;,;,;
+<unique>Gleamscythe
+<7tw>Runic Talons
+<b>One-Hand Damage: 144 to 264
+<b>Durability: 52 of 52
+<b>(Assassin Only)
+<b>Required Dexterity: 89
+<b>Required Strength: 89
+<b>Required Level: 60
+<b>Claw Class [-30]
+<b>Item Level: 90
+<m>+2 to Assassin Skills
+<m>+40% Increased Attack Speed
+<m>+300% Enhanced Damage
+<m>+0.50 to Maximum Damage (Based on Character Level)
+<m>+16.50 to Attack Rating (Based on Character Level)
+<m>+3 to Lightning Sentry (Assassin Only)
+<m>+2 to Weapon Block (Assassin Only)
+<m>+3 to Fire Blast (Assassin Only)
+<m>+9 to Dexterity
+<m>Replenish Life +9
+<m>Cold Resist +30%
+<m>Repairs 1 durability in 10 seconds
+<m>Requirements -15%
+<m>Ethereal (Cannot be Repaired), Socketed (1)
+
+#inventory#
+
+6;,0;,1;,3;,invch3;,;,;
+<superior>Superior Grand Charm
+<cm3>Grand Charm
+<b>Item Level: 90
+<m>+1 to Traps (Assassin Only)
+<m>+12% Faster Hit Recovery
+
+7;,0;,1;,3;,invch3;,;,;
+<superior>Superior Grand Charm
+<cm3>Grand Charm
+<b>Item Level: 90
+<m>+1 to Traps (Assassin Only)
+<m>+12% Faster Hit Recovery
+
+8;,0;,1;,3;,invch3;,;,;
+<superior>Superior Grand Charm
+<cm3>Grand Charm
+<b>Item Level: 90
+<m>+7 to Traps (Assassin Only)
+<m>+315 to Life
+
+9;,0;,1;,3;,invch3;,;,;
+<superior>Superior Grand Charm
+<cm3>Grand Charm
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+3 to Assassin Skills
+<m>+40 to all Attributes
+<m>All Resistances +40
+<m>+8 to Light Radius
+
+6;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>Cold Resist +11%
+<m>Unknown property 98: (224) +1
+
+7;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+45 to Life
+<m>+210 to Mana
+
+8;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+45 to Life
+<m>+210 to Mana
+
+9;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+45 to Life
+<m>+210 to Mana
+
+#cube#
+
+2;,0;,1;,2;,invbbk;,;,;
+<normal>Tome of Town Portal
+<tbk>Tome of Town Portal
+<b>Quantity: 17
+<b>Item Level: 99
+
+3;,0;,1;,2;,invrbk;,;,;
+<normal>Tome of Identify
+<ibk>Tome of Identify
+<b>Quantity: 17
+<b>Item Level: 99
+
+#mercenary#
+
+#character stats#
+
++167 to Strength
++65 to Energy
++89 to Dexterity
++580 to Vitality
+Current Life: 2647
++2647 to Life
+Current Mana: 1388
++1388 to Mana
+Current Stamina: 992
++992 Maximum Stamina
+Level: 99
+Experience: -774482042
+Gold: 976645
+Gold in Stash: 654410
+22% Increased Chance of Blocking
++27 to Minimum Damage
++85 to Maximum Damage
+Regenerate Mana 25%
++1598 Defense
++250 Defense vs. Missile
+Damage Reduced by 8%
+Fire Resist +165%
+Lightning Resist +200%
+Cold Resist +211%
+Poison Resist +200%
++5 to Minimum Fire Damage
++30 to Maximum Fire Damage
+17% Life stolen per hit
+Unknown property 67: +150
+Unknown property 68: +100
+Unknown property 69: +100
+Unknown property 72: +178
+Maximum Durability: +178
+Replenish Life +32
+Increase Maximum Life 5%
+Increase Maximum Mana 20%
+Attacker Takes Damage of 14
+129% Better Chance of Getting Magic Items
++7 to Assassin Skills
++14 Life after each Kill
++8 to Light Radius
+Requirements -42%
++40% Increased Attack Speed
++105% Faster Run/Walk
++1 to Teleport
++4 to Battle Cry
++6 to Battle Orders
++6 to Battle Command
+Unknown property 98: (224) +1
++134% Faster Hit Recovery
++145% Faster Cast Rate
+15% Damage Taken Goes To Mana
+Prevent Monster Heal
++9 to All Skills
++8 Magic Absorb
+Slows Target by 10%
+Cannot Be Frozen
+Unknown property 172: +2
++9 to Traps (Assassin Only)
++2 to Shadow Disciplines (Assassin Only)
+Unknown property 194: +3
+Level 3 Venom (11/11 Charges)
+Unknown property 342: (67) +210
+Unknown property 343: (67) +107
+Unknown property 344: (67) +20
+Unknown property 348: (67) +57
+Unknown property 350: +515
+Unknown property 351: +38

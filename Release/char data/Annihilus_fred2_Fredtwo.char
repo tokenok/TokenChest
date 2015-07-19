@@ -1,0 +1,624 @@
+Realm: Annihilus
+Account: fred2
+Character name: Fredtwo
+
+#stash#
+
+0;,0;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,0;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+2;,0;,1;,1;,invwsfb;,;,;
+<normal>Blue Worldstone Fragment
+<wsf3>Blue Worldstone Fragment
+<b>Item Level: 86
+
+3;,0;,1;,1;,invwsfr;,;,;
+<normal>Red Worldstone Fragment
+<wsf4>Red Worldstone Fragment
+<b>Item Level: 98
+
+5;,0;,2;,1;,invlbl;,;,;
+<unique>Arachnid Mesh
+<ulc>Spiderweb Sash
+<b>Defense: 122
+<b>Durability: 11 of 12
+<b>Required Strength: 50
+<b>Required Level: 80
+<b>Item Level: 98
+<m>+1 to All Skills
+<m>+20% Faster Cast Rate
+<m>+5% to Poison Skill Damage
+<m>Slows Target by 11%
+<m>+95% Enhanced Defense
+<m>+0.50 to Energy (Based on Character Level)
+<m>Increase Maximum Mana 5%
+<m>Level 3 Venom (5/11 Charges)
+
+7;,0;,1;,1;,invtail;,;,;
+<normal>The Cow King's Tail
+<kita>The Cow King's Tail
+<b>Item Level: 86
+
+0;,1;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,1;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+2;,1;,1;,1;,invwsfb;,;,;
+<normal>Blue Worldstone Fragment
+<wsf3>Blue Worldstone Fragment
+<b>Item Level: 86
+
+3;,1;,1;,1;,invwsfr;,;,;
+<normal>Red Worldstone Fragment
+<wsf4>Red Worldstone Fragment
+<b>Item Level: 98
+
+4;,1;,1;,3;,invch3;,;,;
+<magic>Sparking Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Lightning Skills (Sorceress Only)
+<m>+22 to Life
+
+5;,1;,1;,3;,invch3;,;,;
+<magic>Sparking Grand Charm of Sustenance
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Lightning Skills (Sorceress Only)
+<m>+22 to Life
+
+6;,1;,2;,2;,invtbt;,;,;
+<unique>Wraith Brand
+<tbt>Light Plated Boots
+<b>Defense: 9
+<b>Durability: 9 of 18
+<b>Required Strength: 50
+<b>Required Level: 41
+<b>Item Level: 98
+<m>+30% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+16 to Strength
+<m>Cold Resist +49%
+<m>Lightning Resist +44%
+<m>Fire Resist +49%
+
+0;,2;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,2;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+2;,2;,1;,1;,invwsfb;,;,;
+<normal>Blue Worldstone Fragment
+<wsf3>Blue Worldstone Fragment
+<b>Item Level: 86
+
+3;,2;,1;,1;,invwsfr;,;,;
+<normal>Red Worldstone Fragment
+<wsf4>Red Worldstone Fragment
+<b>Item Level: 98
+
+0;,3;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,3;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+2;,3;,1;,1;,invwsfb;,;,;
+<normal>Blue Worldstone Fragment
+<wsf3>Blue Worldstone Fragment
+<b>Item Level: 86
+
+3;,3;,1;,1;,invwsfr;,;,;
+<normal>Red Worldstone Fragment
+<wsf4>Red Worldstone Fragment
+<b>Item Level: 98
+
+6;,3;,1;,3;,invcqv;,;,;
+<unique>Flavie's Bullseye
+<cqv3>Hallowed Bolts
+<b>Quantity: 510
+<b>Required Level: 72
+<b>Item Level: 99
+<m>10% Chance to cast level 5 Amplify Damage on striking
+<m>+17% Faster Run/Walk
+<m>+33% Increased Attack Speed
+<m>Damage +30
+<m>34% Life stolen per hit
+<m>+3% to Maximum Poison Resist
+<m>+3% to Maximum Cold Resist
+<m>+3% to Maximum Lightning Resist
+<m>+3% to Maximum Fire Resist
+<m>Replenishes quantity
+
+8;,3;,2;,3;,invtowu;,invtowu;,invtowu;
+<unique>fred2's Gerke's Sanctuary
+<xow>Pavise
+<b>Xer
+<b>Defense: 267
+<b>Chance to Block:  64%
+<b>Defense: 160 of 172
+<b>Required Strength: 119
+<b>Required Level: 73
+<b>Item Level: 85
+<b>Velocity:  -10
+<m>+10% Faster Cast Rate
+<m>+20% Faster Block Rate
+<m>40% Increased Chance of Blocking
+<m>+239% Enhanced Defense
+<m>Replenish Life +20
+<m>All Resistances +24
+<m>Damage Reduced by 10%
+<m>Damage Reduced by 14
+<m>Magic Damage Reduced by 14
+<m>Requirements -10%
+<m>Socketed (1)
+<m>Maximum Durability: +100
+<m>Unknown property 189: +2
+
+0;,4;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,4;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+4;,4;,1;,3;,invch6;,;,;
+<unique>Gheed's Fortune
+<cm3>Grand Charm
+<b>Required Level: 62
+<b>Item Level: 86
+<m>98% Better Chance of Getting Magic Items
+
+5;,4;,1;,1;,invhorn;,;,;
+<normal>The Cow King's Horn
+<kihn>The Cow King's Horn
+<b>Item Level: 86
+
+0;,5;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,5;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+5;,5;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 65
+<m>+15 to Life
+<m>+70 to Mana
+
+0;,6;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,6;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+5;,6;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 98
+<m>+15 to Life
+<m>+70 to Mana
+
+6;,6;,1;,1;,invamu2;,;,;
+<unique>Nokozan Relic
+<amu>Amulet
+<b>Required Level: 10
+<b>Item Level: 66
+<m>+1 to Fire Skills
+<m>+20% Faster Hit Recovery
+<m>10% Increased Chance of Blocking
+<m>Adds 5-10 fire damage
+<m>+1 to Enchant
+<m>+10% to Maximum Fire Resist
+<m>Fire Resist +70%
+<m>+3 to Light Radius
+
+7;,6;,1;,1;,azaeye;,;,;
+<normal>Azathoth's Eye
+<azey>Azathoth's Eye
+<b>Item Level: 89
+
+9;,6;,1;,1;,invbrnz;,;,;
+<normal>The Cow King's Brain
+<kibr>The Cow King's Brain
+<b>Item Level: 86
+
+0;,7;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,7;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+4;,7;,1;,1;,invtail;,;,;
+<normal>The Cow King's Tail
+<kita>The Cow King's Tail
+<b>Item Level: 86
+
+5;,7;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 86
+<m>+15 to Life
+<m>+70 to Mana
+
+6;,7;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 87
+<m>+15 to Life
+<m>+70 to Mana
+
+7;,7;,1;,1;,invrOrt;,;,;
+<normal>Ort Rune
+<r09>Ort Rune
+<b>Required Level: 21
+<b>Item Level: 1
+
+9;,7;,1;,1;,invhorn;,;,;
+<normal>The Cow King's Horn
+<kihn>The Cow King's Horn
+<b>Item Level: 86
+
+0;,8;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,8;,1;,1;,invwsfg;,;,;
+<normal>Green Worldstone Fragment
+<wsf1>Green Worldstone Fragment
+<b>Item Level: 80
+
+3;,8;,1;,2;,invbwnu;,invbwnu;,invbwnu;
+<unique>Boneshade
+<7bw>Lich Wand
+<b>One-Hand Damage: 10 to 31
+<b>Durability: 15 of 17
+<b>Required Strength: 25
+<b>Required Level: 79
+<b>Staff Class [-20]
+<b>Item Level: 99
+<m>+2 to Summoning Skills (Necromancer Only)
+<m>+3 to Curses (Necromancer Only)
+<m>+2 to Necromancer Skill Levels
+<m>+30% Faster Cast Rate
+<m>+3 to Bone Spirit (Necromancer Only)
+<m>+3 to Bone Spear (Necromancer Only)
+<m>+2 to Bone Wall (Necromancer Only)
+<m>+4 to Bone Armor (Necromancer Only)
+<m>+4 to Teeth (Necromancer Only)
+<m>+50% Damage to Undead
+
+4;,8;,1;,1;,inveye;,;,;
+<normal>The Cow King's Eye
+<kiey>The Cow King's Eye
+<b>Item Level: 86
+
+5;,8;,1;,1;,invrin2;,;,;
+<unique>Dwarf Star
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 80
+<m>+2 to Fire Skills
+<m>-6% to Enemy Fire Resistance
+<m>+40 to Life
+<m>+40 Maximum Stamina
+<m>Heal Stamina Plus 15%
+<m>Fire Absorb 15%
+<m>Magic Damage Reduced by 14
+
+6;,8;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+7;,8;,1;,1;,invch7;,;,;
+<unique>Arcane Essence
+<cm1>Small Charm
+<b>Required Level: 30
+<b>Item Level: 65
+<m>+15 to Life
+<m>+70 to Mana
+
+8;,8;,2;,2;,invhgl;,;,;
+<unique>Frostburn
+<hgl>Gauntlets
+<b>Defense: 48
+<b>Durability: 22 of 24
+<b>Required Strength: 60
+<b>Required Level: 29
+<b>Item Level: 80
+<m>+5% Enhanced Damage
+<m>Adds 1-6 cold damage
+<m>+17% Enhanced Defense
+<m>+30 Defense
+<m>+20 to Life
+<m>Increase Maximum Mana 40%
+<m>Cold Length:  50
+
+0;,9;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+1;,9;,1;,1;,invamu1;,;,;
+<set>Angelic Wings
+<amu>Amulet
+<b>Required Level: 12
+<b>Item Level: 80
+<m>3% Mana stolen per hit
+<m>6% Life stolen per hit
+<m>+10 to Strength
+<m>+10 to Dexterity
+<m>20% Damage Taken Goes To Mana
+<m>+3 to Light Radius
+
+2;,9;,1;,1;,invbrnz;,;,;
+<normal>The Cow King's Brain
+<kibr>The Cow King's Brain
+<b>Item Level: 86
+
+4;,9;,1;,1;,inveye;,;,;
+<normal>The Cow King's Eye
+<kiey>The Cow King's Eye
+<b>Item Level: 86
+
+5;,9;,1;,1;,invhorn;,;,;
+<normal>The Cow King's Horn
+<kihn>The Cow King's Horn
+<b>Item Level: 86
+
+6;,9;,1;,1;,invwsfy;,;,;
+<normal>Yellow Worldstone Fragment
+<wsf2>Yellow Worldstone Fragment
+<b>Item Level: 90
+
+7;,9;,1;,1;,invbrnz;,;,;
+<normal>The Cow King's Brain
+<kibr>The Cow King's Brain
+<b>Item Level: 86
+
+#body#
+
+1;,-1;,2;,2;,invmsk;,;,;
+<set>fred2's Tal Rasha's Horadric Crest
+<usk>Demonhead
+<b>IstIst
+<b>Defense: 108
+<b>Durability: 20 of 20
+<b>Required Strength: 102
+<b>Required Level: 73
+<b>Item Level: 86
+<m>+1 to Sorceress Skill Levels
+<m>+10% Faster Cast Rate
+<m>10% Mana stolen per hit
+<m>10% Life stolen per hit
+<m>+60 to Life
+<m>+60 to Mana
+<m>All Resistances +34
+<m>Damage Reduced by 5%
+<m>50% Better Chance of Getting Magic Items
+<m>Socketed (2)
+<m>Level Requirement: +7
+<m>Unknown property 189: +2
+
+2;,-1;,1;,1;,invamu1;,;,;
+<set>Tal Rasha's Adjudication
+<amu>Amulet
+<b>Required Level: 67
+<b>Item Level: 86
+<m>+2 to Sorceress Skill Levels
+<m>+10% Faster Cast Rate
+<m>5% Increased Chance of Blocking
+<m>+40 to Life
+<m>+40 to Mana
+<m>All Resistances +26
+
+3;,-1;,2;,3;,invgth;,;,;
+<set>fred2's Tal Rasha's Guardianship
+<uth>Lacquered Plate
+<b>Ist
+<b>Defense: 846
+<b>Durability: 55 of 55
+<b>Required Strength: 83
+<b>Required Level: 71
+<b>Item Level: 98
+<b>Velocity:  -5
+<m>+2 to All Skills
+<m>+25% Faster Run/Walk
+<m>+10% Faster Cast Rate
+<m>+400 Defense
+<m>All Resistances +40
+<m>Damage Reduced by 25%
+<m>Magic Damage Reduced by 15
+<m>113% Better Chance of Getting Magic Items
+<m>Requirements -60%
+<m>Socketed (1)
+<m>Unknown property 189: +2
+
+4;,-1;,1;,3;,invob5;,;,;
+<set>fred2's Tal Rasha's Lidless Eye
+<obf>Dimensional Shard
+<b>IstIstIst
+<b>One-Hand Damage: 30 to 53
+<b>Durability: 50 of 50
+<b>(Sorceress Only)
+<b>Required Level: 73
+<b>Staff Class [10]
+<b>Item Level: 86
+<m>+2 to Sorceress Skill Levels
+<m>+20% Faster Cast Rate
+<m>+15% to Cold Skill Damage
+<m>-15% to Enemy Lightning Resistance
+<m>-15% to Enemy Fire Resistance
+<m>+2 to Cold Mastery (Sorceress Only)
+<m>+1 to Lightning Mastery (Sorceress Only)
+<m>+1 to Fire Mastery (Sorceress Only)
+<m>+10 to all Attributes
+<m>+80 to Life
+<m>+80 to Mana
+<m>90% Better Chance of Getting Magic Items
+<m>Socketed (3)
+<m>Level Requirement: +7
+<m>Unknown property 189: +2
+
+5;,-1;,2;,3;,invspk;,invspku;,invspku;
+<runeword>Ganesh
+<upk>Blade Barrier
+<b>IstChamZod
+<b>Defense: 877
+<b>Chance to Block:  40%
+<b>Durability: 63 of 83
+<b>Required Strength: 108
+<b>Required Level: 81
+<b>Item Level: 18
+<m>Indestructible
+<m>+2 to All Skills
+<m>+30% Faster Block Rate
+<m>20% Increased Chance of Blocking
+<m>+1 to Find Item
+<m>+150% Enhanced Defense
+<m>All Resistances +20
+<m>Cannot Be Frozen
+<m>119% Better Chance of Getting Magic Items
+<m>Ethereal (Cannot be Repaired), Socketed (3)
+<m>Level Requirement: +12
+
+6;,-1;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+8% to Lightning Skill Damage
+<m>+6% to Fire Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+7;,-1;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+8% to Lightning Skill Damage
+<m>+6% to Fire Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+8;,-1;,2;,1;,invmbl;,;,;
+<set>Tal Rasha's Fine-Spun Cloth
+<zmb>Mesh Belt
+<b>Defense: 100
+<b>Durability: 16 of 16
+<b>Required Strength: 46
+<b>Required Level: 53
+<b>Item Level: 88
+<m>+20% Faster Cast Rate
+<m>+60 Defense
+<m>+19 to all Attributes
+<m>+80 to Mana
+<m>50% Damage Taken Goes To Mana
+<m>38% Better Chance of Getting Magic Items
+<m>Requirements -20%
+
+9;,-1;,2;,2;,invlbt;,;,;
+<unique>Merman's Sprocket
+<ulb>Wyrmhide Boots
+<b>Defense: 470
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 69
+<b>Item Level: 99
+<m>+65% Faster Run/Walk
+<m>+411 Defense
+<m>+310 Defense vs. Missile
+<m>Replenish Life +5
+<m>+0.75 to Mana (Based on Character Level)
+<m>Regenerate Mana 8%
+<m>+70 Magic Absorb
+<m>Poison Resist 0.75% (Based on Character Level)
+<m>+55 Cold Absorb
+<m>Cannot Be Frozen
+
+10;,-1;,2;,2;,purflame;,;,;
+<quest>Purifying Flame
+<pufl>Crusader Gauntlets
+<b>Defense: 62
+<b>Durability: 18 of 18
+<b>Required Strength: 60
+<b>Required Level: 90
+<b>Item Level: 99
+<m>20% Chance to cast level 40 Volcano when struck
+<m>Level 6 Cleansing Aura When Equipped
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+1 to Lower Resist
+<m>Replenish Life +10
+<m>+100 to Mana
+<m>Fire Resist +35%
+<m>Fire Absorb 8%
+<m>Requirements -60%
+
+11;,-1;,2;,3;,invfla;,;,;
+<runeword>Call to Arms
+<fla>Flail

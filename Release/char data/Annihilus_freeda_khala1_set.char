@@ -1,0 +1,327 @@
+Realm: Annihilus
+Account: freeda_khala1
+Character name: set
+
+#stash#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 13
+
+4;,0;,1;,1;,invrin5;,;,;
+<set>Angelic Halo
+<rin>Ring
+<b>Required Level: 12
+<b>Item Level: 80
+<m>+30 to Life
+<m>Replenish Life +10
+
+0;,2;,2;,2;,invba5;,;,;
+<set>Immortal King's Will
+<ba5>Avenger Guard
+<b>Defense: 163
+<b>Durability: 44 of 55
+<b>(Barbarian Only)
+<b>Required Strength: 65
+<b>Required Level: 47
+<b>Item Level: 99
+<m>+2 to Warcries (Barbarian Only)
+<m>+2 to Barbarian Skill Levels
+<m>+125 Defense
+<m>+20 to all Attributes
+<m>72% Better Chance of Getting Magic Items
+<m>+4 to Light Radius
+<m>Socketed (2)
+
+0;,4;,2;,3;,invgth;,;,;
+<set>Tal Rasha's Guardianship
+<uth>Lacquered Plate
+<b>Defense: 843
+<b>Durability: 29 of 55
+<b>Required Strength: 83
+<b>Required Level: 71
+<b>Item Level: 99
+<b>Velocity:  -5
+<m>+2 to All Skills
+<m>+25% Faster Run/Walk
+<m>+400 Defense
+<m>All Resistances +40
+<m>Damage Reduced by 25%
+<m>Magic Damage Reduced by 15
+<m>88% Better Chance of Getting Magic Items
+<m>Requirements -60%
+<m>Socketed (1)
+
+#body#
+
+#inventory#
+
+0;,0;,2;,2;,invhbt;,;,;
+<set>Sigon's Sabot
+<hbt>Greaves
+<b>Defense: 12
+<b>Durability: 14 of 24
+<b>Required Strength: 70
+<b>Required Level: 6
+<b>Item Level: 86
+<m>+40% Faster Run/Walk
+<m>+10 to Dexterity
+<m>All Resistances +10
+
+2;,0;,2;,2;,invghm;,;,;
+<set>Sigon's Visor
+<ghm>Great Helm
+<b>Defense: 130
+<b>Durability: 32 of 40
+<b>Required Strength: 63
+<b>Required Level: 6
+<b>Item Level: 86
+<m>+10% Faster Run/Walk
+<m>+100 Defense
+<m>+50 to Mana
+<m>Socketed (2)
+
+6;,0;,2;,3;,invgth;,;,;
+<set>Sigon's Shelter
+<gth>Gothic Plate
+<b>Defense: 238
+<b>Durability: 54 of 55
+<b>Required Strength: 70
+<b>Required Level: 15
+<b>Item Level: 80
+<b>Velocity:  -5
+<m>+10% Faster Cast Rate
+<m>+75% Enhanced Defense
+<m>+62 to Mana
+<m>All Resistances +20
+<m>Damage Reduced by 5%
+<m>Socketed (2)
+
+8;,0;,2;,3;,invtowu;,invtowu;,invtowu;
+<set>Sigon's Guard
+<tow>Tower Shield
+<b>Defense: 24
+<b>Chance to Block:  44%
+<b>Durability: 52 of 60
+<b>Required Strength: 75
+<b>Required Level: 6
+<b>Item Level: 86
+<b>Velocity:  -10
+<m>+1 to All Skills
+<m>+15% Faster Block Rate
+<m>20% Increased Chance of Blocking
+<m>Socketed (1)
+
+0;,2;,2;,2;,invhgl;,;,;
+<set>Sigon's Gage
+<hgl>Gauntlets
+<b>Defense: 14
+<b>Durability: 21 of 24
+<b>Required Strength: 60
+<b>Required Level: 6
+<b>Item Level: 86
+<m>+200 to Attack Rating
+<m>+10 to all Attributes
+<m>All Resistances +10
+
+#cube#
+
+0;,0;,2;,1;,invhbl;,;,;
+<set>Immortal King's Detail
+<zhb>War Belt
+<b>Defense: 413
+<b>Durability: 23 of 24
+<b>Required Strength: 110
+<b>Required Level: 29
+<b>Item Level: 94
+<m>+360 Defense
+<m>+13 to all Attributes
+<m>All Resistances +11
+
+2;,0;,2;,3;,invgth;,;,;
+<set>Tal Rasha's Guardianship
+<uth>Lacquered Plate
+<b>Defense: 895
+<b>Durability: 36 of 55
+<b>Required Strength: 83
+<b>Required Level: 71
+<b>Item Level: 98
+<b>Velocity:  -5
+<m>+2 to All Skills
+<m>+25% Faster Run/Walk
+<m>+400 Defense
+<m>All Resistances +40
+<m>Damage Reduced by 25%
+<m>Magic Damage Reduced by 15
+<m>88% Better Chance of Getting Magic Items
+<m>Requirements -60%
+<m>Socketed (1)
+
+4;,0;,2;,2;,invne4;,;,;
+<set>Trang-Oul's Wing
+<ne9>Cantor Trophy
+<b>Defense: 179
+<b>Chance to Block:  40%
+<b>Durability: 18 of 20
+<b>(Necromancer Only)
+<b>Required Strength: 50
+<b>Required Level: 54
+<b>Item Level: 98
+<m>+1 to Poison and Bone Skills (Necromancer Only)
+<m>+2 to Necromancer Skill Levels
+<m>+30% Faster Block Rate
+<m>30% Increased Chance of Blocking
+<m>+125 Defense
+<m>+17 to all Attributes
+<m>Cold Resist +28%
+<m>Lightning Resist +28%
+<m>Fire Resist +67%
+<m>Poison Resist +28%
+<m>Socketed (2)
+
+0;,1;,2;,2;,invmgl;,;,;
+<set>Cleglaw's Pincers
+<mgl>Chain Gloves
+<b>Defense: 8
+<b>Durability: 15 of 16
+<b>Required Strength: 25
+<b>Required Level: 4
+<b>Item Level: 89
+<m>10% Chance of Open Wounds
+<m>Slows Target by 25%
+<m>Knockback
+<m>+223 Maximum Stamina
+<m>All Resistances +10
+
+4;,2;,2;,2;,invxmlu;,invxmlu;,invxmlu;
+<set>Whitstan's Guard
+<xml>Round Shield
+<b>Defense: 154
+<b>Chance to Block:  67%
+<b>Durability: 45 of 64
+<b>Required Strength: 53
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+40% Faster Block Rate
+<m>55% Increased Chance of Blocking
+<m>+175% Enhanced Defense
+<m>Half Freeze Duration
+<m>+5 to Light Radius
+<m>Socketed (2)
+
+2;,3;,2;,2;,invmbt;,;,;
+<set>Natalya's Soul
+<xmb>Mesh Boots
+<b>Defense: 44
+<b>Durability: 11 of 16
+<b>Required Strength: 65
+<b>Required Level: 25
+<b>Item Level: 98
+<m>+40% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+8 to all Attributes
+<m>Heal Stamina Plus +0.25% (Based on Character Level)
+<m>All Resistances +28
+
+4;,4;,2;,2;,invxmlu;,invxmlu;,invxmlu;
+<set>Whitstan's Guard
+<xml>Round Shield
+<b>Defense: 154
+<b>Chance to Block:  67%
+<b>Durability: 48 of 64
+<b>Required Strength: 53
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+40% Faster Block Rate
+<m>55% Increased Chance of Blocking
+<m>+175% Enhanced Defense
+<m>Half Freeze Duration
+<m>+5 to Light Radius
+<m>Socketed (2)
+
+2;,5;,2;,2;,invxmlu;,invxmlu;,invxmlu;
+<set>Whitstan's Guard
+<xml>Round Shield
+<b>Defense: 154
+<b>Chance to Block:  67%
+<b>Durability: 57 of 64
+<b>Required Strength: 53
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+40% Faster Block Rate
+<m>55% Increased Chance of Blocking
+<m>+175% Enhanced Defense
+<m>Half Freeze Duration
+<m>+5 to Light Radius
+<m>Socketed (2)
+
+4;,6;,2;,2;,invxmlu;,invxmlu;,invxmlu;
+<set>Whitstan's Guard
+<xml>Round Shield
+<b>Defense: 154
+<b>Chance to Block:  67%
+<b>Durability: 45 of 64
+<b>Required Strength: 53
+<b>Required Level: 29
+<b>Item Level: 80
+<m>+40% Faster Block Rate
+<m>55% Increased Chance of Blocking
+<m>+175% Enhanced Defense
+<m>Half Freeze Duration
+<m>+5 to Light Radius
+<m>Socketed (2)
+
+#mercenary#
+
+#character stats#
+
+wp:111011010100000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:3//character class
+0:25//+25 to Strength
+1:15//+15 to Energy
+2:20//+20 to Dexterity
+3:25//+25 to Vitality
+6:55//Current Life: 55
+7:55//+55 to Life
+8:15//Current Mana: 15
+9:15//+15 to Mana
+10:89//Current Stamina: 89
+11:89//+89 Maximum Stamina
+12:1//Level: 1
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+172:2//Unknown property 172: +2
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+39:0//Fire Resist +0%
+43:0//Cold Resist +0%
+41:0//Lightning Resist +0%
+45:0//Poison Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

@@ -1,0 +1,577 @@
+Realm: Annihilus
+Account: freeda_khala
+Character name: illuminati
+
+#stash#
+
+0;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+1;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+2;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+3;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+4;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+5;,0;,2;,2;,shriekinglich;,;,;
+<quest>The Shrieking Lich
+<shrl>Hydraskull
+<b>Defense: 116
+<b>Durability: 12 of 18
+<b>Required Strength: 84
+<b>Required Level: 90
+<b>Item Level: 99
+<m>10% Chance to cast level 10 Cloak of Shadows when struck
+<m>25% Chance to cast level 40 Bone Armor when struck
+<m>+0.03 to All Skills (Based on Faster Cast Rate)
+<m>+30% Faster Cast Rate
+<m>+3% to Lightning Skill Damage
+<m>+5% to Fire Skill Damage
+<m>+4% to Cold Skill Damage
+<m>You can summon 1.00 Additional Golems
+<m>Magic Resist +10%
+<m>All Resistances +36
+<m>Socketed (2)
+
+7;,0;,2;,2;,invtbt;,;,;
+<set>Aldur's Advance
+<xtb>Battle Boots
+<b>Defense: 43
+<b>Durability: 12 of 18
+<b>Required Strength: 95
+<b>Required Level: 45
+<b>Item Level: 86
+<m>Indestructible
+<m>+40% Faster Run/Walk
+<m>+80 to Life
+<m>+223 Maximum Stamina
+<m>Heal Stamina Plus 50%
+<m>All Resistances +18
+<m>30% Damage Taken Goes To Mana
+
+9;,0;,1;,1;,invamu1;,;,;
+<magic>Feral Amulet
+<amu>Amulet
+<b>Required Level: 30
+<b>Item Level: 86
+<m>+2 to Shape Shifting Skills (Druid Only)
+
+5;,4;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+#body#
+
+1;,-1;,2;,2;,invci2;,;,;
+<unique>Kira's Guardian
+<ci2>Tiara
+<b>Defense: 132
+<b>Durability: 23 of 25
+<b>Required Level: 77
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+20% Faster Hit Recovery
+<m>+90 Defense
+<m>All Resistances +58
+<m>Cannot Be Frozen
+<m>24% Better Chance of Getting Magic Items
+<m>Socketed (1)
+
+2;,-1;,1;,1;,invamu2;,;,;
+<unique>Seraph's Hymn
+<amu>Amulet
+<b>Required Level: 65
+<b>Item Level: 86
+<m>Level 1 Salvation Aura When Equipped
+<m>+2 to All Skills
+<m>+2 to Paladin Skill Levels
+<m>+54% Damage to Demons
+<m>+250 to Attack Rating against Demons
+<m>+68% Damage to Undead
+<m>+250 to Attack Rating against Undead
+<m>Prevent Monster Heal
+<m>Slain Monsters Rest in Peace
+<m>+15 to all Attributes
+<m>+2 to Light Radius
+
+3;,-1;,2;,3;,invltp;,;,;
+<runeword>Enigma
+<xtp>Mage Plate
+<b>JahIthBer
+<b>Defense: 1029
+<b>Durability: 53 of 60
+<b>Required Strength: 55
+<b>Required Level: 65
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+45% Faster Run/Walk
+<m>+1 to Teleport
+<m>+770 Defense
+<m>+0.75 to Strength (Based on Character Level)
+<m>Increase Maximum Life 5%
+<m>Damage Reduced by 8%
+<m>+14 Life after each Kill
+<m>15% Damage Taken Goes To Mana
+<m>1.00% Better Chance of Getting Magic Items (Based on Character Level)
+<m>Socketed (3)
+
+4;,-1;,2;,3;,invwax;,;,;
+<runeword>Silence
+<7wa>Berserker Axe
+<b>DolEldHelIstTirVex
+<b>One-Hand Damage: 87 to 259
+<b>Durability: 26 of 26
+<b>Required Dexterity: 47
+<b>Required Strength: 110
+<b>Required Level: 64
+<b>Axe Class [0]
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+40% Increased Attack Speed
+<m>+50% Faster Cast Rate
+<m>+30% Faster Hit Recovery
+<m>+265% Enhanced Damage
+<m>+75% Damage to Undead
+<m>+50 to Attack Rating against Undead
+<m>35% Mana stolen per hit
+<m>Hit Causes Monster to Flee 25%
+<m>All Resistances +75
+<m>+2 to Mana after each Kill
+<m>30% Better Chance of Getting Magic Items
+<m>Requirements -20%
+<m>Socketed (6)
+
+5;,-1;,2;,2;,invpa2;,;,;
+<runeword>Spirit
+<pac>Sacred Rondache
+<b>TalThulOrtAmn
+_14: 1445
+<b>Defense: 141
+<b>Chance to Block:  28%
+<b>Durability: 67 of 68
+<b>(Paladin Only)
+<b>Required Strength: 109
+<b>Required Level: 52
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+31% Faster Cast Rate
+<m>+55% Faster Hit Recovery
+<m>+250 Defense vs. Missile
+<m>+22 to Vitality
+<m>+90 to Mana
+<m>Cold Resist +72%
+<m>Lightning Resist +72%
+<m>Fire Resist +37%
+<m>Poison Resist +72%
+<m>+7 Magic Absorb
+<m>Attacker Takes Damage of 14
+<m>Socketed (4)
+
+6;,-1;,1;,1;,invrin5;,;,;
+<unique>Bul-Kathos' Wedding Band
+<rin>Ring
+<b>Required Level: 58
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+10% Increased Attack Speed
+<m>5% Life stolen per hit
+<m>10% Deadly Strike
+<m>+0.50 to Life (Based on Character Level)
+<m>+50 Maximum Stamina
+
+7;,-1;,1;,1;,invrin1;,;,;
+<unique>The Stone of Jordan
+<rin>Ring
+<b>Required Level: 29
+<b>Item Level: 86
+<m>+1 to All Skills
+<m>+1 to Sorceress Skill Levels
+<m>+5% Faster Cast Rate
+<m>Adds 1-50 fire damage
+<m>+8% to Lightning Skill Damage
+<m>+6% to Fire Skill Damage
+<m>+6% to Cold Skill Damage
+<m>+10% to Poison Skill Damage
+<m>+20 to Mana
+<m>Increase Maximum Mana 25%
+<m>+5% to Experience Gained
+
+8;,-1;,2;,1;,invmbl;,;,;
+<set>Tal Rasha's Fine-Spun Cloth
+<zmb>Mesh Belt
+<b>Defense: 40
+<b>Durability: 13 of 16
+<b>Required Strength: 46
+<b>Required Level: 53
+<b>Item Level: 83
+<m>+10% Faster Cast Rate
+<m>+19 to all Attributes
+<m>+80 to Mana
+<m>50% Damage Taken Goes To Mana
+<m>38% Better Chance of Getting Magic Items
+<m>Requirements -20%
+
+9;,-1;,2;,2;,invtbt;,;,;
+<unique>War Traveler
+<xtb>Battle Boots
+<b>Defense: 131
+<b>Defense: 46 of 48
+<b>Required Strength: 95
+<b>Required Level: 42
+<b>Item Level: 86
+<m>+25% Faster Run/Walk
+<m>Adds 15-25 damage
+<m>+173% Enhanced Defense
+<m>+10 to Strength
+<m>+10 to Vitality
+<m>40% Slower Stamina Drain
+<m>Attacker Takes Damage of 6
+<m>40% Better Chance of Getting Magic Items
+<m>Maximum Durability: +30
+<m>+15 to Minimum Throw Damage
+<m>+25 to Maximum Throw Damage
+
+10;,-1;,2;,2;,invtgl;,;,;
+<unique>Magefist
+<tgl>Light Gauntlets
+<b>Defense: 24
+<b>Durability: 16 of 18
+<b>Required Strength: 45
+<b>Required Level: 23
+<b>Item Level: 80
+<m>+1 to Fire Skills
+<m>+20% Faster Cast Rate
+<m>Adds 1-6 fire damage
+<m>+23% Enhanced Defense
+<m>+10 Defense
+<m>Regenerate Mana 25%
+
+11;,-1;,2;,3;,invcrs;,invcrsu;,invcrsu;
+<runeword>Call to Arms
+<crs>Crystal Sword
+<b>AmnRalMalIstOhm
+<b>One-Hand Damage: 17 to 52
+<b>Durability: 20 of 20
+<b>Required Strength: 43
+<b>Required Level: 57
+<b>Sword Class [0]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+253% Enhanced Damage
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+5 to Battle Command
+<m>+6 to Battle Orders
+<m>+1 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>Socketed (5)
+
+12;,-1;,2;,4;,invpa4;,;,;
+<runeword>Spirit
+<pa4>Aerin Shield
+<b>TalThulOrtAmn
+_14: 1445
+<b>Defense: 41
+<b>Chance to Block:  22%
+<b>Durability: 50 of 50
+<b>(Paladin Only)
+<b>Required Strength: 50
+<b>Required Level: 25
+<b>Item Level: 86
+<m>+2 to All Skills
+<m>+29% Faster Cast Rate
+<m>+55% Faster Hit Recovery
+<m>+11% Enhanced Defense
+<m>+250 Defense vs. Missile
+<m>+22 to Vitality
+<m>+92 to Mana
+<m>Cold Resist +76%
+<m>Lightning Resist +76%
+<m>Fire Resist +41%
+<m>Poison Resist +76%
+<m>+6 Magic Absorb
+<m>Attacker Takes Damage of 14
+<m>Socketed (4)
+
+#inventory#
+
+0;,0;,1;,2;,invbbk;,;,;
+<normal>Tome of Town Portal
+<tbk>Tome of Town Portal
+_14: 1455
+<b>Quantity: 500
+<b>Item Level: 99
+<m>Replenishes quantity
+
+1;,0;,1;,2;,invrbk;,;,;
+<normal>Tome of Identify
+<ibk>Tome of Identify
+_14: 1455
+<b>Quantity: 352
+<b>Item Level: 1
+
+5;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+6;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+7;,0;,1;,3;,invch3;,;,;
+<magic>Lion Branded Grand Charm of Life
+<cm3>Grand Charm
+<b>Required Level: 42
+<b>Item Level: 88
+<m>+1 to Combat Skills (Paladin Only)
+<m>+12 to Life
+
+8;,0;,1;,3;,invch6;,;,;
+<unique>Gheed's Fortune
+<cm3>Grand Charm
+<b>Required Level: 62
+<b>Item Level: 99
+<m>89% Better Chance of Getting Magic Items
+
+9;,0;,1;,2;,invtrch;,;,;
+<unique>Hellfire Torch
+<cm2>Large Charm
+<b>Required Level: 75
+<b>Item Level: 99
+<m>5% Chance to cast level 10 Firestorm on striking
+<m>+3 to Paladin Skill Levels
+<m>+15 to all Attributes
+<m>All Resistances +13
+<m>+8 to Light Radius
+<m>Level 30 Hydra (7/10 Charges)
+
+0;,2;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 13
+
+9;,2;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+3 to Fade (Assassin Only)
+<m>+3 to Summon Spirit Wolf (Druid Only)
+<m>+3 to Iron Skin (Barbarian Only)
+<m>+3 to Blessed Hammer (Paladin Only)
+<m>+3 to Blood Golem (Necromancer Only)
+<m>+3 to Warmth (Sorceress Only)
+<m>+3 to Valkyrie (Amazon Only)
+<m>+10 to all Attributes
+<m>All Resistances +16
+<m>+7% to Experience Gained
+
+4;,3;,1;,1;,invch7;,;,;
+<magic>Small Charm of Good Luck
+<cm1>Small Charm
+<b>Required Level: 33
+<b>Item Level: 90
+<m>7% Better Chance of Getting Magic Items
+
+5;,3;,1;,1;,invch4;,;,;
+<magic>Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 99
+<m>+20 to Life
+
+6;,3;,1;,1;,invch4;,;,;
+<magic>Static Small Charm of Fortune
+<cm1>Small Charm
+<b>Required Level: 18
+<b>Item Level: 68
+<m>Adds 1-11 fire damage
+<m>4% Better Chance of Getting Magic Items
+
+7;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm of Good Luck
+<cm1>Small Charm
+<b>Required Level: 33
+<b>Item Level: 86
+<m>6% Better Chance of Getting Magic Items
+
+8;,3;,1;,1;,invch1;,;,;
+<magic>Small Charm of Good Luck
+<cm1>Small Charm
+<b>Required Level: 33
+<b>Item Level: 87
+<m>7% Better Chance of Getting Magic Items
+
+9;,3;,1;,1;,invkey;,;,;
+<normal>Key
+<key>Key
+<b>Quantity: 491
+<b>Item Level: 1
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
+wp:111011111000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:3//character class
+0:166//+166 to Strength
+1:74//+74 to Energy
+2:155//+155 to Dexterity
+3:530//+530 to Vitality
+6:2004//Current Life: 2004
+7:2004//+2004 to Life
+8:522//Current Mana: 522
+9:522//+522 to Mana
+10:6895//Current Stamina: 6895
+11:6895//+6895 Maximum Stamina
+12:96//Level: 96
+13:-1420933150//Experience: -1420933150
+14:6980//Gold: 6980
+20:70//Chance to Block: 70%
+21:102//+102 to Minimum Damage
+22:284//+284 to Maximum Damage
+23:15//+15 to Minimum Damage
+24:25//+25 to Maximum Damage
+27:25//Regenerate Mana 25%
+28:950//Heal Stamina Plus 950%
+31:1497//+1497 Defense
+32:250//+250 Defense vs. Missile
+36:8//Damage Reduced by 8%
+39:289//Fire Resist +289%
+41:324//Lightning Resist +324%
+43:324//Cold Resist +324%
+45:324//Poison Resist +324%
+48:1//+1 to Minimum Fire Damage
+49:6//+6 to Maximum Fire Damage
+50:2//+2 to Minimum Lightning Damage
+51:61//+61 to Maximum Lightning Damage
+60:5//5% Life stolen per hit
+62:35//35% Mana stolen per hit
+67:147//Unknown property 67: +147
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+71:19//Unknown property 71: +19
+72:244//Unknown property 72: +244
+73:261//Maximum Durability: +261
+76:5//Increase Maximum Life 5%
+77:25//Increase Maximum Mana 25%
+78:20//Attacker Takes Damage of 20
+80:341//341% Better Chance of Getting Magic Items
+83:1//+1 to Sorceress Skill Levels
+83:5//+5 to Paladin Skill Levels
+85:12//+12% to Experience Gained
+86:14//+14 Life after each Kill
+89:10//+10 to Light Radius
+91:-40//Requirements -40%
+93:50//+50% Increased Attack Speed
+96:70//+70% Faster Run/Walk
+97:1//+1 to Teleport
+99:105//+105% Faster Hit Recovery
+105:126//+126% Faster Cast Rate
+107:3//+3 to Valkyrie (Amazon Only)
+107:3//+3 to Warmth (Sorceress Only)
+107:3//+3 to Blood Golem (Necromancer Only)
+107:3//+3 to Blessed Hammer (Paladin Only)
+107:3//+3 to Iron Skin (Barbarian Only)
+107:3//+3 to Summon Spirit Wolf (Druid Only)
+107:3//+3 to Fade (Assassin Only)
+108:1//Slain Monsters Rest in Peace
+112:32//Hit Causes Monster to Flee 25%
+114:65//65% Damage Taken Goes To Mana
+117:1//Prevent Monster Heal
+119:100//100% Bonus to Attack Rating
+121:54//+54% Damage to Demons
+122:143//+143% Damage to Undead
+123:250//+250 to Attack Rating against Demons
+124:300//+300 to Attack Rating against Undead
+126:1//+1 to Fire Skills
+127:12//+12 to All Skills
+138:2//+2 to Mana after each Kill
+141:10//10% Deadly Strike
+147:7//+7 Magic Absorb
+151:1//Level 1 Salvation Aura When Equipped
+153:1//Cannot Be Frozen
+154:40//40% Slower Stamina Drain
+159:15//+15 to Minimum Throw Damage
+160:25//+25 to Maximum Throw Damage
+172:2//Unknown property 172: +2
+175:1396//Unknown property 175: +1396
+188:3//+3 to Combat Skills (Paladin Only)
+194:14//Unknown property 194: +14
+198:5//5% Chance to cast level 10 Firestorm on striking
+204:2567//Level 30 Hydra (7/10 Charges)
+328:139//Unknown property 328: +139
+329:6//+6% to Fire Skill Damage
+330:8//+8% to Lightning Skill Damage
+331:6//+6% to Cold Skill Damage
+332:10//+10% to Poison Skill Damage
+350:465//Unknown property 350: +465
+351:116//Unknown property 351: +116
+37:0//Magic Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow

@@ -1,0 +1,929 @@
+Realm: Annihilus
+Account: smiter
+Character name: FreeDIk
+
+#stash#
+
+2;,0;,2;,2;,invhbt;,;,;
+<unique>Gore Rider
+<xhb>War Boots
+<b>Defense: 161
+<b>Defense: 32 of 34
+<b>Required Strength: 93
+<b>Required Level: 47
+<b>Item Level: 86
+<m>+30% Faster Run/Walk
+<m>15% Chance of Crushing Blow
+<m>15% Deadly Strike
+<m>10% Chance of Open Wounds
+<m>+199% Enhanced Defense
+<m>+20 Maximum Stamina
+<m>Requirements -25%
+<m>Maximum Durability: +10
+
+6;,0;,2;,3;,invaaru;,invaaru;,invaaru;
+<unique>Tyrael's Might
+<uar>Sacred Armor
+<b>BerBerBer
+<b>Defense: 1376
+<b>Durability: 59 of 60
+<b>Required Level: 84
+<b>Item Level: 98
+<b>Velocity:  -5
+<m>Indestructible
+<m>+2 to All Skills
+<m>+25% Faster Run/Walk
+<m>+100% Enhanced Damage
+<m>Slain Monsters Rest in Peace
+<m>+129% Enhanced Defense
+<m>+42 to all Attributes
+<m>All Resistances +30
+<m>Damage Reduced by 24%
+<m>Cannot Be Frozen
+<m>+7% to Experience Gained
+<m>Requirements -100%
+<m>Socketed (3)
+
+8;,3;,2;,3;,invwsp;,;,;
+<unique>Hand of Blessed Light
+<9ws>Divine Scepter
+<b>One-Hand Damage: 51 to 121
+<b>Durability: 52 of 70
+<b>Required Strength: 103
+<b>Required Level: 42
+<b>Mace Class [-10]
+<b>Item Level: 98
+<m>20% Chance to cast level 4 Fist of the Heavens on striking
+<m>+3 to Paladin Skill Levels
+<m>+30% Faster Cast Rate
+<m>+219% Enhanced Damage
+<m>Damage +75
+<m>100% Bonus to Attack Rating
+<m>+4 to Fist of the Heavens (Paladin Only)
+<m>+6 to Vengeance (Paladin Only)
+<m>+7 to Holy Bolt (Paladin Only)
+<m>+50% Enhanced Defense
+<m>Regenerate Mana 30%
+<m>+4 to Light Radius
+<m>+50% Damage to Undead
+
+0;,5;,1;,1;,DyeBlack;,;,;
+<normal>Black Dye
+<dy2>Black Dye
+<b>Item Level: 36
+
+1;,5;,1;,1;,DyeBlack;,;,;
+<normal>Black Dye
+<dy2>Black Dye
+<b>Item Level: 36
+
+5;,5;,1;,3;,invob5;,;,;
+<unique>Death's Fathom
+<obf>Dimensional Shard
+<b>One-Hand Damage: 30 to 53
+<b>Durability: 27 of 50
+<b>(Sorceress Only)
+<b>Required Level: 73
+<b>Staff Class [10]
+<b>Item Level: 99
+<m>+3 to Sorceress Skill Levels
+<m>+16% Faster Cast Rate
+<m>+23% to Cold Skill Damage
+<m>+1 to Cold Mastery (Sorceress Only)
+<m>All Resistances +27
+<m>Socketed (2)
+
+6;,5;,2;,2;,invtbt;,;,;
+<unique>Goblin Toe
+<tbt>Light Plated Boots
+<b>Defense: 33
+<b>Durability: 18 of 18
+<b>Required Strength: 50
+<b>Required Level: 22
+<b>Item Level: 86
+<m>+10% Faster Run/Walk
+<m>35% Chance of Crushing Blow
+<m>+50% Enhanced Defense
+<m>+15 Defense
+<m>Damage Reduced by 5
+<m>Magic Damage Reduced by 4
+<m>-1 to Light Radius
+
+3;,6;,2;,1;,invlbl;,;,;
+<unique>String of Ears
+<zlb>Demonhide Sash
+<b>Defense: 110
+<b>Defense: 20 of 22
+<b>Required Strength: 20
+<b>Required Level: 29
+<b>Item Level: 86
+<m>6% Life stolen per hit
+<m>+174% Enhanced Defense
+<m>+15 Defense
+<m>Magic Resist +7%
+<m>All Resistances +24
+<m>Damage Reduced by 15%
+<m>Magic Damage Reduced by 11
+<m>Maximum Durability: +10
+
+8;,6;,2;,1;,invhbl;,;,;
+<rare>Cruel Fringe
+<hbl>Plated Belt
+<b>Defense: 15
+<b>Durability: 23 of 24
+<b>Required Strength: 60
+<b>Required Level: 50
+<b>Item Level: 99
+<m>+27% Enhanced Defense
+<m>+26 to Strength
+<m>+10 to Dexterity
+<m>+10 to Vitality
+<m>+10 to Energy
+<m>+80 to Life
+<m>+29 Maximum Stamina
+<m>Fire Resist +18%
+
+3;,7;,1;,1;,invrin1;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>10% Increased Chance of Blocking
+<m>+232 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-12% to Enemy Cold Resistance
+<m>+19 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+7;,7;,1;,1;,invrin1;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 86
+<m>6% Increased Chance of Blocking
+<m>+202 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-6% to Enemy Cold Resistance
+<m>+19 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+5;,9;,1;,1;,invrin3;,;,;
+<unique>Dwarf Star
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>+1 to Fire Skills
+<m>-14% to Enemy Fire Resistance
+<m>+40 to Life
+<m>+40 Maximum Stamina
+<m>Heal Stamina Plus 15%
+<m>Fire Absorb 15%
+<m>Magic Damage Reduced by 15
+
+8;,9;,1;,1;,invamu2;,;,;
+<unique>Seraph's Hymn
+<amu>Amulet
+<b>Required Level: 65
+<b>Item Level: 99
+<m>Level 3 Salvation Aura When Equipped
+<m>+2 to All Skills
+<m>+2 to Paladin Skill Levels
+<m>+66% Damage to Demons
+<m>+250 to Attack Rating against Demons
+<m>+66% Damage to Undead
+<m>+250 to Attack Rating against Undead
+<m>Slain Monsters Rest in Peace
+<m>Prevent Monster Heal
+<m>+15 to all Attributes
+<m>+2 to Light Radius
+
+#body#
+
+#inventory#
+
+0;,0;,1;,2;,invbbk;,;,;
+<normal>Tome of Town Portal
+<tbk>Tome of Town Portal
+_14: 1455
+<b>Quantity: 499
+<b>Item Level: 99
+<m>Replenishes quantity
+
+1;,0;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 29
+<b>Item Level: 80
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+11 to Attack Rating
+<m>+3 to Maximum Throw Damage
+
+2;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+3;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+4;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+5;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+6;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+7;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+8;,0;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+9;,0;,1;,2;,invtrch;,;,;
+<unique>Hellfire Torch
+<cm2>Large Charm
+<b>Required Level: 75
+<b>Item Level: 99
+<m>5% Chance to cast level 10 Firestorm on striking
+<m>+3 to Paladin Skill Levels
+<m>+20 to all Attributes
+<m>All Resistances +20
+<m>+8 to Light Radius
+<m>Level 30 Hydra (10/10 Charges)
+
+1;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+2;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+3;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+4;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+5;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+6;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+7;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+8;,1;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+0;,2;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 86
+
+2;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+3;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+4;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+5;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+6;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+7;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+8;,2;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+9;,2;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>+3 to Cobra Strike (Assassin Only)
+<m>+3 to Summon Dire Wolf (Druid Only)
+<m>+3 to War Cry (Barbarian Only)
+<m>+3 to Fist of the Heavens (Paladin Only)
+<m>+3 to Raise Skeleton (Necromancer Only)
+<m>+3 to Enchant (Sorceress Only)
+<m>+3 to Critical Strike (Amazon Only)
+<m>+20 to all Attributes
+<m>All Resistances +13
+<m>+5% to Experience Gained
+
+2;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+3;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+4;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+5;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+6;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+7;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+8;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+9;,3;,1;,1;,invch7;,;,;
+<magic>Shimmering Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 39
+<b>Item Level: 86
+<m>+18 to Life
+<m>All Resistances +3
+
+#cube#
+
+0;,0;,2;,2;,invmgl;,;,;
+<set>Cleglaw's Pincers
+<mgl>Chain Gloves
+<b>Defense: 8
+<b>Durability: 14 of 16
+<b>Required Strength: 25
+<b>Required Level: 4
+<b>Item Level: 98
+<m>10% Chance of Open Wounds
+<m>Slows Target by 25%
+<m>Knockback
+<m>+223 Maximum Stamina
+<m>All Resistances +10
+
+2;,0;,2;,3;,invwax;,;,;
+<runeword>Grief
+<7wa>Berserker Axe
+<b>EthTirLoMalRal
+<b>One-Hand Damage: 24 to 71
+<b>Durability: 22 of 26
+<b>Required Dexterity: 59
+<b>Required Strength: 138
+<b>Required Level: 76
+<b>Axe Class [0]
+<b>Item Level: 86
+<m>35% Chance to cast level 15 Venom on striking
+<m>+36% Increased Attack Speed
+<m>Damage +394
+<m>Ignore Target's Defense
+<m>-25% Target Defense
+<m>+1.88% Damage to Demons (Based on Character Level)
+<m>Adds 5-30 fire damage
+<m>-23% to Enemy Poison Resistance
+<m>20% Deadly Strike
+<m>Prevent Monster Heal
+<m>+2 to Mana after each Kill
+<m>+10 Life after each Kill
+<m>Socketed (5)
+<m>Level Requirement: +12
+<m>Unknown property 189: +8
+
+4;,0;,2;,2;,invhgl;,;,;
+<unique>Steelrend
+<uhg>Ogre Gauntlets
+<b>Defense: 267
+<b>Durability: 24 of 24
+<b>Required Strength: 111
+<b>Required Level: 70
+<b>Item Level: 99
+<m>Melee attacks deal splash damage
+<m>+43% Enhanced Damage
+<m>15% Chance of Crushing Blow
+<m>+200 Defense
+<m>+6 to all Attributes
+<m>17% Increased Strength
+<m>Requirements -40%
+
+6;,0;,2;,4;,invpa4;,;,;
+<unique>smiter's Dragonscale
+<pae>Zakarum Shield
+<b>Defense: 574
+<b>Chance to Block:  42%
+<b>Durability: 63 of 65
+<b>(Paladin Only)
+<b>Required Strength: 142
+<b>Required Level: 90
+<b>Item Level: 98
+<m>0.06% Deadly Strike (Based on Vitality)
+<m>+4 to Paladin Skill Levels
+<m>+20% Increased Attack Speed
+<m>+15% Faster Block Rate
+<m>20% Increased Chance of Blocking
+<m>+29% Enhanced Damage
+<m>16% Bonus to Attack Rating
+<m>+196% Enhanced Defense
+<m>+15 to all Attributes
+<m>+5% to Maximum Poison Resist
+<m>+5% to Maximum Cold Resist
+<m>+5% to Maximum Lightning Resist
+<m>+5% to Maximum Fire Resist
+<m>Magic Resist +3%
+<m>Cold Resist +25%
+<m>Lightning Resist +25%
+<m>Fire Resist +85%
+<m>Poison Resist +25%
+<m>Fire Absorb 11%
+<m>Damage Reduced by 3%
+<m>Socketed (1)
+<m>Unknown property 189: +8
+
+9;,0;,1;,1;,horror;,;,;
+<set>Horror
+<s1am>Amulet
+<b>Required Level: 93
+<b>Item Level: 99
+<m>+2 to All Skills
+<m>0.06% Faster Cast Rate (Based on Vitality)
+<m>+30 to Strength
+<m>All Resistances +21
+<m>Damage Reduced by 5%
+
+8;,1;,2;,2;,invtbt;,;,;
+<unique>Wraith Brand
+<tbt>Light Plated Boots
+<b>Defense: 9
+<b>Durability: 12 of 18
+<b>Required Strength: 50
+<b>Required Level: 41
+<b>Item Level: 98
+<m>+30% Faster Run/Walk
+<m>+20% Faster Hit Recovery
+<m>+19 to Strength
+<m>Cold Resist +44%
+<m>Lightning Resist +48%
+<m>Fire Resist +42%
+
+4;,2;,2;,1;,invvbl;,;,;
+<unique>Nosferatu's Coil
+<uvc>Vampirefang Belt
+<b>Defense: 61
+<b>Durability: 13 of 14
+<b>Required Strength: 50
+<b>Required Level: 51
+<b>Item Level: 99
+<m>+10% Faster Run/Walk
+<m>+10% Increased Attack Speed
+<m>7% Mana stolen per hit
+<m>5% Life stolen per hit
+<m>Slows Target by 20%
+<m>+12 to all Attributes
+<m>+2 to Mana after each Kill
+<m>-3 to Light Radius
+
+4;,3;,2;,1;,invhbl;,;,;
+<unique>Bladebuckle
+<hbl>Plated Belt
+<b>Defense: 52
+<b>Durability: 24 of 24
+<b>Required Strength: 60
+<b>Required Level: 29
+<b>Item Level: 78
+<m>+30% Faster Hit Recovery
+<m>+86% Enhanced Defense
+<m>+30 Defense
+<m>+10 to all Attributes
+<m>All Resistances +10
+<m>Damage Reduced by 5%
+<m>Damage Reduced by 3
+<m>Attacker Takes Damage of 19
+
+8;,3;,2;,2;,invcap;,;,;
+<unique>smiter's Harlequin Crest
+<uap>Shako
+<b>Ber
+<b>Defense: 135
+<b>Durability: 8 of 12
+<b>Required Strength: 50
+<b>Required Level: 63
+<b>Item Level: 98
+<m>+3 to All Skills
+<m>+9% Faster Cast Rate
+<m>+10% Faster Hit Recovery
+<m>+5 to Strength
+<m>+5 to Dexterity
+<m>+10 to Vitality
+<m>+7 to Energy
+<m>+3.00 to Life (Based on Character Level)
+<m>+3.00 to Mana (Based on Character Level)
+<m>Damage Reduced by 18%
+<m>50% Better Chance of Getting Magic Items
+<m>Socketed (1)
+<m>Unknown property 189: +8
+
+5;,4;,2;,2;,purflame;,;,;
+<quest>Purifying Flame
+<pufl>Crusader Gauntlets
+<b>Defense: 62
+<b>Durability: 18 of 18
+<b>Required Strength: 60
+<b>Required Level: 90
+<b>Item Level: 99
+<m>20% Chance to cast level 40 Volcano when struck
+<m>Level 6 Cleansing Aura When Equipped
+<m>+1 to All Skills
+<m>+10% Faster Cast Rate
+<m>+1 to Lower Resist
+<m>Replenish Life +10
+<m>+100 to Mana
+<m>Fire Resist +35%
+<m>Fire Absorb 8%
+<m>Requirements -60%
+
+7;,4;,1;,1;,invrin5;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 86
+<m>7% Increased Chance of Blocking
+<m>+231 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-13% to Enemy Cold Resistance
+<m>+17 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+0;,5;,2;,3;,invltp;,;,;
+<unique>Odium
+<utp>Archon Plate
+<b>Hel
+<b>Defense: 2361
+<b>Durability: 60 of 60
+<b>Required Strength: 116
+<b>Required Level: 82
+<b>Item Level: 88
+<m>20% Chance to cast level 5 Mind Blast when struck
+<m>35% Chance to cast level 15 Cloak of Shadows when struck
+<m>+1 to All Skills
+<m>+40% Faster Hit Recovery
+<m>+10 to Fade
+<m>+3 to Teleport
+<m>+200% Enhanced Defense
+<m>Increase Maximum Life 10%
+<m>Increase Maximum Mana 12%
+<m>Repairs 1 durability in 20 seconds
+<m>Requirements +25%
+<m>Ethereal (Cannot be Repaired), Socketed (1)
+
+8;,5;,2;,2;,invcap;,;,;
+<unique>Harlequin Crest
+<uap>Shako
+<b>Cham
+<b>Defense: 135
+<b>Durability: 7 of 12
+<b>Required Strength: 50
+<b>Required Level: 67
+<b>Item Level: 98
+<m>+3 to All Skills
+<m>+9% Faster Cast Rate
+<m>+10% Faster Hit Recovery
+<m>+5 to Strength
+<m>+5 to Dexterity
+<m>+10 to Vitality
+<m>+7 to Energy
+<m>+3.00 to Life (Based on Character Level)
+<m>+3.00 to Mana (Based on Character Level)
+<m>Damage Reduced by 10%
+<m>Cannot Be Frozen
+<m>50% Better Chance of Getting Magic Items
+<m>Socketed (1)
+
+2;,6;,1;,2;,invtk3;,invtk3;,;
+<unique>Warshrike
+<7bk>Winged Knife
+<b>Throw Damage: 146 to 249
+<b>One-Hand Damage: 172 to 224
+<b>Quantity: 300
+<b>Required Dexterity: 132
+<b>Required Strength: 35
+<b>Required Level: 75
+<b>Dagger Class [-20]
+<b>Item Level: 86
+<m>+50% Increased Attack Speed
+<m>Piercing Attack
+<m>+331% Enhanced Damage
+<m>50% Deadly Strike
+<m>+5 to Burst of Speed
+<m>Replenishes quantity
+<m>Ethereal (Cannot be Repaired)
+
+5;,6;,1;,1;,invrin3;,;,;
+<unique>Dwarf Star
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>+1 to Fire Skills
+<m>-14% to Enemy Fire Resistance
+<m>+40 to Life
+<m>+40 Maximum Stamina
+<m>Heal Stamina Plus 15%
+<m>Fire Absorb 15%
+<m>Magic Damage Reduced by 15
+
+6;,6;,1;,1;,invrin4;,;,;
+<unique>Raven Frost
+<rin>Ring
+<b>Required Level: 45
+<b>Item Level: 99
+<m>6% Increased Chance of Blocking
+<m>+232 to Attack Rating
+<m>Adds 15-45 cold damage
+<m>-9% to Enemy Cold Resistance
+<m>+17 to Dexterity
+<m>+40 to Mana
+<m>Cold Absorb 20%
+<m>Cannot Be Frozen
+<m>Cold Length:  100
+
+7;,6;,1;,1;,invrin3;,;,;
+<unique>Nature's Peace
+<rin>Ring
+<b>Required Level: 69
+<b>Item Level: 99
+<m>Slain Monsters Rest in Peace
+<m>Prevent Monster Heal
+<m>All Resistances +21
+<m>Damage Reduced by 5%
+<m>+3% to Experience Gained
+<m>Level 5 Oak Sage (27/27 Charges)
+
+4;,7;,1;,1;,DyeRed;,;,;
+<normal>Red Dye
+<dy8>Red Dye
+<b>Item Level: 97
+
+7;,7;,1;,1;,cthulhuring;,;,;
+<set>Nightmare
+<s1r2>Ring
+<b>Required Level: 93
+<b>Item Level: 99
+<m>+1 to All Skills
+<m>0.06% Faster Run/Walk (Based on Vitality)
+<m>+11 to all Attributes
+<m>Damage Reduced by 5%
+
+8;,7;,1;,1;,invamu2;,;,;
+<unique>Seraph's Hymn
+<amu>Amulet
+<b>Required Level: 65
+<b>Item Level: 98
+<m>Level 3 Salvation Aura When Equipped
+<m>+2 to All Skills
+<m>+2 to Paladin Skill Levels
+<m>+83% Damage to Demons
+<m>+250 to Attack Rating against Demons
+<m>+54% Damage to Undead
+<m>+250 to Attack Rating against Undead
+<m>Slain Monsters Rest in Peace
+<m>Prevent Monster Heal
+<m>+15 to all Attributes
+<m>+2 to Light Radius
+
+9;,7;,1;,1;,invamu3;,;,;
+<unique>Mara's Kaleidoscope
+<amu>Amulet
+<b>Required Level: 67
+<b>Item Level: 99
+<m>+3 to All Skills
+<m>+1 to Paladin Skill Levels
+<m>+7% Faster Cast Rate
+<m>+7 to all Attributes
+<m>Increase Maximum Life 5%
+<m>Increase Maximum Mana 9%
+<m>All Resistances +27
+
+#mercenary#
+
+#character stats#
+
+wp:100101010000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000
+-1:3//character class
+0:68//+68 to Strength
+1:55//+55 to Energy
+2:129//+129 to Dexterity
+3:498//+498 to Vitality
+7:2270//+2270 to Life
+8:200//Current Mana: 200
+9:222//+222 to Mana
+10:660//Current Stamina: 660
+11:660//+660 Maximum Stamina
+12:99//Level: 99
+13:-774482041//Experience: -774482041
+19:11//+11 to Attack Rating
+22:3//+3 to Maximum Damage
+24:3//+3 to Maximum Damage
+39:143//Fire Resist +143%
+41:143//Lightning Resist +143%
+43:143//Cold Resist +143%
+45:143//Poison Resist +143%
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+83:3//+3 to Paladin Skill Levels
+85:5//+5% to Experience Gained
+89:8//+8 to Light Radius
+99:5//+5% Faster Hit Recovery
+107:3//+3 to Critical Strike (Amazon Only)
+107:3//+3 to Enchant (Sorceress Only)
+107:3//+3 to Raise Skeleton (Necromancer Only)
+107:3//+3 to Fist of the Heavens (Paladin Only)
+107:3//+3 to War Cry (Barbarian Only)
+107:3//+3 to Summon Dire Wolf (Druid Only)
+107:3//+3 to Cobra Strike (Assassin Only)
+127:1//+1 to All Skills
+160:3//+3 to Maximum Throw Damage
+172:2//Unknown property 172: +2
+198:5//5% Chance to cast level 10 Firestorm on striking
+204:2570//Level 30 Hydra (10/10 Charges)
+328:195//Unknown property 328: +195
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

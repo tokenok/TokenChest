@@ -1,0 +1,174 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: aaaaa
+
+#stash#
+
+0;,0;,2;,3;,invaaru;,invaaru;,invaaru;
+<unique>Hotspur
+<aar>Ancient Armor
+<b>Defense: 10
+<b>Required Strength: 100
+<b>Required Level: 5
+<b>Item Level: 90
+<b>Velocity:  -5
+
+2;,0;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+5;,0;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+8;,0;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 99
+
+9;,0;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 99
+
+2;,2;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+5;,2;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+0;,3;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 99
+
+1;,3;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 99
+
+2;,4;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+5;,4;,2;,3;,invaaru;,invaaru;,invaaru;
+<unique>Headstriker
+<aar>Ancient Armor
+<b>Defense: 10
+<b>Required Strength: 100
+<b>Required Level: 39
+<b>Item Level: 90
+<b>Velocity:  -5
+<m>+107% Faster Cast Rate
+<m>+63 to Teleport
+
+6;,8;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+#body#
+
+#inventory#
+
+0;,0;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+3;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 13
+
+5;,0;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+0;,2;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 99
+
+1;,2;,3;,2;,invinch;,;,;
+<quest>Bad Unique ID
+<inc5>Unlocked Infernal Chest
+<b>Item Level: 99
+
+4;,2;,1;,2;,invikey;,;,;
+<quest>Bad Unique ID
+<ikey>Infernal Key
+<b>Item Level: 99
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
+wp:111111111111111111111111111111111111111011111111111111111111111111111111111111101111111111111111111111111111111111111110
+-1:4//character class
+0:1023//+1023 to Strength
+1:1023//+1023 to Energy
+2:1023//+1023 to Dexterity
+3:1023//+1023 to Vitality
+4:505//New Stats: 505
+6:8133//Current Life: 8133
+7:8190//+8190 to Life
+8:108//Current Mana: 108
+9:108//+108 to Mana
+10:190//Current Stamina: 190
+11:190//+190 Maximum Stamina
+12:99//Level: 99
+13:-774482042//Experience: -774482042
+14:986400//Gold: 986400
+15:2500000//Gold in Stash: 2500000
+39:30//Fire Resist +30%
+41:30//Lightning Resist +30%
+43:30//Cold Resist +30%
+45:30//Poison Resist +30%
+67:100//Unknown property 67: +100
+68:100//+100% Increased Feral Attack Speed
+69:100//Unknown property 69: +100
+172:2//Unknown property 172: +2
+342:108//Unknown property 342: (30) +108
+343:78//Unknown property 343: (30) +78
+344:24//Unknown property 344: (30) +24
+350:127//Unknown property 350: +127
+351:11//Unknown property 351: +11
+20:0//0% Increased Chance of Blocking
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike

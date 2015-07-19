@@ -1,0 +1,673 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: gay
+
+#stash#
+
+0;,0;,2;,2;,invbox;,;,;
+<normal>Horadric Cube
+<box>Horadric Cube
+<b>Item Level: 1
+
+5;,0;,1;,1;,invjw1;,;,;
+<superior>Superior Jewel
+<jew>Jewel
+<b>Item Level: 90
+<m>35% Chance to cast level 15 Venom on striking
+<m>+40% Increased Attack Speed
+<m>+65% Enhanced Damage
+<m>Damage +400
+<m>Ignore Target's Defense
+<m>+1.88% Damage to Demons (Based on Character Level)
+<m>-25% to Enemy Poison Resistance
+<m>20% Deadly Strike
+<m>25% Chance of Open Wounds
+<m>Freezes target +3
+<m>+15 Life after each Kill
+<m>Requirements -20%
+
+5;,1;,1;,1;,invjw1;,;,;
+<superior>Superior Jewel
+<jew>Jewel
+<b>Item Level: 90
+<m>Level 9 Fanaticism Aura When Equipped
+<m>+40% Increased Attack Speed
+<m>+335% Enhanced Damage
+<m>+3 to Attack Rating
+<m>20% Deadly Strike
+<m>25% Chance of Open Wounds
+<m>+3 to Werebear
+<m>+3 to Lycanthropy
+<m>Freezes target +3
+<m>+40 to Strength
+<m>Level 13 Summon Grizzly (5/5 Charges)
+<m>Requirements -20%
+
+5;,2;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+2;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+5;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+2;,5;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+1;,6;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+2;,6;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+3;,6;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+4;,6;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+8;,7;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+#body#
+
+1;,-1;,2;,2;,invba5;,;,;
+<rare>Pain Barb
+<baa>Slayer Guard
+<b>Defense: 120
+<b>Durability: 55 of 55
+<b>(Barbarian Only)
+<b>Required Strength: 118
+<b>Required Level: 40
+<b>Item Level: 90
+<m>+2 to Barbarian Skill Levels
+<m>+10% Faster Hit Recovery
+<m>5% Bonus to Attack Rating
+<m>+1.00 to Attack Rating (Based on Character Level)
+<m>+1 to Teleport
+<m>+3 to Whirlwind (Barbarian Only)
+<m>+3 to Battle Orders (Barbarian Only)
+<m>+3 to Leap (Barbarian Only)
+<m>+60 to Life
+<m>Cannot Be Frozen
+<m>+5 to Light Radius
+<m>Socketed (2)
+
+2;,-1;,1;,1;,invamu1;,;,;
+<unique>Highlord's Wrath
+<amu>Amulet
+<b>Required Level: 65
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+30% Faster Run/Walk
+<m>+30 fire damage
+<m>0.38% Deadly Strike (Based on Character Level)
+<m>Lightning Resist +35%
+<m>Attacker Takes Damage of 15
+
+3;,-1;,2;,3;,invcstu;,;,;
+<unique>Spire of Lazarus
+<uui>Dusk Shroud
+<b>Defense: 1455
+<b>Durability: 20 of 20
+<b>Required Strength: 77
+<b>Required Level: 49
+<b>Item Level: 90
+<m>20% Chance to cast level 15 Chilling Armor when struck
+<m>+25% Faster Cast Rate
+<m>+300% Enhanced Damage
+<m>+200% Enhanced Defense
+<m>+15 Defense
+<m>+1.50 to Life (Based on Character Level)
+<m>Replenish Life +7
+<m>All Resistances +45
+<m>Damage Reduced by 8%
+<m>12% Damage Taken Goes To Mana
+<m>25% Better Chance of Getting Magic Items
+<m>Socketed (1)
+
+4;,-1;,2;,3;,invmauu;,;,;
+<unique>Bonesnap
+<fla>Flail
+<b>One-Hand Damage: 4 to 97
+<b>Durability: 30 of 30
+<b>Required Dexterity: 35
+<b>Required Strength: 41
+<b>Required Level: 24
+<b>Mace Class [-10]
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+40% Increased Attack Speed
+<m>+305% Enhanced Damage
+<m>+3 to Attack Rating
+<m>Adds 5-30 fire damage
+<m>7% Life stolen per hit
+<m>+6 to Battle Command
+<m>+6 to Battle Orders
+<m>+4 to Battle Cry
+<m>Prevent Monster Heal
+<m>Replenish Life +12
+<m>30% Better Chance of Getting Magic Items
+<m>+50% Damage to Undead
+<m>Socketed (1)
+
+5;,-1;,2;,3;,invmauu;,;,;
+<unique>Bonesnap
+<fla>Flail
+<b>One-Hand Damage: 1 to 27
+<b>Durability: 30 of 30
+<b>Required Dexterity: 35
+<b>Required Strength: 41
+<b>Required Level: 24
+<b>Mace Class [-10]
+<b>Item Level: 90
+<m>+3 to All Skills
+<m>+40% Faster Cast Rate
+<m>+15% Enhanced Damage
+<m>+3 to Attack Rating
+<m>+10 to Dexterity
+<m>Replenish Life +20
+<m>Increase Maximum Mana 15%
+<m>All Resistances +40
+<m>Level 4 Oak Sage (25/25 Charges)
+<m>+50% Damage to Undead
+<m>Socketed (1)
+
+6;,-1;,1;,1;,invrin1;,;,;
+<rare>Skull Fang
+<rin>Ring
+<b>Item Level: 90
+<m>+10% Faster Cast Rate
+<m>+9 to Minimum Damage
+<m>+120 to Attack Rating
+<m>+20 to Strength
+<m>+15 to Dexterity
+<m>All Resistances +15
+
+7;,-1;,1;,1;,invrin1;,;,;
+<rare>Skull Fang
+<rin>Ring
+<b>Item Level: 90
+<m>+10% Faster Cast Rate
+<m>+9 to Minimum Damage
+<m>+120 to Attack Rating
+<m>+20 to Strength
+<m>+15 to Dexterity
+<m>All Resistances +15
+
+8;,-1;,2;,1;,invlbl;,;,;
+<unique>Arachnid Mesh
+<ulc>Spiderweb Sash
+<b>Defense: 127
+<b>Durability: 12 of 12
+<b>Required Strength: 50
+<b>Required Level: 80
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+20% Faster Cast Rate
+<m>Slows Target by 10%
+<m>+120% Enhanced Defense
+<m>Increase Maximum Mana 5%
+<m>Level 3 Venom (11/11 Charges)
+
+9;,-1;,2;,2;,invhbt;,;,;
+<unique>Gore Rider
+<xhb>War Boots
+<b>Defense: 159
+<b>Durability: 34 of 34
+<b>Required Strength: 93
+<b>Required Level: 47
+<b>Item Level: 90
+<m>+30% Faster Run/Walk
+<m>15% Chance of Crushing Blow
+<m>15% Deadly Strike
+<m>10% Chance of Open Wounds
+<m>+200% Enhanced Defense
+<m>+20 Maximum Stamina
+<m>Requirements -25%
+
+10;,-1;,2;,2;,invvgl;,;,;
+<unique>Dracul's Grasp
+<uvg>Vampirebone Gloves
+<b>Defense: 132
+<b>Durability: 14 of 14
+<b>Required Strength: 50
+<b>Required Level: 76
+<b>Item Level: 90
+<m>5% Chance to cast level 10 Life Tap on striking
+<m>10% Life stolen per hit
+<m>25% Chance of Open Wounds
+<m>+120% Enhanced Defense
+<m>+15 to Strength
+<m>+10 Life after each Kill
+
+11;,-1;,2;,3;,invwax;,;,;
+<ethereal/socketed>Superior Berserker Axe
+<7wa>Berserker Axe
+<b>One-Hand Damage: 39 to 117
+<b>Durability: 25 of 26
+<b>Required Dexterity: 47
+<b>Required Strength: 110
+<b>Required Level: 64
+<b>Axe Class [0]
+<b>Item Level: 90
+<m>35% Chance to cast level 15 Venom on striking
+<m>+40% Increased Attack Speed
+<m>+65% Enhanced Damage
+<m>Damage +400
+<m>Ignore Target's Defense
+<m>+1.88% Damage to Demons (Based on Character Level)
+<m>-25% to Enemy Poison Resistance
+<m>20% Deadly Strike
+<m>25% Chance of Open Wounds
+<m>Freezes target +3
+<m>+15 Life after each Kill
+<m>Requirements -20%
+<m>Socketed (1)
+
+12;,-1;,2;,3;,invwax;,;,;
+<ethereal/socketed>Superior Berserker Axe
+<7wa>Berserker Axe
+<b>One-Hand Damage: 104 to 308
+<b>Durability: 26 of 26
+<b>Required Dexterity: 47
+<b>Required Strength: 110
+<b>Required Level: 64
+<b>Axe Class [0]
+<b>Item Level: 90
+<m>Level 9 Fanaticism Aura When Equipped
+<m>+40% Increased Attack Speed
+<m>+335% Enhanced Damage
+<m>+3 to Attack Rating
+<m>20% Deadly Strike
+<m>25% Chance of Open Wounds
+<m>+3 to Werebear
+<m>+3 to Lycanthropy
+<m>Freezes target +3
+<m>+40 to Strength
+<m>Level 13 Summon Grizzly (5/5 Charges)
+<m>Requirements -20%
+<m>Socketed (1)
+
+#inventory#
+
+0;,0;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+1;,0;,1;,3;,invch3;,;,;
+<magic>Sharp Grand Charm of Vita
+<cm3>Grand Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+10 to Maximum Damage
+<m>+76 to Attack Rating
+<m>+45 to Life
+
+2;,0;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+3;,0;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+4;,0;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+5;,0;,1;,3;,invch3;,;,;
+<magic>Sharp Grand Charm of Vita
+<cm3>Grand Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+10 to Maximum Damage
+<m>+76 to Attack Rating
+<m>+45 to Life
+
+6;,0;,1;,3;,invch3;,;,;
+<magic>Sharp Grand Charm of Vita
+<cm3>Grand Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+10 to Maximum Damage
+<m>+76 to Attack Rating
+<m>+45 to Life
+
+7;,0;,1;,3;,invch3;,;,;
+<magic>Sharp Grand Charm of Vita
+<cm3>Grand Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+10 to Maximum Damage
+<m>+76 to Attack Rating
+<m>+45 to Life
+
+8;,0;,1;,3;,invch3;,;,;
+<magic>Sharp Grand Charm of Vita
+<cm3>Grand Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+10 to Maximum Damage
+<m>+76 to Attack Rating
+<m>+45 to Life
+
+9;,0;,1;,2;,invtrch;,;,;
+<unique>Hellfire Torch
+<cm2>Large Charm
+<b>Required Level: 75
+<b>Item Level: 90
+<m>100% Chance to cast level 10 an evil force on striking
+<m>+3 to Barbarian Skill Levels
+<m>+20 to all Attributes
+<m>All Resistances +20
+<m>+8 to Light Radius
+<m>Level 30 Hydra (10/10 Charges)
+
+0;,1;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+2;,1;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+3;,1;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+4;,1;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+0;,2;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+2;,2;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+3;,2;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+4;,2;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+9;,2;,1;,1;,invmss;,;,;
+<unique>Annihilus
+<cm1>Small Charm
+<b>Required Level: 70
+<b>Item Level: 90
+<m>+1 to All Skills
+<m>+20 to all Attributes
+<m>All Resistances +20
+
+0;,3;,1;,1;,invch1;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+15 to Life
+<m>+70 to Mana
+
+1;,3;,1;,1;,invch4;,;,;
+<superior>Superior Small Charm
+<cm1>Small Charm
+<b>Item Level: 90
+<m>+604 poison damage over 12 seconds
+<m>Poison Length:  300
+<m>Poison Count: 1
+
+2;,3;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+3;,3;,1;,1;,invch7;,;,;
+<magic>Fine Small Charm of Vita
+<cm1>Small Charm
+<b>Required Level: 69
+<b>Item Level: 90
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+<m>+20 to Life
+
+4;,3;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+5;,3;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+6;,3;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+7;,3;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+8;,3;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+9;,3;,1;,1;,invch1;,;,;
+<magic>Fine Small Charm of Balance
+<cm1>Small Charm
+<b>Required Level: 6
+<b>Item Level: 90
+<m>+5% Faster Hit Recovery
+<m>+3 to Maximum Damage
+<m>+20 to Attack Rating
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
++138 to Strength
++50 to Energy
++100 to Dexterity
++557 to Vitality
+Current Life: 3111
++3111 to Life
+Current Mana: 505
++505 to Mana
+Current Stamina: 2216
++2216 Maximum Stamina
+Level: 99
+Experience: -774482042
+Gold in Stash: 2493292
+Enhanced Maximum Damage
+Enhanced Minimum Damage
++1062 to Attack Rating
++22 to Minimum Damage
++198 to Maximum Damage
++18 to Minimum Damage
++101 to Maximum Damage
++1993 Defense
+Damage Reduced by 8%
+Fire Resist +245%
+Lightning Resist +280%
+Cold Resist +245%
+Poison Resist +245%
++5 to Minimum Fire Damage
++30 to Maximum Fire Damage
++30 to Minimum Lightning Damage
++30 to Maximum Lightning Damage
++515 to Minimum Poison Damage
++515 to Maximum Poison Damage
+Poison Length:  300
+17% Life stolen per hit
+Unknown property 67: +139
+Unknown property 68: +110
+Unknown property 69: +100
+Unknown property 72: +195
+Maximum Durability: +195
+Replenish Life +39
+Increase Maximum Mana 20%
+Attacker Takes Damage of 15
+55% Better Chance of Getting Magic Items
++5 to Barbarian Skill Levels
++10 Life after each Kill
++13 to Light Radius
+Requirements -25%
++40% Increased Attack Speed
++60% Faster Run/Walk
++1 to Teleport
++4 to Battle Cry
++6 to Battle Orders
++6 to Battle Command
++50% Faster Hit Recovery
++105% Faster Cast Rate
++3 to Leap (Barbarian Only)
++3 to Battle Orders (Barbarian Only)
++3 to Whirlwind (Barbarian Only)
+12% Damage Taken Goes To Mana
+Prevent Monster Heal
+5% Bonus to Attack Rating
++7 to All Skills
+35% Chance of Open Wounds
+15% Chance of Crushing Blow
+52% Deadly Strike
+Slows Target by 10%
+Cannot Be Frozen
+Unknown property 171: +150
+Unknown property 172: +2
+Unknown property 194: +5
+5% Chance to cast level 10 Life Tap on striking
+100% Chance to cast level 10 an evil force on striking
+20% Chance to cast level 15 Chilling Armor when struck
+Level 30 Hydra (10/10 Charges)
+Level 4 Oak Sage (25/25 Charges)
+Level 3 Venom (11/11 Charges)
+Poison Count: 1
+Unknown property 342: (28) +276
+Unknown property 343: (28) +183
+Unknown property 344: (28) +32
+Unknown property 350: +715
+Unknown property 351: +84

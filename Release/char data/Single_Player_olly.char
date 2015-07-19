@@ -1,0 +1,208 @@
+Realm: Single_Player
+Account: Single_Player
+Character name: olly
+
+#stash#
+
+#body#
+
+1;,-1;,2;,2;,invba1;,;,;
+<normal>Jawbone Cap
+<ba1>Jawbone Cap
+<b>Defense: 13
+<b>Durability: 15 of 25
+<b>(Barbarian Only)
+<b>Required Strength: 25
+<b>Required Level: 3
+<b>Item Level: 6
+<m>+511% Enhanced Damage
+<m>Damage +491
+<m>+3 to Mace Mastery (Barbarian Only)
+
+2;,-1;,1;,1;,invamu2;,;,;
+<magic>Felicitous Amulet
+<amu>Amulet
+<b>Required Level: 3
+<b>Item Level: 8
+<m>5% Better Chance of Getting Magic Items
+
+3;,-1;,2;,3;,invlea;,;,;
+<normal>Leather Armor
+<lea>Leather Armor
+<b>Defense: 16
+<b>Durability: 16 of 24
+<b>Required Strength: 15
+<b>Item Level: 1
+<m>Level 31 Vigor Aura When Equipped
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+107% Faster Hit Recovery
+<m>+511% Enhanced Damage
+<m>Damage +491
+<m>+63 to Burst of Speed
+<m>+63 to Vigor
+<m>+63 to Teleport
+<m>All Resistances +205
+
+4;,-1;,1;,3;,invhax;,invhaxu;,invhaxu;
+<ethereal/socketed>Hand Axe
+<hax>Hand Axe
+<b>One-Hand Damage: 18 to 36
+<b>Durability: 18 of 28
+<b>Axe Class [0]
+<b>Item Level: 3
+<m>+511% Enhanced Damage
+<m>Damage +491
+<m>Socketed (1)
+
+5;,-1;,2;,2;,invbuc;,invbucu;,invbucu;
+<ethereal/socketed>Buckler
+<buc>Buckler
+<b>Defense: 4
+<b>Durability: 9 of 12
+<b>Required Strength: 12
+<b>Item Level: 3
+<m>+107% Faster Run/Walk
+<m>+107% Faster Cast Rate
+<m>+107% Faster Hit Recovery
+<m>All Resistances +205
+<m>Socketed (1)
+
+8;,-1;,2;,1;,invlbl;,;,;
+<normal>Sash
+<lbl>Sash
+<b>Defense: 2
+<b>Durability: 4 of 12
+<b>Item Level: 3
+
+#inventory#
+
+2;,0;,1;,2;,invbbk;,;,;
+<normal>Replenishes Quantity
+Tome of Town Portal
+<tbk>Replenishes Quantity
+ÿc=Tome of Town Portal
+_14: 1455
+<b>Quantity: 492
+<b>Item Level: 1
+
+9;,1;,1;,1;,invhp1;,;,;
+<normal>Minor Healing Potion
+<hp1>Minor Healing Potion
+<b>Item Level: 1
+
+0;,2;,1;,2;,invrbk;,;,;
+<normal>Replenishes Quantity
+Tome of Identify
+<ibk>Replenishes Quantity
+ÿc=Tome of Identify
+_14: 1455
+<b>Quantity: 499
+<b>Item Level: 1
+
+9;,2;,1;,1;,invmp1;,;,;
+<normal>Minor Mana Potion
+<mp1>Minor Mana Potion
+<b>Item Level: 1
+
+9;,3;,1;,1;,invkey;,;,;
+<normal>Key
+<key>Key
+<b>Quantity: 499
+<b>Item Level: 1
+
+#cube#
+
+#mercenary#
+
+#character stats#
+
+wp:100000000111111111000000000111111111111010000000011111111100000000000000000000001000010011111111111000100101010000001000
+-1:4//character class
+36:0//Damage Reduced by 0%
+37:0//Magic Resist +0%
+39:0//Fire Resist +0%
+43:0//Cold Resist +0%
+41:0//Lightning Resist +0%
+45:0//Poison Resist +0%
+38:0//+0% to Maximum Magic Resist
+40:0//+0% to Maximum Fire Resist
+44:0//+0% to Maximum Cold Resist
+42:0//+0% to Maximum Lightning Resist
+46:0//+0% to Maximum Poison Resist
+34:0//Damage Reduced by 0
+35:0//Magic Damage Reduced by 0
+110:0//Poison Length Reduced by 0%
+142:0//Fire Absorb 0%
+148:0//Cold Absorb 0%
+144:0//Lightning Absorb 0%
+146:0//Magic Absorb 0%
+143:0//+0 Fire Absorb
+145:0//+0 Lightning Absorb
+149:0//+0 Cold Absorb
+147:0//+0 Magic Absorb
+80:0//0% Better Chance of Getting Magic Items
+105:0//+0% Faster Cast Rate
+93:0//+0% Increased Attack Speed
+96:0//+0% Faster Run/Walk
+99:0//+0% Faster Hit Recovery
+85:0//+0% to Experience Gained
+74:0//Replenish Life +0
+135:0//0% Chance of Open Wounds
+136:0//0% Chance of Crushing Blow
+141:0//0% Deadly Strike
+0:46//+46 to Strength
+1:1023//+1023 to Energy
+2:36//+36 to Dexterity
+3:1023//+1023 to Vitality
+4:329//New Stats: 329
+5:183//New Skill: 183
+6:8191//Current Life: 8191
+7:8191//+8191 to Life
+8:8191//Current Mana: 8191
+9:8191//+8191 to Mana
+10:1161//Current Stamina: 1161
+11:1161//+1161 Maximum Stamina
+12:99//Level: 99
+13:-774482042//Experience: -774482042
+14:990000//Gold: 990000
+15:2500000//Gold in Stash: 2500000
+17:1022//Enhanced Maximum Damage
+18:1022//Enhanced Minimum Damage
+21:18//+18 to Minimum Damage
+22:36//+36 to Maximum Damage
+28:800//Heal Stamina Plus 800%
+31:35//+35 Defense
+67:146//Unknown property 67: +146
+68:100//Unknown property 68: +100
+69:100//Unknown property 69: +100
+72:62//Unknown property 72: +62
+73:101//Maximum Durability: +101
+97:63//+63 to Teleport
+97:63//+63 to Vigor
+97:63//+63 to Burst of Speed
+107:3//+3 to Mace Mastery (Barbarian Only)
+111:1473//Damage +1473
+151:31//Level 31 Vigor Aura When Equipped
+172:2//Unknown property 172: +2
+194:2//Unknown property 194: +2
+342:44//Unknown property 342: (28) +44
+342:36//Unknown property 342: (30) +36
+342:70//Unknown property 342: (33) +70
+342:54//Unknown property 342: (34) +54
+342:196//Unknown property 342: (57) +196
+343:38//Unknown property 343: (28) +38
+343:33//Unknown property 343: (30) +33
+343:53//Unknown property 343: (33) +53
+343:43//Unknown property 343: (34) +43
+343:133//Unknown property 343: (57) +133
+344:12//Unknown property 344: (28) +12
+344:9//Unknown property 344: (30) +9
+344:19//Unknown property 344: (33) +19
+344:15//Unknown property 344: (34) +15
+344:30//Unknown property 344: (57) +30
+345:62//Unknown property 345: (48) +62
+346:48//Unknown property 346: (48) +48
+347:17//Unknown property 347: (48) +17
+350:904//Unknown property 350: +904
+351:73//Unknown property 351: +73
