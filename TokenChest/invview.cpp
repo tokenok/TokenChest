@@ -55,9 +55,9 @@ using namespace std;
 ////};
 
 void ethtransform(BYTE* r, BYTE* g, BYTE* b) {
-	/**r = 255;
+	*r = 255;
 	*g -= 100;
-	*b -= 100;*/
+	*b -= 100;
 }
 
 Image* LoadPicture(LPCWSTR lpszFileName) {
@@ -664,7 +664,7 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 									}
 								}
 								if (!painted)
-									TransparentBlitToHdc(hDCmem, *hitembmp, rc.left, rc.top, rc.right, rc.bottom, RGB(0, 0, 0), ethtransform);
+									TransparentBlitToHdc(hDCmem, *hitembmp, rc.left, rc.top, rc.right, rc.bottom, RGB(0, 0, 0));
 
 								//draw trade rect (pink)
 								if (items->at(i).is_trade && trade::is_mytradefile()) {
