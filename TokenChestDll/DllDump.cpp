@@ -1685,7 +1685,9 @@ bool DumpPlayer(DWORD D2Client_base, const UnitAny *PlayerUnit) {
 
 		if (gameinfo->szRealmName[0]) {
 			printf("Realm: %s\n", gameinfo->szRealmName);
-			printf("Account: %s\n", gameinfo->szAccountName);
+			std::string account_name(gameinfo->szAccountName);
+			std::transform(account_name.begin(), account_name.end(), account_name.begin(), tolower);
+			printf("Account: %s\n", account_name.c_str());
 		}
 		else {
 			printf("Realm: Single_Player\n");
