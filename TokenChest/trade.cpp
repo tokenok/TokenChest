@@ -280,7 +280,7 @@ namespace trade {
 		int pos = ListView_GetCurSel(tradelist);
 		SendMessage(tradelist, LVM_DELETEALLITEMS, 0, 0);
 
-		for (auto realm : data) {			
+		for (auto realm : trade::data) {			
 			for (auto & account : realm.second) {				
 				for (auto & character : account.second) {				
 					for (auto & store : character.second) {					

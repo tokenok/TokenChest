@@ -97,16 +97,61 @@ Blue Worldstone Crystal,wsc3,0
 Red Worldstone Crystal,wsc4,0
 Gold Worldstone Crystal,wsc5,0
 Pale Worldstone Crystal,wsc6,0
-Prime Charm,aby1,0
-Prime Charm,aby2,0
-Prime Charm,aby3,0
-Prime Charm,aby4,0
-Prime Charm,aby5,0
-Prime Charm,aby6,0
-Prime Charm,aby7,0
-Prime Charm,aby8,0
-Large Charm,aby9,0
+Prime Charm 1,aby1,0
+Prime Charm 2,aby2,0
+Prime Charm 3,aby3,0
+Prime Charm 4,aby4,0
+Prime Charm 5,aby5,0
+Prime Charm 6,aby6,0
+Prime Charm 7,aby7,0
+Prime Charm 8,aby8,0
+Large Charm 9,aby9,0
 Basket of Organs,baog,0
+Divine Amethyst,gdv,0
+Divine Topaz,gdy,0
+Divine Sapphire,gdb,0
+Divine Emerald,gdg,0
+Divine Ruby,gdr,0
+Divine Diamond,gdw,0
+Divine Skull,dskz,0
+Enchantment Scroll 1,enc1,0
+Enchantment Scroll 2,enc2,0
+Enchantment Scroll 3,enc3,0
+Enchantment Scroll 4,enc4,0
+Enchantment Scroll 5,enc5,0
+Enchantment Scroll 6,enc6,0
+Enchantment Scroll 7,enc7,0
+Enchantment Scroll 8,enc8,0
+Enchantment Scroll 9,enc9,0
+Enchantment Scroll 10,en10,0
+Enchantment Scroll 11,en11,0
+Enchantment Scroll 12,en12,0
+Enchantment Scroll 13,en13,0
+Enchantment Scroll 14,en14,0
+Enchantment Scroll 15,en15,0
+Enchantment Scroll 16,en16,0
+Enchantment Scroll 17,en17,0
+Enchantment Scroll 18,en18,0
+Enchantment Scroll 19,en19,0
+Enchantment Scroll 20,en20,0
+Enchantment Scroll 21,en21,0
+Enchantment Scroll 22,en22,0
+Enchantment Scroll 23,en23,0
+Enchantment Scroll 24,en24,0
+Enchantment Scroll 25,en25,0
+Enchantment Scroll 26,en26,0
+Enchantment Scroll 27,en27,0
+Enchantment Scroll 28,en28,0
+Enchantment Scroll 29,en29,0
+Enchantment Scroll 30,en30,0
+Enchantment Scroll 31,en31,0
+Enchantment Scroll 32,en32,0
+Enchantment Scroll 33,en33,0
+Enchantment Scroll 34,en34,0
+Enchantment Scroll 35,en35,0
+Enchantment Scroll 36,en36,0
+Enchantment Scroll 37,en37,0
+Book of Enchantments,scbk,0
 @Weapon
 Short Circuit,shci,0
 Frostmourne,rnbl,0

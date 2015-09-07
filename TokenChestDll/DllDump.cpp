@@ -1858,8 +1858,8 @@ DWORD getDumps() {
 		return 4;
 	}
 
-#define TEST
-#define WRITEITEMS
+//#define TEST
+//#define WRITEITEMS
 //#define WRITEITEMCODES
 #ifdef _DEBUG
 #ifdef TEST
@@ -1908,7 +1908,9 @@ DWORD getDumps() {
 			|| us.prop == 294
 			|| us.prop >= 296 && us.prop <= 298
 			|| us.prop == 301
-			|| us.prop >= 322 && us.prop <= 327)
+			|| us.prop >= 322 && us.prop <= 327
+			|| us.prop == 336
+			|| us.prop == 337)
 		{
 			sprintf(out, g_props[us.prop].c_str(), range.c_str());
 		}
@@ -2024,10 +2026,13 @@ DWORD getDumps() {
 			sprintf(out, g_props[us.prop].c_str());
 		}
 		else if (us.prop == 300) {
-			sprintf(out, "Fist of the Heavens' Holy Shock synergy is replaced with Fanaticism\n100% of your Fist of the Heavens Skill Damage is converted to Physical Damage");
+			sprintf(out, "Fist of the Heavens' Holy Shock synergy is replaced with Fanaticism\n100%% of your Fist of the Heavens Skill Damage is converted to Physical Damage");
 		}
 		else if (us.prop == 303) {
 			sprintf(out, "(Death Spear gains a 10%% Damage Synergy from Shout)\n(Death Spear requires a Shield equipped)");
+		}
+		else if (us.prop == 334) {
+			sprintf(out, "+%s%% to Lightning Skill Damage\n+%s%% to Fire Skill Damage\n+%s%% to Cold Skill Damage\n+%s%% to Poison Skill Damage", range.c_str(), range.c_str(), range.c_str(), range.c_str());
 		}
 		else {
 			sprintf(out, "--------------%d, %s, %d, %d, %d--------------", us.prop, g_props[us.prop].c_str(), us.par, us.min, us.max);
@@ -2111,7 +2116,7 @@ DWORD getDumps() {
 
 		//	if (types[txt->type].size() == 0)
 		//		printf("%d: \"%s\", \"%s\" invfile:%s type:%d:%s\n", i, text, tstr2.c_str(), txt->inv, txt->type, types[txt->type].c_str());
-			printf("%d{Place: %d:\"%s\", \"%s\", \"%s\", 0}\n", i, txt->type, types[txt->type].size() == 0 ? "Other" : types[txt->type].c_str(), tstr.c_str(), tstr2.c_str());
+			printf("%d{Place: %d:\"%s\", \"%s\", \"%s\", 0},\n", i, txt->type, types[txt->type].size() == 0 ? "Other" : types[txt->type].c_str(), tstr.c_str(), tstr2.c_str());
 		}
 		codeout.close();
 		_getch();
