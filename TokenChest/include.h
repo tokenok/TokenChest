@@ -18,7 +18,11 @@ BOOL CALLBACK TabPage3Proc(HWND, UINT, WPARAM, LPARAM);
 BOOL CALLBACK TradeTabPage1Proc(HWND, UINT, WPARAM, LPARAM);
 BOOL CALLBACK TradeTabPage2Proc(HWND, UINT, WPARAM, LPARAM);
 
+LRESULT CALLBACK kbhookProc(int, WPARAM, LPARAM);
+
 extern HINSTANCE g_hInst;
+
+extern HHOOK kbhook;
 
 extern TabClass g_TAB;
 extern TabClass g_Tradetab;

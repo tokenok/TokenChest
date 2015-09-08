@@ -65,6 +65,8 @@ VOID CALLBACK TimerProc(HWND, UINT, UINT_PTR, DWORD);
 
 HINSTANCE g_hInst;
 
+HHOOK kbhook;
+
 HWND g_finder = NULL;
 
 TabClass g_TAB;
@@ -1136,7 +1138,7 @@ INT_PTR CALLBACK DllWarnProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM /*lP
 	return FALSE;
 }
 
-LRESULT CALLBACK tradelistProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam, UINT_PTR /*uIdSubclass*/, DWORD_PTR /*dwRefData*/) {
+LRESULT CALLBACK itemlistProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam, UINT_PTR /*uIdSubclass*/, DWORD_PTR /*dwRefData*/) {
 	switch (message) {
 		case WM_KEYDOWN:{
 			switch (wParam) {
@@ -1147,18 +1149,6 @@ LRESULT CALLBACK tradelistProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lP
 							ListView_SetItemState(hwnd, pos, LVIS_SELECTED, LVIS_SELECTED);
 							pos = ListView_GetNextItem(hwnd, pos, LVNI_ALL);
 						}
-					}
-					break;
-				}
-				case 'Z':{
-					if (GetAsyncKeyState(VK_CONTROL) < 0) {
-						trade::undo.undo();
-					}
-					break;
-				}
-				case 'Y':{
-					if (GetAsyncKeyState(VK_CONTROL) < 0) {
-						trade::undo.redo();
 					}
 					break;
 				}
@@ -1254,6 +1244,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE/* hPrevInstance*/, LPSTR/* arg
 //	oGetSysColorBrush = (pGetSysColorBrush)DetourFunction((PBYTE)addr, (PBYTE)hGetSysColorBrush);
 
 	*(FARPROC*)&DumpGames = GetProcAddress(LoadLibrary(DLL_NAME), "DUMP");
+
+	kbhook = SetWindowsHookEx(WH_KEYBOARD_LL, kbhookProc, NULL, 0);
 
 	EnableDebugPriv();
 
@@ -1986,6 +1978,8 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 				first = false;
 				oldComboProc = (WNDPROC)SetWindowLong(GetDlgItem(hwnd, IDC_SEARCHNAME), GWL_WNDPROC, (LONG)SubComboProc);
 				SendMessage(GetDlgItem(hwnd, IDC_RESULTSTATS), EM_SETBKGNDCOLOR, NULL, g_cust_color);
+
+				SetWindowSubclass(GetDlgItem(hwnd, IDC_SEARCHRESULTS), itemlistProc, 0, 0);
 			}
 
 			//////////////////////////////////////////////////////////////////////////
@@ -2065,7 +2059,7 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 			TRoot = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 			HTREEITEM TBasetype;
 			HTREEITEM TSubtype;
-			HTREEITEM TTier;			
+			HTREEITEM TTier;
 			for (auto basetype : item_types) {
 				tvinsert.hParent = TRoot;
 				tvinsert.item.pszText = str_to_LPWSTR(basetype.first);
@@ -2367,7 +2361,8 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 					to_finder = 1,
 					add_to_trade_file,
 					remove_from_trade_file,
-					open_stats_new_wnd
+					open_stats_new_wnd,
+					listview_selectall
 				};
 				if (selectlist.size() == 1) {
 					InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, to_finder, STW("Show 'this' Item in Viewer (" + item->name + ")"));
@@ -2392,6 +2387,8 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 					}
 					InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show Selected Items in New Window (" + int_to_str(selectlist.size()) + ")"));
 				}
+				InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
+				InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, listview_selectall, L"Select All");
 				UINT clicked = TrackPopupMenu(menu, TPM_RETURNCMD | TPM_NONOTIFY | TPM_VERNEGANIMATION, LOWORD(lParam), HIWORD(lParam), NULL, hwnd, NULL);
 				switch (clicked) {
 					case to_finder:{
@@ -2409,6 +2406,14 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 					case open_stats_new_wnd:{
 						for (auto item1 : selectlist)
 							open_item_in_new_wnd(item1);
+						break;
+					}
+					case listview_selectall:{
+						int pos = ListView_GetNextItem((HWND)wParam, -1, LVNI_ALL);
+						while (pos != -1) {
+							ListView_SetItemState((HWND)wParam, pos, LVIS_SELECTED, LVIS_SELECTED);
+							pos = ListView_GetNextItem((HWND)wParam, pos, LVNI_ALL);
+						}
 						break;
 					}
 				}
@@ -2485,7 +2490,7 @@ BOOL CALLBACK TradeTabPage1Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 			static bool first = true;
 			if (first) {
 				first = false;
-				SetWindowSubclass(tradelist, tradelistProc, 0, 0);
+				SetWindowSubclass(tradelist, itemlistProc, 0, 0);
 			}
 			
 			SendMessage(tradelist, LVM_SETEXTENDEDLISTVIEWSTYLE, 0, LVS_EX_FULLROWSELECT);
@@ -2694,3 +2699,21 @@ BOOL CALLBACK TradeTabPage2Proc(HWND /*hwnd*/, UINT message, WPARAM /*wParam*/, 
 	return FALSE;
 }
 
+LRESULT CALLBACK kbhookProc(int code, WPARAM wParam, LPARAM lParam) {
+	KBDLLHOOKSTRUCT kbhs = *((KBDLLHOOKSTRUCT*)lParam);
+	DWORD key = kbhs.vkCode;
+	if ((GetKeyState(VK_MENU) & 0x8000) != 0) key += 256;
+	if ((GetKeyState(VK_SHIFT) & 0x8000) != 0) key += 256 * 4;
+	if ((GetKeyState(VK_CONTROL) & 0x8000) != 0) key += 256 * 2;
+	if ((GetKeyState(VK_LWIN) & 0x8000) != 0) key += 256 * 8;
+	if ((GetKeyState(VK_RWIN) & 0x8000) != 0) key += 256 * 8;
+	if (wParam == WM_KEYDOWN || wParam == WM_SYSKEYDOWN) {
+		if (key == 602) {//ctrl + Z
+			trade::undo.undo();
+		}
+		else if (key == 601) {//ctrl + y
+			trade::undo.redo();
+		}
+	}
+	return CallNextHookEx(kbhook, code, wParam, lParam);
+}
