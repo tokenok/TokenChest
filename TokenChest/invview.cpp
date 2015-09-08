@@ -3,6 +3,7 @@
 #include <map>
 #include <set>
 #include <gdiplus.h>
+#include <algorithm>
 #pragma comment (lib,"gdiplus.lib")
 
 #include "statview.h"
@@ -1422,100 +1423,8 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 
 							break;
 						}
-						case search_type:{
-							g_TAB.selectTab(1);
-							ComboBox_SetText(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHNAME), L"");
-							SetWindowText(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHSTATS), L"");
-							if (Button_GetCheck(GetDlgItem(g_TAB.getTab(1).wnd, IDC_ADVANCEDBTN)) == BST_UNCHECKED) {
-								Button_SetCheck(GetDlgItem(g_TAB.getTab(1).wnd, IDC_ADVANCEDBTN), BST_CHECKED);
-								SendMessage(g_TAB.getTab(1).wnd, WM_COMMAND, IDC_ADVANCEDBTN, NULL);
-							}
-							SendMessage(g_TAB.getTab(1).wnd, WM_COMMAND, IDC_ADVANCEDALLQUALITY, NULL);
-
-							HWND tree = GetDlgItem(g_TAB.getTab(1).wnd, IDC_ADVANCEDCHARFILTER);
-							HTREEITEM hti = TreeView_GetRoot(tree);
-							TreeView_SetCheckStateForAllChildren(tree, hti, FALSE);
-							TreeView_SetCheckState(tree, hti, TRUE);
-							TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-
-							for (auto item : selectionlist) {
-								hti = TreeView_GetNextSibling(tree, hti);
-								hti = TreeView_GetChild(tree, hti);
-								hti = TreeView_FindSibling(tree, hti, item->icode.basetype);
-								hti = TreeView_GetChild(tree, hti);
-
-								if (item->icode.basetype == "Weapons" || item->icode.basetype == "Armor") {
-									hti = TreeView_FindSibling(tree, hti, item->icode.tier == 1 ? "Normal" : item->icode.tier == 2 ? "Exceptional" : item->icode.tier == 3 ? "Elite" : "");
-									hti = TreeView_GetChild(tree, hti);
-								}
-
-								hti = TreeView_FindSibling(tree, hti, item->icode.subtype);
-								hti = TreeView_GetChild(tree, hti);
-								hti = TreeView_FindSiblingItemCode(tree, hti, item->icode.code);
-								TreeView_SetCheckState(tree, hti, TRUE);
-								TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-								hti = TreeView_GetRoot(tree);
-							}
-
-							SendMessage(g_TAB.getTab(1).wnd, WM_COMMAND, MAKEWPARAM(IDC_SEARCHNAME, CBN_EDITCHANGE), NULL);
-							SetFocus(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHRESULTS));
-
-							break;
-						}
-						case search_sub_type:{
-							g_TAB.selectTab(1);
-							ComboBox_SetText(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHNAME), L"");
-							SetWindowText(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHSTATS), L"");
-							if (Button_GetCheck(GetDlgItem(g_TAB.getTab(1).wnd, IDC_ADVANCEDBTN)) == BST_UNCHECKED) {
-								Button_SetCheck(GetDlgItem(g_TAB.getTab(1).wnd, IDC_ADVANCEDBTN), BST_CHECKED);
-								SendMessage(g_TAB.getTab(1).wnd, WM_COMMAND, IDC_ADVANCEDBTN, NULL);
-							}
-							SendMessage(g_TAB.getTab(1).wnd, WM_COMMAND, IDC_ADVANCEDALLQUALITY, NULL);
-
-							HWND tree = GetDlgItem(g_TAB.getTab(1).wnd, IDC_ADVANCEDCHARFILTER);
-							HTREEITEM hti = TreeView_GetRoot(tree);
-							TreeView_SetCheckStateForAllChildren(tree, hti, FALSE);
-							TreeView_SetCheckState(tree, hti, TRUE);
-							TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-
-							for (auto item : selectionlist) {
-								hti = TreeView_GetNextSibling(tree, hti);
-								hti = TreeView_GetChild(tree, hti);
-								hti = TreeView_FindSibling(tree, hti, item->icode.basetype);
-								hti = TreeView_GetChild(tree, hti);
-
-								if (item->icode.basetype == "Weapons" || item->icode.basetype == "Armor") {
-									HTREEITEM normal = hti;
-									hti = TreeView_GetChild(tree, normal);
-									hti = TreeView_FindSibling(tree, hti, item->icode.subtype);
-									TreeView_SetCheckState(tree, hti, TRUE);
-									TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-
-									HTREEITEM except = TreeView_GetNextSibling(tree, normal);
-									hti = TreeView_GetChild(tree, except);
-									hti = TreeView_FindSibling(tree, hti, item->icode.subtype);
-									TreeView_SetCheckState(tree, hti, TRUE);
-									TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-
-									HTREEITEM elite = TreeView_GetNextSibling(tree, except);
-									hti = TreeView_GetChild(tree, elite);
-									hti = TreeView_FindSibling(tree, hti, item->icode.subtype);
-									TreeView_SetCheckState(tree, hti, TRUE);
-									TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-								}
-								else {
-									hti = TreeView_FindSibling(tree, hti, item->icode.subtype);
-									TreeView_SetCheckState(tree, hti, TRUE);
-									TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
-								}
-								hti = TreeView_GetRoot(tree);
-							}
-
-							SendMessage(g_TAB.getTab(1).wnd, WM_COMMAND, MAKEWPARAM(IDC_SEARCHNAME, CBN_EDITCHANGE), NULL);
-							SetFocus(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHRESULTS));
-
-							break;
-						}
+						case search_type:
+						case search_sub_type:
 						case search_base_type:{
 							g_TAB.selectTab(1);
 							ComboBox_SetText(GetDlgItem(g_TAB.getTab(1).wnd, IDC_SEARCHNAME), L"");
@@ -1533,11 +1442,25 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 							TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
 
 							for (auto item : selectionlist) {
-								hti = TreeView_GetNextSibling(tree, hti);
-								hti = TreeView_GetChild(tree, hti);
-								hti = TreeView_FindSibling(tree, hti, item->icode.basetype);
-								TreeView_SetCheckState(tree, hti, TRUE);
-								TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
+								vector<string> hier = {
+									"All Items",
+									clicked <= search_base_type ? item->icode.basetype : "",
+									clicked <= search_sub_type ? item->icode.subtype : "",
+									clicked <= search_type ? item->icode.tier == 1 ? "Normal" : item->icode.tier == 2 ? "Exceptional" : item->icode.tier == 3 ? "Elite" : "" : "",
+									clicked <= search_type ? item->icode.type : ""
+								};
+								hier.erase(std::remove(hier.begin(), hier.end(), ""), hier.end());
+								for (UINT i = 0; i < hier.size(); i++) {
+									hti = TreeView_FindSibling(tree, hti, hier[i]);
+									if (i == hier.size() - 1) {
+										if (hti) {
+											TreeView_SetCheckState(tree, hti, TRUE);
+											TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, hti), TRUE);
+										}//else failed
+										break;
+									}
+									hti = TreeView_GetChild(tree, hti);
+								}
 								hti = TreeView_GetRoot(tree);
 							}
 

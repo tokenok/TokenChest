@@ -94,6 +94,22 @@ int TreeView_GetChildCount(HWND tree, HTREEITEM hItem) {
 		count++;
 	return count;
 }
+void TreeView_SetCheckStateForAllParents(HWND tree, HTREEITEM child) {
+	while (child != NULL) {
+		int check = 0;
+		int total = 1;
+		HTREEITEM current = TreeView_GetChild(tree, TreeView_GetParent(tree, child));
+		check = TreeView_GetCheckState(tree, current) ? check + 1 : check;
+		while (current != NULL) {
+			current = TreeView_GetNextSibling(tree, current);
+			check = TreeView_GetCheckState(tree, current) ? check + 1 : check;
+			total++;
+		}
+		TreeView_SetCheckState(tree, TreeView_GetParent(tree, child), total == check);
+
+		child = TreeView_GetParent(tree, child);
+	}
+}
 HTREEITEM TreeView_SetCheckStateForAllChildren(HWND tree, HTREEITEM hItem, BOOL checkstate) {
 	HTREEITEM current = hItem;
 	HTREEITEM sibling = NULL;

@@ -1974,6 +1974,8 @@ BOOL CALLBACK TabPage1Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 	return FALSE;
 }
 BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
+	const UINT WM_POSTCONSTRUCTION = WM_USER + 1;
+	const UINT PC_SETCHECKSTATEFORPARENTS = 0;
 	switch (message) {
 		case WM_INITDIALOG:{
 			InitCommonControls();
@@ -1985,11 +1987,6 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 				oldComboProc = (WNDPROC)SetWindowLong(GetDlgItem(hwnd, IDC_SEARCHNAME), GWL_WNDPROC, (LONG)SubComboProc);
 				SendMessage(GetDlgItem(hwnd, IDC_RESULTSTATS), EM_SETBKGNDCOLOR, NULL, g_cust_color);
 			}
-
-		//	HWND loadingwindow = CreateDialog(GetModuleHandle(0), MAKEINTRESOURCE(IDD_LOADSCREEN), NULL, LoadingProc);
-		//	HWND progressbar1 = GetDlgItem(loadingwindow, IDC_PROGRESS1);
-		//	SendMessage(progressbar1, PBM_SETRANGE, 0, MAKELPARAM(0, g_characters.size() + g_itemcodes.size()));
-		//	SendMessage(progressbar1, PBM_SETSTEP, (WPARAM)1, 0);
 
 			//////////////////////////////////////////////////////////////////////////
 			//*******************Initialize tab page2 controls************************
@@ -2028,7 +2025,6 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 
 			//----------init advanced search filtering tree
 			//-----init character filter tree
-			//realm     //account   //character //store     //items
 			TV_INSERTSTRUCT tvinsert = {0};
 			tvinsert.hParent = NULL;
 			tvinsert.hInsertAfter = TVI_ROOT;
@@ -2054,50 +2050,48 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 						tvinsert.item.pszText = str_to_LPWSTR(character.first);
 						SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 						delete[] tvinsert.item.pszText;
-		//				SendMessage(progressbar1, PBM_STEPIT, 0, 0);
 					}
 				}
 			}
 
 			//-----init item filter tree
-			//basetype  //lvl   //subtype    //type      //code
-			map<string, map<int, map<string, map<string, ItemCode*>>>> item_types;//generates Warning: C4503
+			map<string, map<string, map<int, map<string, ItemCode*>>>> item_types;//generates Warning: C4503
 			for (UINT i = 0; i < g_itemcodes.size(); i++)
-				item_types[g_itemcodes[i].basetype][g_itemcodes[i].tier][g_itemcodes[i].subtype][g_itemcodes[i].type] = &g_itemcodes[i];
+				item_types[g_itemcodes[i].basetype][g_itemcodes[i].subtype][g_itemcodes[i].tier][g_itemcodes[i].type] = &g_itemcodes[i];
+
 			tvinsert.hParent = NULL;
 			tvinsert.hInsertAfter = TVI_ROOT;
 			tvinsert.item.pszText = L"All Items";
 			TRoot = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 			HTREEITEM TBasetype;
 			HTREEITEM TSubtype;
-			HTREEITEM TTier;
+			HTREEITEM TTier;			
 			for (auto basetype : item_types) {
 				tvinsert.hParent = TRoot;
 				tvinsert.item.pszText = str_to_LPWSTR(basetype.first);
 				TBasetype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 				delete[] tvinsert.item.pszText;
-				for (auto & tier : basetype.second) {
+				for (auto & subtype : basetype.second) {
 					tvinsert.hParent = TBasetype;
-					tvinsert.item.pszText = (tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"");
-					TTier = (tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TBasetype);
-					for (auto & subtype : tier.second) {
-						tvinsert.hParent = TTier;
-						tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
-						TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
-						delete[] tvinsert.item.pszText;
-						for (auto & type : subtype.second) {
-							tvinsert.hParent = TSubtype;
+					tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
+					TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+					delete[] tvinsert.item.pszText;
+					for (auto & tier : subtype.second) {
+						tvinsert.hParent = TSubtype;
+						tvinsert.item.pszText = tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"";
+						TTier = tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TSubtype;
+						for (auto & type : tier.second) {
+							tvinsert.hParent = TTier;
 							tvinsert.item.pszText = str_to_LPWSTR(type.first);
 							tvinsert.item.lParam = (LPARAM)type.second;
 							SendDlgItemMessage(hwnd, IDC_ADVANCEDCHARFILTER, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 							delete[] tvinsert.item.pszText;
-		//					SendMessage(progressbar1, PBM_STEPIT, 0, 0);
 						}
 						tvinsert.item.lParam = 0;
 					}
 				}
 			}
-		//	DestroyWindow(loadingwindow);
+
 			break;
 		}
 		case WM_CTLCOLORDLG:{
@@ -2256,6 +2250,12 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 								TreeView_GetItem(ptvkd->hdr.hwndFrom, &tvi);
 
 								TreeView_SetCheckStateForAllChildren(lpnmh->hwndFrom, TreeView_GetChild(lpnmh->hwndFrom, tvi.hItem), !TreeView_GetCheckState(lpnmh->hwndFrom, tvi.hItem));
+								
+								RECT* SetCheckStateForAllParents = new RECT;
+								SetCheckStateForAllParents->left = (LONG)lpnmh->hwndFrom;
+								SetCheckStateForAllParents->right = (LONG)tvi.hItem;
+								PostMessage(hwnd, WM_POSTCONSTRUCTION, PC_SETCHECKSTATEFORPARENTS, (LPARAM)SetCheckStateForAllParents);
+								
 								PostMessage(hwnd, WM_COMMAND, MAKEWPARAM(IDC_SEARCHNAME, CBN_EDITCHANGE), lParam);
 							}
 							return 0L;  // see the documentation for TVN_KEYDOWN
@@ -2274,6 +2274,12 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 								tvi.stateMask = TVIS_STATEIMAGEMASK;
 
 								TreeView_SetCheckStateForAllChildren(lpnmh->hwndFrom, TreeView_GetChild(lpnmh->hwndFrom, tvi.hItem), !TreeView_GetCheckState(lpnmh->hwndFrom, tvi.hItem));
+																
+								RECT* SetCheckStateForAllParents = new RECT;
+								SetCheckStateForAllParents->left = (LONG)lpnmh->hwndFrom;
+								SetCheckStateForAllParents->right = (LONG)tvi.hItem;
+								PostMessage(hwnd, WM_POSTCONSTRUCTION, PC_SETCHECKSTATEFORPARENTS, (LPARAM)SetCheckStateForAllParents);
+								
 								PostMessage(hwnd, WM_COMMAND, MAKEWPARAM(IDC_SEARCHNAME, CBN_EDITCHANGE), lParam);
 							}
 							break;
@@ -2408,6 +2414,18 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 				}
 				DestroyMenu(menu);
 			}
+			break;
+		}
+		case WM_POSTCONSTRUCTION:{
+			switch (wParam) {
+				case PC_SETCHECKSTATEFORPARENTS:{
+					RECT* hack = (RECT*)lParam;
+					TreeView_SetCheckStateForAllParents((HWND)hack->left, (HTREEITEM)hack->right);
+					delete hack;
+					break;
+				}
+			}
+			
 			break;
 		}
 	}

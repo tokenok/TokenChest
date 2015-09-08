@@ -20,6 +20,7 @@ bool TreeView_IsSelectedD2Store();
 bool TreeView_IsSelectedD2Char();
 HTREEITEM TreeView_GetHTVofD2item(const ItemData* item);
 int TreeView_GetChildCount(HWND tree, HTREEITEM hItem);
+void TreeView_SetCheckStateForAllParents(HWND tree, HTREEITEM child);
 HTREEITEM TreeView_SetCheckStateForAllChildren(HWND tree, HTREEITEM hItem, BOOL checkstate);
 HTREEITEM getfiltercharacters(HWND tree, HTREEITEM hItem, std::map<std::string, std::vector<std::string>> *list);
 HTREEITEM getfilteritems(HWND tree, HTREEITEM hItem, std::vector<std::string>* list);
