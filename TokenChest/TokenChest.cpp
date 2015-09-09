@@ -2365,14 +2365,15 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 					listview_selectall
 				};
 				if (selectlist.size() == 1) {
-					InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, to_finder, STW("Show 'this' Item in Viewer (" + item->name + ")"));
 					if (trade::is_mytradefile()) {
 						if (!trade::is_itemcountmax(item))
-							InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, add_to_trade_file, STW("Add 'this' Item to trade file (" + item->name + ")"));
+							InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, add_to_trade_file, STW("Add 'this' Item to trade file (" + item->name + ")"));
 						if (trade::findtradeitem(item))
-							InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, remove_from_trade_file, STW("Remove 'this' Item from trade file (" + item->name + ")"));
+							InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, remove_from_trade_file, STW("Remove 'this' Item from trade file (" + item->name + ")"));
+						InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
 					}
-					InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show 'this' Item in New Window(" + item->name + ")"));
+					InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, to_finder, STW("Show 'this' Item in Viewer (" + item->name + ")"));
+					InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show 'this' Item in New Window(" + item->name + ")"));
 				}
 				else {
 					LVHITTESTINFO lvhti = {0};
@@ -2380,12 +2381,13 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 					lvhti.flags = LVHT_ONITEMICON | LVHT_ONITEMLABEL | LVHT_ONITEMSTATEICON;
 					ListView_HitTest(listbox, &lvhti);
 					item = (ItemData*)ListView_GetItemParam(listbox, lvhti.iItem);
-					InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, to_finder, STW("Show 'this' Item in Viewer (" + item->name + ")"));
 					if (trade::is_mytradefile()) {
-						InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, add_to_trade_file, STW("Add Selected Items to trade file (" + int_to_str(selectlist.size()) + ")"));
-						InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, remove_from_trade_file, STW("Remove Selected Items from trade file (" + int_to_str(selectlist.size()) + ")"));
+						InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, add_to_trade_file, STW("Add Selected Items to trade file (" + int_to_str(selectlist.size()) + ")"));
+						InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, remove_from_trade_file, STW("Remove Selected Items from trade file (" + int_to_str(selectlist.size()) + ")"));
+						InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
 					}
-					InsertMenu(menu, 0, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show Selected Items in New Window (" + int_to_str(selectlist.size()) + ")"));
+					InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, to_finder, STW("Show 'this' Item in Viewer (" + item->name + ")"));
+					InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show Selected Items in New Window (" + int_to_str(selectlist.size()) + ")"));
 				}
 				InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
 				InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, listview_selectall, L"Select All");
@@ -2631,8 +2633,10 @@ BOOL CALLBACK TradeTabPage1Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 				};
 				if (item) {
 					if (selectlist.size() == 1) {
-						if (trade::is_mytradefile())
+						if (trade::is_mytradefile()) {
 							InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, remove, STW("Remove 'this' Item from Trade File (" + item->name + ")"));
+							InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
+						}
 						InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, to_finder, STW("Show Item in Viewer (" + item->name + ")"));
 						InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show Item in New Window (" + item->name + ")"));
 					}
@@ -2640,6 +2644,7 @@ BOOL CALLBACK TradeTabPage1Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM l
 						if (trade::is_mytradefile())
 							InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, remove, STW("Remove 'these' Items from Trade File (" + int_to_str(selectlist.size()) + ")"));
 						InsertMenu(menu, (UINT)-1, MF_BYCOMMAND | MF_STRING | MF_ENABLED, open_stats_new_wnd, STW("Show 'these' Items in New Window (" + int_to_str(selectlist.size()) + ")"));
+						InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
 					}
 					InsertMenu(menu, (UINT)-1, MF_SEPARATOR | MF_BYPOSITION, 0, NULL);
 				}
