@@ -16,6 +16,7 @@
 //TODO draw sockets + gems in sockets on hover / selection
 
 #include <windows.h>
+#include <windowsx.h>
 #include <vector>
 #include <map>
 #include <string>
@@ -1164,6 +1165,24 @@ LRESULT CALLBACK itemlistProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 	return DefSubclassProc(hwnd, message, wParam, lParam);
 }
 
+LRESULT CALLBACK stateditproc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam, UINT_PTR /*uIdSubclass*/, DWORD_PTR /*dwRefData*/) {
+	switch (message) {
+		case WM_CHAR:{
+			switch (wParam) {
+				case 1:{
+					if (GetAsyncKeyState(VK_CONTROL) < 0) {
+						Edit_SetSel(hwnd, 0, -1);
+						return 1;
+					}
+					break;
+				}
+			}
+			break;
+		}
+	}
+	return DefSubclassProc(hwnd, message, wParam, lParam);
+};
+
 #pragma endregion
 #pragma region Display Status
 
@@ -1980,6 +1999,8 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 				SendMessage(GetDlgItem(hwnd, IDC_RESULTSTATS), EM_SETBKGNDCOLOR, NULL, g_cust_color);
 
 				SetWindowSubclass(GetDlgItem(hwnd, IDC_SEARCHRESULTS), itemlistProc, 0, 0);
+
+				SetWindowSubclass(GetDlgItem(hwnd, IDC_SEARCHSTATS), stateditproc, 0, 0);
 			}
 
 			//////////////////////////////////////////////////////////////////////////
