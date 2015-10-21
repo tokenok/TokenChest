@@ -174,9 +174,12 @@ string getwindowclassname(HWND hwnd) {
 	return string(a);
 }
 string getwindowtext(HWND wnd) {
-	wchar_t text[256];
-	GetWindowText(wnd, text, 256);
-	return wstr_to_str(text);
+	int len = GetWindowTextLength(wnd) + 1;
+	wchar_t* text = new wchar_t[len];
+	GetWindowText(wnd, text, len);
+	string ret = wstr_to_str(text);
+	delete[] text;
+	return ret;
 }
 RECT getwindowrect(HWND wnd) {
 	RECT ret;

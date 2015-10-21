@@ -2022,7 +2022,7 @@ DWORD getDumps() {
 		else if (us.prop == 291) {//Level %s Bulwark Aura When Equipped\n(Nearby allies have %s%% Increased Damage Reduction and Block Chance)
 			sprintf(out, "Level %s Bulwark Aura When Equipped\n(Nearby allies have %s%% Increased Damage Reduction and Block Chance)", range.c_str(), range.c_str());
 		}
-		else if (us.prop == 292 || us.prop == 299 || us.prop == 302 || us.prop == 329 || us.prop == 330 || us.prop == 331) {//no parameter stats (plain text)
+		else if (us.prop == 289 || us.prop == 292 || us.prop == 299 || us.prop == 302 || us.prop == 329 || us.prop == 330 || us.prop == 331) {//no parameter stats (plain text)
 			sprintf(out, g_props[us.prop].c_str());
 		}
 		else if (us.prop == 300) {
@@ -2033,6 +2033,9 @@ DWORD getDumps() {
 		}
 		else if (us.prop == 334) {
 			sprintf(out, "+%s%% to Lightning Skill Damage\n+%s%% to Fire Skill Damage\n+%s%% to Cold Skill Damage\n+%s%% to Poison Skill Damage", range.c_str(), range.c_str(), range.c_str(), range.c_str());
+		}
+		else if (us.prop == 347) {
+			sprintf(out, "-%s%% to Lightning Skill Damage\n-%s%% to Fire Skill Damage\n-%s%% to Cold Skill Damage\n-%s%% to Poison Skill Damage", range.c_str(), range.c_str(), range.c_str(), range.c_str());
 		}
 		else {
 			sprintf(out, "--------------%d, %s, %d, %d, %d--------------", us.prop, g_props[us.prop].c_str(), us.par, us.min, us.max);

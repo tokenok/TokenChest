@@ -3,8 +3,8 @@
 #include <map>
 #include <set>
 #include <gdiplus.h>
-#include <algorithm>
 #pragma comment (lib,"gdiplus.lib")
+#include <algorithm>
 
 #include "statview.h"
 #include "treeview.h"
@@ -56,9 +56,9 @@ using namespace std;
 ////};
 
 void ethtransform(BYTE* r, BYTE* g, BYTE* b) {
-	*r = 255;
+	/**r = 255;
 	*g -= 100;
-	*b -= 100;
+	*b -= 100;*/
 }
 
 Image* LoadPicture(LPCWSTR lpszFileName) {

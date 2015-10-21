@@ -10,6 +10,12 @@ Treads of Valusia,trva,0
 The Shrieking Lich ,shrl,0
 Dragon's Bulwark,drbu,0
 Purifying Flame,pufl,0
+The Horseman's Head,pmkn,0
+Scourgelord's Girdle,lic1,0
+Crown of the High Heavens,tyr1,0
+Divinity,tyr2,0
+Heaven's Champion,tyr3,0
+Death's Advance,lic3,0
 @Misc
 Runic Arrows,aqv2,0
 Hellfire Arrows,aqv3,0
@@ -97,15 +103,16 @@ Blue Worldstone Crystal,wsc3,0
 Red Worldstone Crystal,wsc4,0
 Gold Worldstone Crystal,wsc5,0
 Pale Worldstone Crystal,wsc6,0
-Prime Charm 1,aby1,0
-Prime Charm 2,aby2,0
-Prime Charm 3,aby3,0
-Prime Charm 4,aby4,0
-Prime Charm 5,aby5,0
-Prime Charm 6,aby6,0
-Prime Charm 7,aby7,0
-Prime Charm 8,aby8,0
-Large Charm 9,aby9,0
+Orb of Transmogrification,orbt,0
+Prime Charm 1 (Amazon),aby1,0
+Prime Charm 2 (Assassin),aby2,0
+Prime Charm 3 (Barbarian),aby3,0
+Prime Charm 4 (Druid),aby4,0
+Prime Charm 5 (Necromancer),aby5,0
+Prime Charm 6 (Paladin),aby6,0
+Prime Charm 7 (Sorceress),aby7,0
+Book of the Abyss,aby8,0
+Belial's Tome,aby9,0
 Basket of Organs,baog,0
 Divine Amethyst,gdv,0
 Divine Topaz,gdy,0
@@ -114,44 +121,55 @@ Divine Emerald,gdg,0
 Divine Ruby,gdr,0
 Divine Diamond,gdw,0
 Divine Skull,dskz,0
-Enchantment Scroll 1,enc1,0
-Enchantment Scroll 2,enc2,0
-Enchantment Scroll 3,enc3,0
-Enchantment Scroll 4,enc4,0
-Enchantment Scroll 5,enc5,0
-Enchantment Scroll 6,enc6,0
-Enchantment Scroll 7,enc7,0
-Enchantment Scroll 8,enc8,0
-Enchantment Scroll 9,enc9,0
-Enchantment Scroll 10,en10,0
-Enchantment Scroll 11,en11,0
-Enchantment Scroll 12,en12,0
-Enchantment Scroll 13,en13,0
-Enchantment Scroll 14,en14,0
-Enchantment Scroll 15,en15,0
-Enchantment Scroll 16,en16,0
-Enchantment Scroll 17,en17,0
-Enchantment Scroll 18,en18,0
-Enchantment Scroll 19,en19,0
-Enchantment Scroll 20,en20,0
-Enchantment Scroll 21,en21,0
-Enchantment Scroll 22,en22,0
-Enchantment Scroll 23,en23,0
-Enchantment Scroll 24,en24,0
-Enchantment Scroll 25,en25,0
-Enchantment Scroll 26,en26,0
-Enchantment Scroll 27,en27,0
-Enchantment Scroll 28,en28,0
-Enchantment Scroll 29,en29,0
-Enchantment Scroll 30,en30,0
-Enchantment Scroll 31,en31,0
-Enchantment Scroll 32,en32,0
-Enchantment Scroll 33,en33,0
-Enchantment Scroll 34,en34,0
-Enchantment Scroll 35,en35,0
-Enchantment Scroll 36,en36,0
-Enchantment Scroll 37,en37,0
+Scroll of Faster Cast Rate,enc1,0
+Scroll of Faster Run Walk,enc2,0
+Scroll of Faster Hit Recovery,enc3,0
+Scroll of Increased Attack Speed,enc4,0
+Scroll of Attack Rating,enc5,0
+Scroll of Maximum Life,enc6,0
+Scroll of Maximum Mana,enc7,0
+Scroll of Ease,enc8,0
+Scroll of Thawing,enc9,0
+Scroll of Fire Damage,en10,0
+Scroll of Cold Damage,en11,0
+Scroll of Lightning Damage,en12,0
+Scroll of Poison Damage,en13,0
+Scroll of Trap Damage,en14,0
+Scroll of Strength,en15,0
+Scroll of Crushing Blow,en16,0
+Scroll of Deadly Strike,en17,0
+Scroll of Open Wounds,en18,0
+Scroll of Luck,en19,0
+Scroll of Enlightenment,en20,0
+Scroll of the Amazon,en21,0
+Scroll of the Assassin,en22,0
+Scroll of the Barbarian,en23,0
+Scroll of the Druid,en24,0
+Scroll of the Necromancer,en25,0
+Scroll of the Paladin,en26,0
+Scroll of the Sorceress,en27,0
+Scroll of Skill,en28,0
+Scroll of Damage Reduction,en29,0
+Scroll of Blood,en30,0
+Scroll of the Valkyrie,en31,0
+Scroll of the Golems,en32,0
+Scroll of Massive Life,en33,0
+Scroll of Massive Mana,en34,0
+Scroll of Frostfire,en35,0
+Scroll of the Old One,en36,0
+Scroll of Cleaving,en37,0
 Book of Enchantments,scbk,0
+Key to the Courts of Justice,cojk,0
+Trick or Treat Bag,tktr,0
+Candy Bar,hac1,0
+Spooky Ghost,hac2,0
+Jack O' Lantern,hac3,0
+Candy Corn,hac4,0
+Infernal Pearl,inpe,0
+nv Frozen Wings,ef15,0
+nv Angel Wings,ef16,0
+nv Demon Wings,ef17,0
+nv Iridescent Wings,ef18,0
 @Weapon
 Short Circuit,shci,0
 Frostmourne,rnbl,0
@@ -164,6 +182,8 @@ Trickster's Mischief,trms,0
 Goka Uln,goul,0
 Heaven's Fury,hefu,0
 Gae Bolg,gabo,0
+Eldruin,anbl,0
+The Plaguebringer,lic2,0
 !Armor
 @Barbarian Helms
 Jawbone Cap,ba1,1
