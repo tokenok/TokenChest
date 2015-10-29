@@ -1,19 +1,9 @@
 /*
-Written by s
+Written by r57shell from Blizzhackers
+http://www.blizzhackers.cc/viewtopic.php?f=182&t=499536
 
-
+modified by token
 */
-
-
-
-
-
-
-
-
-
-
-
 
 #include <Windows.h>
 #include <tlhelp32.h>

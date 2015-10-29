@@ -1,3 +1,9 @@
+/*
+Written by r57shell from Blizzhackers
+http://www.blizzhackers.cc/viewtopic.php?f=182&t=499536
+*/
+
+
 #ifndef REMOTE_TEMPLATE_H
 #define REMOTE_TEMPLATE_H
 
