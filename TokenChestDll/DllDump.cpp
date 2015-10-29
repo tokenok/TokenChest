@@ -1,3 +1,20 @@
+/*
+Written by s
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 #include <Windows.h>
 #include <tlhelp32.h>
 #include <psapi.h>
@@ -1858,8 +1875,8 @@ DWORD getDumps() {
 		return 4;
 	}
 
-#define TEST
-#define WRITEITEMS
+//#define TEST
+//#define WRITEITEMS
 //#define WRITEITEMCODES
 #ifdef _DEBUG
 #ifdef TEST
