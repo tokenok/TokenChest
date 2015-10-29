@@ -1858,8 +1858,8 @@ DWORD getDumps() {
 		return 4;
 	}
 
-//#define TEST
-//#define WRITEITEMS
+#define TEST
+#define WRITEITEMS
 //#define WRITEITEMCODES
 #ifdef _DEBUG
 #ifdef TEST
@@ -2008,7 +2008,7 @@ DWORD getDumps() {
 		else if (us.prop == 276) {//Level %s Armor Penetration Aura When Equipped\n(Nearby Enemies have %s%% Reduced Physical Resistance)
 			sprintf(out, "Level %s Armor Penetration Aura When Equipped\n(Nearby Enemies have %s%% Reduced Physical Resistance)", range.c_str(), range.c_str());
 		}
-		else if (us.prop >= 277 && us.prop <= 279 || us.prop == 282 || us.prop == 283 || us.prop >= 285 && us.prop <= 287 || us.prop == 295 || us.prop == 318 || us.prop == 319 || us.prop == 320 || us.prop == 322) {//%s%% x (Based on xstat)
+		else if (us.prop >= 277 && us.prop <= 279 || (us.prop >= 281 && us.prop <= 283) || (us.prop >= 285 && us.prop <= 288) || us.prop == 295 || us.prop == 318 || us.prop == 319 || us.prop == 320 || us.prop == 322) {//%s%% x (Based on xstat)
 			char perlvlmin[8];
 			sprintf(perlvlmin, "%.2lf", (float)us.min * .03125);
 			char perlvlmax[8];
@@ -2034,13 +2034,16 @@ DWORD getDumps() {
 		else if (us.prop == 334) {
 			sprintf(out, "+%s%% to Lightning Skill Damage\n+%s%% to Fire Skill Damage\n+%s%% to Cold Skill Damage\n+%s%% to Poison Skill Damage", range.c_str(), range.c_str(), range.c_str(), range.c_str());
 		}
+		else if (us.prop == 346) {
+			sprintf(out, "%s%% Increased Strength\n%s%% Increased Dexterity\n%s%% Increased Vitality\n%s%% Increased Energy", range.c_str(), range.c_str(), range.c_str(), range.c_str());
+		}
 		else if (us.prop == 347) {
 			sprintf(out, "-%s%% to Lightning Skill Damage\n-%s%% to Fire Skill Damage\n-%s%% to Cold Skill Damage\n-%s%% to Poison Skill Damage", range.c_str(), range.c_str(), range.c_str(), range.c_str());
 		}
 		else {
 			sprintf(out, "--------------%d, %s, %d, %d, %d--------------", us.prop, g_props[us.prop].c_str(), us.par, us.min, us.max);
 		}
-		return std::string(out) + "\n";
+		return std::string(out);
 	};
 #ifdef WRITEITEMS
 	std::ofstream statout;
@@ -2138,12 +2141,24 @@ DWORD getDumps() {
 #ifdef WRITEITEMS
 			statout << tte;
 #endif
-			for (UINT j = 0; j < 12; j++) {
+
+			/*std::string s0(tte);
+			if (s0.find("Queen") != std::string::npos)
+				std::cout << "break\n";*/
+
+			for (UINT j = 0; j < 19; j++) {
 				std::string s = getproptext(txt->props[j]);
 				if (s.size()) {
 					printf("%s", s.c_str());
+					if (j > 8)
+						printf(" (%d item set bonus)", ((j - 9) / 2) + 2);
+					printf("\n");
 #ifdef WRITEITEMS
 					statout << s;
+					if (j > 8) {
+						statout << " (" << ((j - 9) / 2) + 2 << " item set bonus)";
+					}
+					statout << '\n';
 #endif
 				}
 
@@ -2183,9 +2198,9 @@ DWORD getDumps() {
 			for (UINT j = 0; j < 12; j++) {
 				std::string s = getproptext(txt->props[j]);
 				if (s.size()) {
-					printf("%s", s.c_str());
-#ifdef WRITEITEMS
-					statout << s;
+					printf("%s\n", s.c_str());
+#ifdef WRITEITEMS					
+					statout << s << '\n';
 #endif
 				}
 

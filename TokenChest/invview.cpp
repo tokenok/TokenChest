@@ -1447,11 +1447,22 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 									clicked <= search_base_type ? item->icode.basetype : "",
 									clicked <= search_sub_type ? item->icode.subtype : "",
 									clicked <= search_type ? item->icode.tier == 1 ? "Normal" : item->icode.tier == 2 ? "Exceptional" : item->icode.tier == 3 ? "Elite" : "" : "",
-									clicked <= search_type ? item->icode.type : ""
+									clicked <= search_type ? item->icode.code : ""
 								};
 								hier.erase(std::remove(hier.begin(), hier.end(), ""), hier.end());
 								for (UINT i = 0; i < hier.size(); i++) {
-									hti = TreeView_FindSibling(tree, hti, hier[i]);
+									if (TreeView_GetChildCount(tree, hti) == 0) {
+										HTREEITEM current = hti;
+										do {
+											ItemCode* tcode = (ItemCode*)TreeView_GetItemParam(tree, current);
+											if (tcode && tcode->code == hier[i]) {
+												hti = current;
+												break;
+											}
+										} while ((current = TreeView_GetNextSibling(tree, current)) != NULL);
+									}
+									else
+										hti = TreeView_FindSibling(tree, hti, hier[i]);
 									if (i == hier.size() - 1) {
 										if (hti) {
 											TreeView_SetCheckState(tree, hti, TRUE);
