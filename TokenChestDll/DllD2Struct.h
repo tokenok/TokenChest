@@ -854,4 +854,10 @@ struct GameStructInfo
 	char szGamePassword[0x18];		//0x241
 };
 
+struct PropertiesTxt {
+	CHAR tx[16];
+	BYTE _1[4];
+
+};
+
 #endif

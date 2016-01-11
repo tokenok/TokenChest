@@ -272,11 +272,7 @@ Scroll,0sc,0
 Scroll of Town Portal,tsc,0
 Scroll of Identify,isc,0
 Arrows,aqv,0
-Runic Arrows,aqv2,0
-Hellfire Arrows,aqv3,0
 Bolts,cqv,0
-Razorspine Bolts,cqv2,0
-Hallowed Bolts,cqv3,0
 herb,hrb,0
 Jewel,jew,0
 Charm Small,cm1,0
@@ -286,6 +282,8 @@ Player Ear,ear,0
 Skeleton Key,key,0
 Mephisto Key,luv,0
 @Potion
+Healing Potion,hpo,0
+Mana Potion,mpo,0
 Full Healing Potion,hpf,0
 Full Mana Potion,mpf,0
 Stamina Potion,vps,0

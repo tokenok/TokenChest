@@ -162,6 +162,7 @@ bool initBins() {
 	txt |= Txt<GemTxt>::Load((g_TokenChestPath + "\\bin\\gems.bin").c_str());
 	txt |= Txt<CharStatsTxt>::Load((g_TokenChestPath + "\\bin\\charstats.bin").c_str());
 	txt |= Txt<MonStatsTxt>::Load((g_TokenChestPath + "\\bin\\monstats.bin").c_str());
+	//txt |= Txt<PropertiesTxt>::Load((g_TokenChestPath + "\\bin\\properties.bin").c_str());
 
 	//txt |= Txt<CubeBinField>::Load("C:\\Users\\Josh_2.Josh-PC\\Desktop\\Work\\data\\global\\excel\\cubemain.bin");
 
@@ -1765,7 +1766,7 @@ bool DumpPlayer(DWORD D2Client_base, const UnitAny *PlayerUnit) {
 		//player
 		printf("\n#character stats#\n\n");
 
-		//dump waypoint info
+		//TODO dump waypoint info
 		const DWORD *wp = ReadProcess(D2Client_base + 0x1088FD, &wp);
 		const Waypoint *PlayerWaypoint = ReadProcess(*wp, &PlayerWaypoint);
 		std::string norm = GetNormalWps(PlayerWaypoint);
@@ -1773,7 +1774,7 @@ bool DumpPlayer(DWORD D2Client_base, const UnitAny *PlayerUnit) {
 		std::string hell = GetHellWps(PlayerWaypoint);
 		printf("wp:%s%s%s\n", norm.c_str(), nightmare.c_str(), hell.c_str());
 
-		//dump skills
+		//TODO dump skills
 		/*
 		[6-35]
 		[36-65]
@@ -1784,7 +1785,7 @@ bool DumpPlayer(DWORD D2Client_base, const UnitAny *PlayerUnit) {
 		[251-280]
 		*/		
 
-		//dump quests
+		//TODO dump quests
 
 		//dump character stats
 		const StatArr *hm = ReadProcess(PlayerUnit->pStats + 0x48, &hm);
@@ -1865,8 +1866,8 @@ DWORD getDumps() {
 		return 4;
 	}
 
-//#define TEST
-//#define WRITEITEMS
+#define TEST
+#define WRITEITEMS
 //#define WRITEITEMCODES
 #ifdef _DEBUG
 #ifdef TEST
@@ -1895,7 +1896,7 @@ DWORD getDumps() {
 		std::string range = us.min == us.max ? int_to_str(us.min) : "[" + int_to_str(us.min) + "-" + int_to_str(us.max) + "]";
 
 		if (g_props[us.prop].size() == 0) {
-			sprintf(out, "--------------Unknown %d, %d%s, %d, %d--------------\n", us.prop, us.par, us.par ? std::string("(" + std::string(GetSkillName(us.par)) + ")").c_str(): "", us.min, us.max);
+			sprintf(out, "--------------Unknown %d, %d%s, %d, %d--------------", us.prop, us.par, us.par ? std::string("(" + std::string(GetSkillName(us.par)) + ")").c_str(): "", us.min, us.max);
 			return std::string(out);
 		}
 		else if (us.prop <= 16
@@ -1917,7 +1918,9 @@ DWORD getDumps() {
 			|| us.prop == 301
 			|| us.prop >= 322 && us.prop <= 327
 			|| us.prop == 336
-			|| us.prop == 337)
+			|| us.prop == 337
+			|| us.prop >= 354 && us.prop <= 356
+			|| us.prop == 359)
 		{
 			sprintf(out, g_props[us.prop].c_str(), range.c_str());
 		}
@@ -1945,8 +1948,8 @@ DWORD getDumps() {
 					range = int_to_str((int)((float)str_to_int(range) / 3.415));
 			}
 			sprintf(out, g_props[us.prop].c_str(), range.c_str());
-			std::string ret(out);
-			return ret + (us.prop == 19 || us.prop == 21 || us.prop == 23 || us.prop == 26 ? "\n" : "");
+		//	std::string ret(out);
+		//	return ret + (us.prop == 19 || us.prop == 21 || us.prop == 23 || us.prop == 26 ? "\n" : "");
 		}
 		else if (us.prop == 117) {//animate as _____
 			sprintf(out, g_props[us.prop].c_str(), range.c_str(), GetMonsterName(us.par));
@@ -2006,7 +2009,7 @@ DWORD getDumps() {
 		else if (us.prop == 266) {//nv state
 			sprintf(out, g_props[us.prop].c_str(), int_to_str(us.par).c_str());
 		}
-		else if (us.prop == 267 || us.prop == 269) {//+x to %s Skill Levels //+ rand class skill levels
+		else if (us.prop == 267 || us.prop == 269 || us.prop == 358) {//+x to %s Skill Levels //+ rand class skill levels
 			sprintf(out, g_props[us.prop].c_str(), ("(Random Class" + range + ")").c_str());
 		}
 		else if (us.prop == 268) {//?????
@@ -2015,7 +2018,7 @@ DWORD getDumps() {
 		else if (us.prop == 276) {//Level %s Armor Penetration Aura When Equipped\n(Nearby Enemies have %s%% Reduced Physical Resistance)
 			sprintf(out, "Level %s Armor Penetration Aura When Equipped\n(Nearby Enemies have %s%% Reduced Physical Resistance)", range.c_str(), range.c_str());
 		}
-		else if (us.prop >= 277 && us.prop <= 279 || (us.prop >= 281 && us.prop <= 283) || (us.prop >= 285 && us.prop <= 288) || us.prop == 295 || us.prop == 318 || us.prop == 319 || us.prop == 320 || us.prop == 322) {//%s%% x (Based on xstat)
+		else if (us.prop >= 277 && us.prop <= 279 || (us.prop >= 281 && us.prop <= 283) || (us.prop >= 285 && us.prop <= 288) || us.prop == 295 || us.prop == 318 || us.prop == 319 || us.prop == 320 || us.prop == 322 || us.prop == 357) {//%s%% x (Based on xstat)
 			char perlvlmin[8];
 			sprintf(perlvlmin, "%.2lf", (float)us.min * .03125);
 			char perlvlmax[8];
@@ -2052,7 +2055,26 @@ DWORD getDumps() {
 		}
 		return std::string(out);
 	};
+
+	auto isnewline = [](UniqueStats us) -> bool {
+		bool ret = true;
+		switch (us.prop) {
+			case 20:
+			case 22:
+			case 24:
+			case 25:{
+				ret = false;
+				break;
+			}
+		}
+		return ret;
+	};
+
 #ifdef WRITEITEMS
+	std::ofstream setnamecodes;
+	setnamecodes.open("setnamecodes.txt");
+	std::ofstream uniquenamecodes;
+	uniquenamecodes.open("uniquenamecodes.txt");
 	std::ofstream statout;
 	statout.open("candy.txt");
 	if (statout.is_open()) {
@@ -2135,6 +2157,16 @@ DWORD getDumps() {
 		_getch();
 #endif
 		
+		/*size_t sisis = Txt<PropertiesTxt>::Count();
+		for (size_t i = 0; i < Txt<PropertiesTxt>::Count(); ++i) {
+			const PropertiesTxt *txt;
+			TxtGet(&txt, (DWORD)i);
+
+			if (!txt)
+				continue;
+
+			printf("");
+		}*/
 
 		for (size_t i = 0; i < Txt<SetTxt>::Count(); ++i) {
 			const SetTxt *txt;
@@ -2147,7 +2179,10 @@ DWORD getDumps() {
 			printf(tte);
 #ifdef WRITEITEMS
 			statout << tte;
-#endif
+			char tte2[60];
+			sprintf(tte2, "%s|%.4s\n", txt->name, txt->base);
+			setnamecodes << tte2;
+#endif	
 
 			/*std::string s0(tte);
 			if (s0.find("Queen") != std::string::npos)
@@ -2159,13 +2194,15 @@ DWORD getDumps() {
 					printf("%s", s.c_str());
 					if (j > 8)
 						printf(" (%d item set bonus)", ((j - 9) / 2) + 2);
-					printf("\n");
+					if (isnewline(txt->props[j]))
+						printf("\n");
 #ifdef WRITEITEMS
 					statout << s;
 					if (j > 8) {
 						statout << " (" << ((j - 9) / 2) + 2 << " item set bonus)";
 					}
-					statout << '\n';
+					if (isnewline(txt->props[j]))
+						statout << '\n';
 #endif
 				}
 
@@ -2201,13 +2238,21 @@ DWORD getDumps() {
 				printf("");
 #ifdef WRITEITEMS
 			statout << tte;
-#endif
+			char tte2[60];
+			sprintf(tte2, "%s|%.4s\n", txt->name, txt->base);
+			uniquenamecodes << tte2;
+#endif			
+
 			for (UINT j = 0; j < 12; j++) {
 				std::string s = getproptext(txt->props[j]);
 				if (s.size()) {
-					printf("%s\n", s.c_str());
+					printf("%s", s.c_str());
+					if (isnewline(txt->props[j]))
+						printf("\n");
 #ifdef WRITEITEMS					
-					statout << s << '\n';
+					statout << s;
+					if (isnewline(txt->props[j]))
+						statout << '\n';
 #endif
 				}
 
@@ -2232,7 +2277,9 @@ DWORD getDumps() {
 #ifdef WRITEITEMS
 	}
 	statout.close();
-#endif
+	setnamecodes.close();
+	uniquenamecodes.close();
+#endif	
 
 #endif
 #endif

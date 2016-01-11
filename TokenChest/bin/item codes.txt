@@ -16,6 +16,10 @@ Crown of the High Heavens,tyr1,0
 Divinity,tyr2,0
 Heaven's Champion,tyr3,0
 Death's Advance,lic3,0
+Hysteria,twi2,0
+Devil's Bargain,twi3,0
+Elder of Tristram,cai2,0
+Blade Barrier,uld4,0
 @Misc
 Runic Arrows,aqv2,0
 Hellfire Arrows,aqv3,0
@@ -170,6 +174,54 @@ nv Frozen Wings,ef15,0
 nv Angel Wings,ef16,0
 nv Demon Wings,ef17,0
 nv Iridescent Wings,ef18,0
+Scroll of Rune Upgrade,scru,0
+Scroll of Rune Downgrade,scrd,0
+nv Warped,ef20,0
+Enchantment Scroll,en38,0
+Enchantment Scroll,en39,0
+Crucible Admission Level 1,cru1,0
+Crucible Admission Level 2,cru2,0
+Crucible Admission Level 3,cru3,0
+Crucible Admission Level 4,cru4,0
+Crucible Admission Level 5,cru5,0
+Crucible Admission Level 6,cru6,0
+Crucible Admission Level 7,cru7,0
+Crucible Admission Level 8,cru8,0
+Crucible Admission Level 9,cru9,0
+Crucible Admission Level 10,cr10,0
+Crucible Admission Level 11,cr11,0
+Crucible Admission Level 12,cr12,0
+Crucible Admission Level 13,cr13,0
+Crucible Admission Level 14,cr14,0
+Crucible Admission Level 15,cr15,0
+Crucible Admission Level 16,cr16,0
+Crucible Admission Level 17,cr17,0
+Crucible Admission Level 18,cr18,0
+Crucible Admission Level 19,cr19,0
+Crucible Admission Level 20,cr20,0
+Key to The Crucible Level 2,crk2,0
+Key to The Crucible Level 3,crk3,0
+Key to The Crucible Level 4,crk4,0
+Key to The Crucible Level 5,crk5,0
+Key to The Crucible Level 6,crk6,0
+Key to The Crucible Level 7,crk7,0
+Key to The Crucible Level 8,crk8,0
+Key to The Crucible Level 9,crk9,0
+Key to The Crucible Level 10,ck10,0
+Key to The Crucible Level 11,ck11,0
+Key to The Crucible Level 12,ck12,0
+Key to The Crucible Level 13,ck13,0
+Key to The Crucible Level 14,ck14,0
+Key to The Crucible Level 15,ck15,0
+Key to The Crucible Level 16,ck16,0
+Key to The Crucible Level 17,ck17,0
+Key to The Crucible Level 18,ck18,0
+Key to The Crucible Level 19,ck19,0
+Key to The Crucible Level 20,ck20,0
+The Dark Wanderer,cai1,0
+Horadric Jewel,cai3,0
+Nephalem's Birthright,uld3,0
+nv Conquerer of Crucible,ef19,0
 @Weapon
 Short Circuit,shci,0
 Frostmourne,rnbl,0
@@ -184,6 +236,11 @@ Heaven's Fury,hefu,0
 Gae Bolg,gabo,0
 Eldruin,anbl,0
 The Plaguebringer,lic2,0
+Flaming Pearl,chi1,0
+Buckshot,chi2,0
+The Twins Anger,twi1,0
+Thunderfury,uld1,0
+Khalim's Hope,uld2,0
 !Armor
 @Barbarian Helms
 Jawbone Cap,ba1,1

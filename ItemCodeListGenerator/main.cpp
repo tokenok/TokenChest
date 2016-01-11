@@ -24,6 +24,11 @@ using namespace std;
 
 BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
+HWND g_hwnd;
+string ConfigIni;
+
+const COLORREF g_cust_color = RGB(25, 25, 25);
+
 void SHOW_CONSOLE(bool show, bool noclose = false) {
 	static bool show_state = false;
 	if (show && !show_state) {
@@ -96,6 +101,43 @@ std::string getexedir() {
 	string dir = wstr_to_str(path);
 	return dir.substr(0, dir.rfind('\\'));
 }
+RECT getclientrect(HWND wnd) {
+	RECT ret;
+	GetClientRect(wnd, &ret);
+	return ret;
+}
+
+enum quality {
+	QUAL_WHATEVER,
+	QUAL_LOW,
+	QUAL_NORMAL,
+	QUAL_SUPERIOR,
+	QUAL_MAGIC,
+	QUAL_SET,
+	QUAL_RARE,
+	QUAL_UNIQUE,
+	QUAL_CRAFTED,
+	QUAL_TEMPERED
+};
+enum colors {
+	COL_WHITE,
+	COL_RED,
+	COL_LIGHTGREEN,
+	COL_BLUE,
+	COL_DARKGOLD,
+	COL_GRAY,
+	COL_BLACK,
+	COL_GOLD,
+	COL_ORANGE,
+	COL_YELLOW,
+	COL_DARKGREEN,
+	COL_PURPLE,
+	COL_GREEN,
+	COL_WHITE2,
+	COL_BLACK2,
+	COL_DARKWHITE,
+	COL_HIDE
+};
 
 string TransColor(int col) {
 	if (col == 0) return "white";
@@ -191,6 +233,25 @@ string TransCode(DWORD dwCode) {
 
 	return string(ItemCode);
 }
+int get_selected_color_mode() {
+	return IsDlgButtonChecked(g_hwnd, IDC_RADIO1) ? 0 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO2) ? 1 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO3) ? 2 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO4) ? 3 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO5) ? 4 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO6) ? 5 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO7) ? 6 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO8) ? 7 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO9) ? 8 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO10) ? 9 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO11) ? 10 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO12) ? 11 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO13) ? 12 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO14) ? 13 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO15) ? 14 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO16) ? 15 :
+		IsDlgButtonChecked(g_hwnd, IDC_RADIO17) ? 16 : 16;
+}
 
 struct ItemCode {
 	std::string basetype;//weapon, armor...
@@ -198,6 +259,9 @@ struct ItemCode {
 	std::string type;//battle axe, buckler...
 	std::string code;//btx, buc...
 	int tier;//normal, exceptional, or elite, otherwise zero
+
+	int col = -1;
+	int def_col = -1;
 };
 struct ItemConfig {
 	int Code;
@@ -206,6 +270,71 @@ struct ItemConfig {
 	int Type;
 };
 
+vector<ItemCode> g_itemcodes;
+vector<ItemCode> g_acodenames;
+map<string, map<string, int>> g_ucodenames;
+map<string, map<string, int>> g_scodenames;
+vector<ItemConfig> g_ItemArray;
+
+COLORREF getitemqualitycolor(int col) {
+	if (col == COL_WHITE) return RGB(0xC4, 0xC4, 0xC4);
+	else if (col == COL_RED) return RGB(0xff, 0, 0); 
+	else if (col == COL_LIGHTGREEN) return RGB(0x18, 0xFC, 0x00);
+	else if (col == COL_BLUE) return RGB(0x78, 0x7c, 0xe7);
+	else if (col == COL_DARKGOLD) return RGB(0xAF, 0xA6, 0x69);
+	else if (col == COL_GRAY) return RGB(0x50, 0x50, 0x50);
+	else if (col == COL_BLACK) return RGB(0, 0, 0);
+	else if (col == COL_GOLD) return RGB(0xAC, 0x9C, 0x64);
+	else if (col == COL_ORANGE) return RGB(0xD0,0x84,0x20); 
+	else if (col == COL_YELLOW) return RGB(0xf5, 0xf7, 0x92);
+	else if (col == COL_DARKGREEN) return RGB(0x18, 0x64, 0x08);
+	else if (col == COL_PURPLE) return RGB(0xA4, 0x20, 0xFC);
+	else if (col == COL_GREEN) return RGB(0x28, 0x7C, 0x14);
+	else if (col == COL_WHITE2) return RGB(0xC4, 0xC4, 0xC4);
+	else if (col == COL_BLACK2) return RGB(0xC4, 0xC4, 0xC4);
+	else if (col == COL_DARKWHITE) return RGB(0xC4, 0xC4, 0xC4);
+	else if (col == COL_HIDE) return 0;
+	
+	return 0;
+}
+LRESULT TreeCustomDraw(HWND tree, LPNMTVCUSTOMDRAW pNMTVCD) {
+	if (pNMTVCD == NULL) 
+		return -1;
+	switch (pNMTVCD->nmcd.dwDrawStage) {
+		case CDDS_PREPAINT:{
+			return (CDRF_NOTIFYPOSTPAINT | CDRF_NOTIFYITEMDRAW);
+		}
+		case CDDS_ITEMPREPAINT: {
+			TV_ITEM tvi = {0};
+			tvi.mask = TVIF_TEXT | TVIF_PARAM;
+			tvi.hItem = (HTREEITEM)pNMTVCD->nmcd.dwItemSpec;
+			TreeView_GetItem(tree, &tvi);
+			if (tvi.lParam > 0 && TreeView_GetChild(tree, tvi.hItem) == NULL) {
+				ItemCode* pItemData = (ItemCode*)tvi.lParam;
+				if (pItemData) {
+					//set text color
+					SetTextColor(pNMTVCD->nmcd.hdc, getitemqualitycolor(TreeView_GetCheckState(tree, tvi.hItem) ? pItemData->col : pItemData->def_col));
+
+					//set background color
+					if (pNMTVCD->nmcd.uItemState & CDIS_SELECTED)
+						SetBkColor(pNMTVCD->nmcd.hdc, RGB(128, 0, 0));
+					else {
+						if (TreeView_GetSelection(tree) == tvi.hItem)
+							SetBkColor(pNMTVCD->nmcd.hdc, RGB(80, 80, 200));//selection no focus
+						else if (pItemData->col != COL_HIDE)
+							SetBkColor(pNMTVCD->nmcd.hdc, g_cust_color);
+						else; //default
+					}
+				}
+			}
+			return (CDRF_NOTIFYPOSTPAINT | CDRF_NEWFONT);
+		}
+		case CDDS_ITEMPOSTPAINT: {
+			return CDRF_DODEFAULT;
+		}
+	}
+	return CDRF_DODEFAULT;
+}
 LPARAM TreeView_GetItemParam(HWND hwnd, HTREEITEM htItem) {
 	TVITEMW tvi = {0};
 	tvi.hItem = htItem;
@@ -228,7 +357,9 @@ string TreeView_GetItemText(HWND hwnd, HTREEITEM htItem) {
 HTREEITEM TreeView_FindSibling(HWND hwnd, HTREEITEM start, string match) {
 	HTREEITEM current = start;
 	do {
-		if (TreeView_GetItemText(hwnd, current) == match)
+		string text = TreeView_GetItemText(hwnd, current);
+		text = text.substr(0, text.find(" ("));
+		if (text == match)
 			return current;
 	} while ((current = TreeView_GetNextSibling(hwnd, current)) != NULL);
 	return NULL;
@@ -238,6 +369,10 @@ HTREEITEM TreeView_SetCheckStateForAllChildren(HWND tree, HTREEITEM hItem, BOOL 
 	HTREEITEM sibling = NULL;
 	while (current != NULL && sibling == NULL) {
 		TreeView_SetCheckState(tree, current, checkstate);
+		ItemCode* ic = (ItemCode*)TreeView_GetItemParam(tree, current);
+		if (ic) {
+			ic->col = checkstate != 0 ? get_selected_color_mode() : -1;
+		}
 		sibling = TreeView_SetCheckStateForAllChildren(tree, TreeView_GetChild(tree, current), checkstate);
 		current = TreeView_GetNextSibling(tree, current);
 	}
@@ -259,23 +394,17 @@ void TreeView_SetCheckStateForAllParents(HWND tree, HTREEITEM child) {
 		child = TreeView_GetParent(tree, child);
 	}
 }
-HTREEITEM getfilteritems(HWND tree, HTREEITEM hItem, vector<ItemCode*>* list) {
+HTREEITEM getfilteritems(HWND tree, HTREEITEM hItem, vector<HTREEITEM>* list) {
 	HTREEITEM current = hItem;
 	HTREEITEM child = NULL;
 	while (current != NULL && child == NULL) {
 		child = getfilteritems(tree, TreeView_GetChild(tree, current), list);
-		if ((TreeView_GetChild(tree, current) == NULL) && (TreeView_GetCheckState(tree, current) == 1)) 
-			list->push_back((ItemCode*)TreeView_GetItemParam(tree, current));
+		if ((TreeView_GetChild(tree, current) == NULL) && (TreeView_GetCheckState(tree, current) == BST_CHECKED))
+			list->push_back(current);
 		current = TreeView_GetNextSibling(tree, current);
 	}
 	return child;
 }
-
-HWND g_hwnd;
-string ConfigIni;
-
-vector<ItemCode> g_itemcodes;
-vector<ItemConfig> g_ItemArray;
 
 void read_itemcodes() {
 	g_itemcodes.clear();
@@ -295,13 +424,14 @@ void read_itemcodes() {
 						&& line[0] != '!'
 						&& line[0] != '@'
 						&& file.good()) {
+
 						ItemCode code;
 						code.basetype = basetype;
 						code.subtype = subtype;
 						vector<string> cod = split_str(line, ",");
 						code.type = cod[0];
 						code.code = cod[1];
-						code.tier = str_to_int(cod[2]);
+						code.tier = str_to_int(cod[2]); 
 						g_itemcodes.push_back(code);
 						getline(file, line);
 					}
@@ -313,6 +443,80 @@ void read_itemcodes() {
 		MessageBox(NULL, L"Unable to open item codes.txt", L"ERROR", MB_OK);
 
 	file.close();
+
+	ifstream annihiluscodes;
+	annihiluscodes.open("annihiluscodes.txt");
+	if (annihiluscodes.is_open()) {
+		while (annihiluscodes.good()) {
+			string line;
+			getline(annihiluscodes, line);
+
+			while (line.find("!") == 0 && annihiluscodes.good()) {
+				string basetype = line.substr(1, line.size() - 1);
+				getline(annihiluscodes, line);
+				while (line.find("@") == 0 && annihiluscodes.good()) {
+					string subtype = line.substr(1, line.size() - 1);
+					getline(annihiluscodes, line);
+					while (line.size() > 0
+						&& line[0] != '!'
+						&& line[0] != '@'
+						&& annihiluscodes.good()) {
+
+						ItemCode code;
+						code.basetype = basetype;
+						code.subtype = subtype;
+						vector<string> cod = split_str(line, ",");
+						code.type = cod[0];
+						code.code = cod[1];
+						code.tier = str_to_int(cod[2]);
+						g_acodenames.push_back(code);
+						getline(annihiluscodes, line);
+					}
+				}
+			}
+		}
+	}
+	annihiluscodes.close();
+
+	ifstream uniquenamecodes;
+	uniquenamecodes.open("uniquenamecodes.txt");
+	if (uniquenamecodes.is_open()) {
+		while (uniquenamecodes.good()) {
+			string line;
+			getline(uniquenamecodes, line);
+
+			vector<string> item = split_str(line, "|");
+
+			if (item.size() != 2)
+				continue;
+
+			if (item[1][3] == ' ')
+				item[1].pop_back();
+
+			g_ucodenames[item[1]].insert(make_pair(item[0], 1));
+		}
+	}
+	uniquenamecodes.close();
+
+	ifstream setnamecodes;
+	setnamecodes.open("setnamecodes.txt");
+	if (setnamecodes.is_open()) {
+		while (setnamecodes.good()) {
+			string line;
+			getline(setnamecodes, line);
+
+			vector<string> item = split_str(line, "|");
+
+			if (item.size() != 2)
+				continue;
+
+			if (item[1][3] == ' ')
+				item[1].pop_back();
+
+			g_scodenames[item[1]].insert(make_pair(item[0], 1));
+		}
+	}
+	setnamecodes.close();
 }
 void LoadItemConfig() {
 	char szConfig[200];
@@ -372,44 +576,31 @@ void SaveItemConfig(int start = 1) {
 void PrintBaseFilterCodes(HWND tree, int start = 1) {
 	SetWindowText(GetDlgItem(GetParent(tree), IDC_RICHEDIT21), L"");
 
-	vector<ItemCode*> filter_itemtypes;
 	int c = start;
 	string output = "";
 
-	output += int_to_str(c++) + "=dy1,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy2,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy3,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy4,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy5,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy6,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy7,whatever,purple\r\n";
-	output += int_to_str(c++) + "=dy8,whatever,purple\r\n";
-	
-	vector<string> qualities = {"low", "normal", "superior", "magic", "set", "rare", "unique"};
-
 	if (GetDlgCtrlID(tree) == IDC_ITEMCODEFILTERTREE) {
-		HTREEITEM item = TreeView_GetRoot(tree);
+		vector<HTREEITEM> filter_itemtypes;
+		getfilteritems(tree, TreeView_GetRoot(tree), &filter_itemtypes);
 
-		item = TreeView_GetChild(tree, item);
-		getfilteritems(tree, TreeView_GetChild(tree, item), &filter_itemtypes);
-		for (auto item : filter_itemtypes) {
-			output += int_to_str(c++) + "=" + item->code + "," + qualities[0] + ",hide\r\n";
-			//output += "\"" + item->code + "\",";
-		}
-		filter_itemtypes.clear();
+		for (UINT i = 0; i < filter_itemtypes.size(); i++) {
+			ItemCode* ic = (ItemCode*)TreeView_GetItemParam(tree, filter_itemtypes[i]);
 
-		for (UINT i = 1; i < qualities.size(); i++) {
-			item = TreeView_GetNextItem(tree, item, TVGN_NEXT);
-			getfilteritems(tree, TreeView_GetChild(tree, item), &filter_itemtypes);
-			for (auto item : filter_itemtypes) {
-				output += int_to_str(c++) + "=" + item->code + "," + qualities[i] + ",hide\r\n";
-			//	output += "\"" + item->code + "\",";
-			}
-			filter_itemtypes.clear();
+			HTREEITEM parent = TreeView_GetParent(tree, filter_itemtypes[i]);
+			HTREEITEM cur;
+			do {
+				cur = parent;
+				parent = TreeView_GetParent(tree, parent);
+			} while (TreeView_GetParent(tree, parent));
+
+			string quality = TreeView_GetItemText(tree, cur);
+			boost::to_lower(quality);
+			if (quality == "annihilus")
+				quality = "whatever";
+			
+			if (filter_itemtypes[i])
+				output += int_to_str(c++) + "=" + ic->code + "," + quality + "," + TransColor(ic->col) + "\r\n";
 		}
-	}
-	else if (GetDlgCtrlID(tree) == IDC_ITEMCODEFILTERTREE2) {
-		
 	}
 
 	SetWindowText(GetDlgItem(GetParent(tree), IDC_RICHEDIT21), str_to_wstr(output).c_str());
@@ -425,45 +616,40 @@ HTREEITEM findcodeintree(HWND tree, HTREEITEM start, ItemCode* icode) {
 		return start;
 	return NULL;
 }
-void InitTree(HWND tree, vector<string> &configlines) {
-	TreeView_SetCheckStateForAllChildren(tree, TreeView_GetRoot(tree), FALSE);
+void InitTree(HWND tree, vector<string>& configlines) {
+	static bool first = true;
+	if (!first) {
+		first = false;
+		TreeView_SetCheckStateForAllChildren(tree, TreeView_GetRoot(tree), FALSE);
+	}	
 
-	if (GetDlgCtrlID(tree) == IDC_ITEMCODEFILTERTREE) {
-		for (auto line : configlines) {
-			string code = line.substr(line.find('=') + 1, line.find(',') - line.find('=') - 1);
-			string qual = line.substr(line.find(',') + 1, line.rfind(',') - line.find(',') - 1);
-			string col = line.substr(line.rfind(',') + 1, string::npos);
-			boost::trim(code); boost::trim(qual); boost::trim(col);
-			boost::to_lower(code); boost::to_lower(qual); boost::to_lower(col);
-			if (col != "hide") continue;
+	for (auto line : configlines) {
+		string code = line.substr(line.find('=') + 1, line.find(',') - line.find('=') - 1);
+		string qual = line.substr(line.find(',') + 1, line.rfind(',') - line.find(',') - 1);
+		string col = line.substr(line.rfind(',') + 1, string::npos);
+		boost::trim(code); boost::trim(qual); boost::trim(col);
+		boost::to_lower(code); boost::to_lower(qual); boost::to_lower(col);
 
-			HTREEITEM current = TreeView_GetRoot(tree);
+		HTREEITEM current = TreeView_GetRoot(tree);
+		if (qual != "whatever") {				
 			current = TreeView_GetChild(tree, current);
 			do {
 				string match = TreeView_GetItemText(tree, current);
-				transform(match.begin(), match.end(), match.begin(), tolower);
+				boost::to_lower(match);
 				if (qual == match)
 					break;
 			} while ((current = TreeView_GetNextSibling(tree, current)) != NULL);
-			if (!current) continue;
-
-			ItemCode* item = 0;
-			for (UINT i = 0; i < g_itemcodes.size(); i++) {
-				if (g_itemcodes[i].code == code) {
-					item = &g_itemcodes[i];
-					break;
-				}
-			}
-			if (!item) continue;
+			if (!current) 
+				continue;
 
 			ItemConfig ic;
 			ic.Code = TransCode(code.c_str());
 			ic.Quality = TransQuality(qual);
-			ic.Color = 16;
+			ic.Color = TransColor(col);
 			int pos = -1;
 			for (UINT i = 0; i < g_ItemArray.size(); i++) {
 				if (g_ItemArray[i].Code == ic.Code && g_ItemArray[i].Quality == ic.Quality) {
-					if (g_ItemArray[i].Color == 16) {
+					if (true || g_ItemArray[i].Color == COL_HIDE) {
 						pos = (int)i;
 						break;
 					}
@@ -472,17 +658,63 @@ void InitTree(HWND tree, vector<string> &configlines) {
 			if (pos == -1) g_ItemArray.push_back(ic);
 			else g_ItemArray.erase(g_ItemArray.begin() + pos);
 
-			HTREEITEM found = findcodeintree(tree, current, item);
-			if (!found)
-				printf("item not found in tree!\n");
-			TreeView_SetCheckState(tree, found, TRUE);
-			TreeView_SetCheckStateForAllParents(tree, found);
-		}
-		PostMessage(GetParent(tree), WM_COMMAND, IDC_BUTTON1, GetDlgCtrlID(tree));//PrintBaseFilterCodes(tree);
-	}
-	else if (GetDlgCtrlID(tree) == IDC_ITEMCODEFILTERTREE2) {
+			ItemCode* item = 0;
+			for (UINT i = 0; i < g_itemcodes.size(); i++) {
+				if (g_itemcodes[i].code == code) {
+					item = &g_itemcodes[i];
+					break;
+				}
+			}
+			if (!item) {
+				for (UINT i = 0; i < g_acodenames.size(); i++) {
+					if (g_acodenames[i].code == code) {
+						item = &g_acodenames[i];
+						break;
+					}
+				}
+				if (!item)
+					continue;
+			}
 
+			HTREEITEM found = findcodeintree(tree, current, item);
+			if (found) {
+				((ItemCode*)TreeView_GetItemParam(tree, found))->col = TransColor(col);
+				TreeView_SetCheckState(tree, found, TRUE);
+				TreeView_SetCheckStateForAllParents(tree, found);
+			}
+			else
+				printf("item not found in tree!\n");
+		}
+		else {
+			function<HTREEITEM(HWND, HTREEITEM, string, vector<HTREEITEM>*)> rec = [&](HWND tree, HTREEITEM hItem, string code, vector<HTREEITEM>* list) -> HTREEITEM {
+				HTREEITEM current = hItem;
+				HTREEITEM child = NULL;
+				while (current != NULL && child == NULL) {
+					child = rec(tree, TreeView_GetChild(tree, current), code, list);
+					ItemCode* ic = ((ItemCode*)TreeView_GetItemParam(tree, current));
+					if ((TreeView_GetChild(tree, current) == NULL) && (((ItemCode*)TreeView_GetItemParam(tree, current))->code == code))
+						list->push_back(current);
+					current = TreeView_GetNextSibling(tree, current);
+				}
+				return child;
+			};
+
+			vector<HTREEITEM> nodes;
+			rec(tree, TreeView_GetRoot(tree), code, &nodes);
+
+			for (UINT i = 0; i < nodes.size(); i++) {
+				ItemCode* icd = (ItemCode*)TreeView_GetItemParam(tree, nodes[i]);
+
+				icd->col = TransColor(col);
+
+				//if (icd->col == COL_HIDE) {						
+				TreeView_SetCheckState(tree, nodes[i], TRUE);
+				TreeView_SetCheckStateForAllParents(tree, nodes[i]);
+				//}
+			}
+		}		
 	}
+	PostMessage(GetParent(tree), WM_COMMAND, IDC_BUTTON1, GetDlgCtrlID(tree));//PrintBaseFilterCodes(tree);
 }
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE/* hPrevInstance*/, LPSTR/* args*/, int/* iCmdShow*/) {
@@ -491,8 +723,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE/* hPrevInstance*/, LPSTR/* arg
 #endif
 	ConfigIni = getexedir() + "\\D2Ex.ini";
 
-	LoadItemConfig();
-	read_itemcodes();
+	InitCommonControls();
 
 	LoadLibrary(L"riched20.dll");
 	DialogBoxParam(GetModuleHandle(0), MAKEINTRESOURCE(IDD_MAIN), NULL, (DLGPROC)DialogProc, 0);
@@ -502,20 +733,55 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 		case WM_INITDIALOG:{
 			g_hwnd = hwnd;
 
-			InitCommonControls();
+			LoadItemConfig();
+			read_itemcodes();
 
-			vector<string> qualities = {"Low", "Normal", "Superior", "Magic", "Set", "Rare", "Unique"};
+			map<string, map<string, map<int, map<string, ItemCode*>>>> item_tree;//generates Warning: C4503
+			for (UINT i = 0; i < g_itemcodes.size(); i++) {
+				item_tree[g_itemcodes[i].basetype][g_itemcodes[i].subtype][g_itemcodes[i].tier][g_itemcodes[i].type] = &g_itemcodes[i];
+			}
 
-			map<string, map<string, map<int, map<string, ItemCode*>>>> item_types;//generates Warning: C4503
-			for (UINT i = 0; i < g_itemcodes.size(); i++)
-				item_types[g_itemcodes[i].basetype][g_itemcodes[i].subtype][g_itemcodes[i].tier][g_itemcodes[i].type] = &g_itemcodes[i];
+			map<string, map<string, map<int, map<string, ItemCode*>>>> annihilus_tree;
+			for (UINT i = 0; i < g_acodenames.size(); i++) {
+				annihilus_tree[g_acodenames[i].basetype][g_acodenames[i].subtype][g_acodenames[i].tier][g_acodenames[i].type] = &g_acodenames[i];
+			}
+
+			map<string, map<string, map<int, map<string, ItemCode*>>>> set_tree;
+			for (auto a : g_scodenames) {
+				for (UINT i = 0; i < g_itemcodes.size(); i++) {
+					if (g_itemcodes[i].code == a.first) {
+						set_tree[g_itemcodes[i].basetype][g_itemcodes[i].subtype][g_itemcodes[i].tier][g_itemcodes[i].type] = &g_itemcodes[i];
+						break;
+					}
+				}
+			}
+
+			map<string, map<string, map<int, map<string, ItemCode*>>>> unique_tree;
+			for (auto a : g_ucodenames) {
+				for (UINT i = 0; i < g_itemcodes.size(); i++) {
+					if (g_itemcodes[i].code == a.first) {
+						unique_tree[g_itemcodes[i].basetype][g_itemcodes[i].subtype][g_itemcodes[i].tier][g_itemcodes[i].type] = &g_itemcodes[i];
+						break;
+					}
+				}
+			}
+
+			vector<string> qualities = {"Low", "Normal", "Superior", "Magic", "Rare"};
+
+			static HIMAGELIST hImageList = ImageList_Create(16, 16, ILC_COLOR16, 3, 10);
+			static HBITMAP hBitMap = LoadBitmap(GetModuleHandle(0), MAKEINTRESOURCE(IDB_BITMAP1));
+			ImageList_Add(hImageList, hBitMap, NULL);
+			DeleteObject(hBitMap);
+			SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_SETIMAGELIST, 0, (LPARAM)hImageList);
 
 			TV_INSERTSTRUCT tvinsert = {0};
 			tvinsert.hParent = NULL;
 			tvinsert.hInsertAfter = TVI_ROOT;
 			tvinsert.item.pszText = L"All Items";
-			tvinsert.item.mask = TVIF_HANDLE | TVIF_TEXT | TVIF_PARAM | TVIF_STATE;
+			tvinsert.item.mask = TVIF_HANDLE | TVIF_TEXT | TVIF_IMAGE | TVIF_SELECTEDIMAGE | TVIF_PARAM | TVIF_STATE;
 			tvinsert.item.stateMask = TVIS_STATEIMAGEMASK;
+			tvinsert.item.iImage = 0;
+			tvinsert.item.iSelectedImage = 1;
 			tvinsert.hInsertAfter = TVI_LAST;
 			HTREEITEM TRoot = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 			HTREEITEM TQuality;
@@ -527,12 +793,16 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 				tvinsert.item.pszText = str_to_LPWSTR(quality);
 				TQuality = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 				delete[] tvinsert.item.pszText;
-				for (auto basetype : item_types) {
+				for (auto basetype : item_tree) {
+					if ((quality == "Low" || quality == "Superior") && basetype.first == "Misc")
+						continue;
 					tvinsert.hParent = TQuality;
 					tvinsert.item.pszText = str_to_LPWSTR(basetype.first);
 					TBasetype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 					delete[] tvinsert.item.pszText;
 					for (auto & subtype : basetype.second) {
+						if ((quality == "Magic" || quality == "Rare") && basetype.first == "Misc" && subtype.first != "Other")
+							continue;
 						tvinsert.hParent = TBasetype;
 						tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
 						TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
@@ -541,104 +811,245 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 							tvinsert.hParent = TSubtype;
 							tvinsert.item.pszText = tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"";
 							TTier = tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TSubtype;
+							tvinsert.item.iImage = 2;
+							tvinsert.item.iSelectedImage = 2;
 							for (auto & type : tier.second) {
+								if ((quality == "Normal" && basetype.first == "Misc" && subtype.first == "Other")
+									&& (type.first == "Charm Large" || type.first == "Charm Medium" || type.first == "Charm Small"
+									|| type.first == "Jewel" || type.first == "amulet" || type.first == "ring"))
+									continue;
+								if ((quality == "Magic" || quality == "Rare") && basetype.first == "Misc" && subtype.first == "Other"
+									&& type.first != "Arrows" && type.first != "Bolts"
+									&& type.first != "Hallowed Bolts" && type.first != "Hellfire Arrows"
+									&& type.first != "Razorspine Bolts" && type.first != "Runic Arrows"
+									&& type.first != "Charm Large" && type.first != "Charm Medium" && type.first != "Charm Small"
+									&& type.first != "Jewel" && type.first != "amulet" && type.first != "ring")
+									continue;
+
+								if (quality == "Rare" && basetype.first == "Misc" && subtype.first == "Other"
+									&& (type.first == "Charm Large" || type.first == "Charm Medium" || type.first == "Charm Small"))
+									continue;
+
+								ItemCode* ic = new ItemCode;
+								ic->basetype = type.second->basetype;
+								ic->code = type.second->code;
+								ic->subtype = type.second->subtype;
+								ic->tier = type.second->tier;
+								ic->type = type.second->type;
+								ic->def_col = 
+									quality == "Low" ? COL_GRAY 
+									: quality == "Normal" ? COL_WHITE 
+									: quality == "Superior" ? COL_GRAY 
+									: quality == "Magic" ? COL_BLUE 
+									: quality == "Rare" ? COL_YELLOW
+									: COL_RED;
+
 								tvinsert.hParent = TTier;
-								tvinsert.item.pszText = str_to_LPWSTR(type.first);
-								tvinsert.item.lParam = (LPARAM)type.second;
+								tvinsert.item.pszText = str_to_LPWSTR(type.first + " (" + type.second->code + ")");
+								tvinsert.item.lParam = (LPARAM)ic;
 								SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 								delete[] tvinsert.item.pszText;
 							}
 							tvinsert.item.lParam = 0;
+							tvinsert.item.iImage = 0;
+							tvinsert.item.iSelectedImage = 1;
 						}
 					}
 				}
 			}
-			
-			/*tvinsert.hParent = NULL;
-			tvinsert.hInsertAfter = TVI_ROOT;
-			tvinsert.item.pszText = L"All Items";
-			TRoot = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE2, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
-			for (auto basetype : item_types) {
-				tvinsert.hParent = TRoot;
+
+			tvinsert.hParent = TRoot;
+			tvinsert.item.pszText = L"Annihilus";
+			TQuality = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+			for (auto basetype : annihilus_tree) {
+				tvinsert.hParent = TQuality;
 				tvinsert.item.pszText = str_to_LPWSTR(basetype.first);
-				TBasetype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE2, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+				TBasetype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 				delete[] tvinsert.item.pszText;
-				for (auto & tier : basetype.second) {
+				for (auto & subtype : basetype.second) {
 					tvinsert.hParent = TBasetype;
-					tvinsert.item.pszText = (tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"");
-					TTier = (tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE2, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TBasetype);
-					for (auto & subtype : tier.second) {
-						tvinsert.hParent = TTier;
-						tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
-						TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE2, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
-						delete[] tvinsert.item.pszText;
-						for (auto & type : subtype.second) {
-							tvinsert.hParent = TSubtype;
-							tvinsert.item.pszText = str_to_LPWSTR(type.first);
-							tvinsert.item.lParam = (LPARAM)type.second;
-							TQuality = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE2, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+					tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
+					TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+					delete[] tvinsert.item.pszText;
+					for (auto & tier : subtype.second) {
+						tvinsert.hParent = TSubtype;
+						tvinsert.item.pszText = tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"";
+						TTier = tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TSubtype;
+						for (auto & type : tier.second) {
+							ItemCode* ic = new ItemCode;
+							ic->basetype = type.second->basetype;
+							ic->code = type.second->code;
+							ic->subtype = type.second->subtype;
+							ic->tier = type.second->tier;
+							ic->type = type.second->type;
+							ic->def_col = COL_DARKGOLD;
+
+							tvinsert.hParent = TTier;
+							tvinsert.item.pszText = str_to_LPWSTR(type.first + " (" + type.second->code + ")");
+							tvinsert.item.lParam = (LPARAM)ic;
+							SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 							delete[] tvinsert.item.pszText;
-							for (auto quality : qualities) {
-								tvinsert.hParent = TQuality;
-								tvinsert.item.pszText = str_to_LPWSTR(quality);
-								SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE2, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+						}
+						tvinsert.item.lParam = 0;
+					}
+				}
+			}
+
+			tvinsert.hParent = TRoot;
+			tvinsert.item.pszText = L"Set";
+			TQuality = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+			for (auto basetype : set_tree) {
+				tvinsert.hParent = TQuality;
+				tvinsert.item.pszText = str_to_LPWSTR(basetype.first);
+				TBasetype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+				delete[] tvinsert.item.pszText;
+				for (auto & subtype : basetype.second) {
+					tvinsert.hParent = TBasetype;
+					tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
+					TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+					delete[] tvinsert.item.pszText;
+					for (auto & tier : subtype.second) {
+						tvinsert.hParent = TSubtype;
+						tvinsert.item.pszText = tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"";
+						TTier = tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TSubtype;
+						for (auto & type : tier.second) {
+							if (g_scodenames[type.second->code].size()) {
+								tvinsert.hParent = TTier;
+								string text = type.first + " (" + type.second->code + ") [";
+
+								for (auto a : g_scodenames[type.second->code]) {
+									if (a.second == 1) {
+										text += a.first + ", ";
+									}
+								}
+								text.pop_back();
+								text.pop_back();
+								text += "]";
+
+								ItemCode* ic = new ItemCode;
+								ic->basetype = type.second->basetype;
+								ic->code = type.second->code;
+								ic->subtype = type.second->subtype;
+								ic->tier = type.second->tier;
+								ic->type = type.second->type;
+								ic->def_col = COL_LIGHTGREEN;
+
+								tvinsert.item.pszText = str_to_LPWSTR(text);
+								tvinsert.item.lParam = (LPARAM)ic;
+								SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
 								delete[] tvinsert.item.pszText;
 							}
 						}
 						tvinsert.item.lParam = 0;
 					}
 				}
-			}*/
+			}
+
+			tvinsert.hParent = TRoot;
+			tvinsert.item.pszText = L"Unique";
+			TQuality = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+			for (auto basetype : unique_tree) {
+				tvinsert.hParent = TQuality;
+				tvinsert.item.pszText = str_to_LPWSTR(basetype.first);
+				TBasetype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+				delete[] tvinsert.item.pszText;
+				for (auto & subtype : basetype.second) {
+					tvinsert.hParent = TBasetype;
+					tvinsert.item.pszText = str_to_LPWSTR(subtype.first);
+					TSubtype = (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+					delete[] tvinsert.item.pszText;
+					for (auto & tier : subtype.second) {
+						tvinsert.hParent = TSubtype;
+						tvinsert.item.pszText = tier.first == 1 ? L"Normal" : tier.first == 2 ? L"Exceptional" : tier.first == 3 ? L"Elite" : L"";
+						TTier = tier.first > 0 ? (HTREEITEM)SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert) : TSubtype;
+						for (auto & type : tier.second) {
+							if (g_ucodenames[type.second->code].size()) {
+								tvinsert.hParent = TTier;
+								string text = type.first + " (" + type.second->code + ") [";
+
+								for (auto a : g_ucodenames[type.second->code]) {
+									if (a.second == 1) {
+										text += a.first + ", ";
+									}
+								}
+								text.pop_back();
+								text.pop_back();
+								text += "]";
+
+								ItemCode* ic = new ItemCode;
+								ic->basetype = type.second->basetype;
+								ic->code = type.second->code;
+								ic->subtype = type.second->subtype;
+								ic->tier = type.second->tier;
+								ic->type = type.second->type;
+								ic->def_col = COL_DARKGOLD;
+
+								tvinsert.item.pszText = str_to_LPWSTR(text);
+								tvinsert.item.lParam = (LPARAM)ic;
+								SendDlgItemMessage(hwnd, IDC_ITEMCODEFILTERTREE, TVM_INSERTITEM, 0, (LPARAM)&tvinsert);
+								delete[] tvinsert.item.pszText;
+							}
+						}
+						tvinsert.item.lParam = 0;
+					}
+				}
+			}
 
 			PostMessage(hwnd, WM_COMMAND, IDC_BUTTON1, NULL);
 
 			break;
 		}
-		case WM_COMMAND:{
-			if (HIWORD(wParam) == EN_CHANGE) {
-				if (LOWORD(wParam) == IDC_EDITSTARTVAL) {
-					wchar_t text[10];
-					GetWindowText(GetDlgItem(hwnd, LOWORD(wParam)), text, 10);
-					string txt = wstr_to_str(text);
-					int start;
-					if (txt.size() == 0)
-						start = 1;
-					else
-						start = str_to_int(txt);
-					PrintBaseFilterCodes(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE), start);
-					break;
-				}
+		/*case WM_CTLCOLORBTN:{
+			int col = -1;
+			switch (GetDlgCtrlID((HWND)lParam)) {
+				case IDC_RADIO1:
+					col = 0; break;
+				case IDC_RADIO2:
+					col = 1; break;
+				case IDC_RADIO3:
+					col = 2; break;
+				case IDC_RADIO4:
+					col = 3; break;
+				case IDC_RADIO5:
+					col = 4; break;
+				case IDC_RADIO6:
+					col = 5; break;
+				case IDC_RADIO7:
+					col = 6; break;
+				case IDC_RADIO8:
+					col = 7; break;
+				case IDC_RADIO9:
+					col = 8; break;
+				case IDC_RADIO10:
+					col = 9; break;
+				case IDC_RADIO11:
+					col = 10; break;
+				case IDC_RADIO12:
+					col = 11; break;
+				case IDC_RADIO13:
+					col = 12; break;
+				case IDC_RADIO14:
+					col = 13; break;
+				case IDC_RADIO15:
+					col = 14; break;
+				case IDC_RADIO16:
+					col = 15; break;
+				case IDC_RADIO17:
+					col = 16; break;
 			}
+
+			if (col != -1) {
+				HDC hDC = (HDC)wParam;
+
+				SetTextColor(hDC, getitemqualitycolor(col));
+
+				
+			}
+
+			break;
+		}*/
+		case WM_COMMAND:{
 			switch (wParam) {
-				case IDC_RADIO1:{
-					ShowWindow(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE), SW_SHOW);
-					ShowWindow(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE2), SW_HIDE);
-
-					vector<string>* lines;
-					vector<string> temp;
-					if ((HWND)lParam == GetDlgItem(hwnd, IDC_RADIO1)) {
-						HWND edit = GetDlgItem(hwnd, IDC_RICHEDIT21);
-						int len = GetWindowTextLength(edit);
-						wchar_t* wtext = new wchar_t[GetWindowTextLength(edit)];
-						GetWindowText(edit, wtext, len);
-						wstring wt = wstring(wtext);
-						delete[] wtext;
-						string text = wstr_to_str(wt);
-						temp = split_str(text, "\r\n");
-						lines = &temp;
-					}
-					else
-						lines = (vector<string>*)lParam;
-
-					InitTree(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE), *lines);
-					break;
-				}
-				case IDC_RADIO2:{
-					ShowWindow(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE), SW_HIDE);
-					ShowWindow(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE2), SW_SHOW);
-
-					break;
-				}
 				case IDC_BUTTON1:{//hack
 					if (lParam == NULL) {
 						vector<string> lines;
@@ -675,9 +1086,14 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 		case WM_NOTIFY: {
 			LPNMHDR lpnmh = (LPNMHDR)lParam;
 			switch (lpnmh->idFrom) {
-				case IDC_ITEMCODEFILTERTREE:
-				case IDC_ITEMCODEFILTERTREE2:{
+				case IDC_ITEMCODEFILTERTREE:{
 					switch (lpnmh->code) {
+						case NM_CUSTOMDRAW:{
+							LPNMTVCUSTOMDRAW pNMTVCD = (LPNMTVCUSTOMDRAW)lpnmh;
+							HWND hWndTreeView = lpnmh->hwndFrom;
+							SetWindowLong(hwnd, DWL_MSGRESULT, TreeCustomDraw(hWndTreeView, pNMTVCD));
+							break;
+						}
 						case TVN_KEYDOWN:{
 							LPNMTVKEYDOWN ptvkd = (LPNMTVKEYDOWN)lParam;
 							if (ptvkd->wVKey == VK_SPACE) {
@@ -710,16 +1126,30 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 								tvi.hItem = (HTREEITEM)ht.hItem;
 								tvi.stateMask = TVIS_STATEIMAGEMASK;
 								TreeView_SetCheckStateForAllChildren(lpnmh->hwndFrom, TreeView_GetChild(lpnmh->hwndFrom, tvi.hItem), !TreeView_GetCheckState(lpnmh->hwndFrom, tvi.hItem));
+																
+								ItemCode* ic = (ItemCode*)TreeView_GetItemParam(lpnmh->hwndFrom, tvi.hItem);
+								if (ic)
+									ic->col = TreeView_GetCheckState(lpnmh->hwndFrom, tvi.hItem) == 0 ? get_selected_color_mode() : -1;
+								
 								RECT* hack = new RECT;
 								hack->left = (LONG)lpnmh->hwndFrom;
 								hack->right = (LONG)tvi.hItem;
 								PostMessage(hwnd, WM_COMMAND, 10, (LPARAM)hack);
 								PostMessage(hwnd, WM_COMMAND, IDC_BUTTON1, lpnmh->idFrom);
+
+								RedrawWindow(lpnmh->hwndFrom, NULL, NULL, RDW_UPDATENOW | RDW_INVALIDATE);
+
 							}
 							break;
 						}
+						case NM_RCLICK:{
+							HTREEITEM hItem = TreeView_GetNextItem(lpnmh->hwndFrom, 0, TVGN_DROPHILITE);
+							if (hItem)
+								TreeView_SelectItem(lpnmh->hwndFrom, hItem);
+							break;
+						}
 					}
-					break;
+					return TRUE;
 				}
 			}
 			break;
@@ -732,3 +1162,4 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 	}
 	return FALSE;
 }
+

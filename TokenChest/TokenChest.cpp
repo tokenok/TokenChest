@@ -508,6 +508,54 @@ namespace itemcodes {
 		{"Annihilus", "Misc", "nv Angel Wings", "ef16", 0},
 		{"Annihilus", "Misc", "nv Demon Wings", "ef17", 0},
 		{"Annihilus", "Misc", "nv Iridescent Wings", "ef18", 0},
+		{"Annihilus", "Misc", "Scroll of Rune Upgrade", "scru", 0},
+		{"Annihilus", "Misc", "Scroll of Rune Downgrade", "scrd", 0},
+		{"Annihilus", "Misc", "nv Warped", "ef20", 0},
+		{"Annihilus", "Misc", "Scroll of Magic Damage", "en38", 0},
+		{"Annihilus", "Misc", "Scroll of the Horadrim", "en39", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 1", "cru1", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 2", "cru2", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 3", "cru3", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 4", "cru4", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 5", "cru5", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 6", "cru6", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 7", "cru7", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 8", "cru8", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 9", "cru9", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 10", "cr10", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 11", "cr11", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 12", "cr12", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 13", "cr13", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 14", "cr14", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 15", "cr15", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 16", "cr16", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 17", "cr17", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 18", "cr18", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 19", "cr19", 0},
+		{"Annihilus", "Misc", "Crucible Admission Level 20", "cr20", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 2", "crk2", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 3", "crk3", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 4", "crk4", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 5", "crk5", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 6", "crk6", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 7", "crk7", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 8", "crk8", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 9", "crk9", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 10", "ck10", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 11", "ck11", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 12", "ck12", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 13", "ck13", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 14", "ck14", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 15", "ck15", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 16", "ck16", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 17", "ck17", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 18", "ck18", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 19", "ck19", 0},
+		{"Annihilus", "Misc", "Key to The Crucible Level 20", "ck20", 0},
+		{"Annihilus", "Misc", "The Dark Wanderer", "cai1", 0},
+		{"Annihilus", "Misc", "Horadric Jewel", "cai3", 0},
+		{"Annihilus", "Misc", "Nephalem's Birthright", "uld3", 0},
+		{"Annihilus", "Misc", "nv Conquerer of Crucible", "ef19", 0},
 		{"Annihilus", "Armor", "Knarst's Ribcage", "knrc", 0},
 		{"Annihilus", "Armor", "Moon of R'lyeh", "ctpe", 0},
 		{"Annihilus", "Armor", "The Husk of Kaalut", "huka", 0},
@@ -524,6 +572,10 @@ namespace itemcodes {
 		{"Annihilus", "Armor", "Divinity", "tyr2", 0},
 		{"Annihilus", "Armor", "Heaven's Champion", "tyr3", 0},
 		{"Annihilus", "Armor", "Death's Advance", "lic3", 0},
+		{"Annihilus", "Armor", "Hysteria", "twi2", 0},
+		{"Annihilus", "Armor", "Devil's Bargain", "twi3", 0},
+		{"Annihilus", "Armor", "Elder of Tristram", "cai2", 0},
+		{"Annihilus", "Armor", "Emblem of the Edyrem", "uld4", 0},
 		{"Annihilus", "Weapon", "Short Circuit", "shci", 0},
 		{"Annihilus", "Weapon", "Frostmourne", "rnbl", 0},
 		{"Annihilus", "Weapon", "Ssshaa's Primordial Fang", "sfan", 0},
@@ -537,7 +589,17 @@ namespace itemcodes {
 		{"Annihilus", "Weapon", "Gae Bolg", "gabo", 0},	
 		{"Annihilus", "Weapon", "Eldruin", "anbl", 0},
 		{"Annihilus", "Weapon", "The Plaguebringer", "lic2", 0},
+		{"Annihilus", "Weapon", "Flaming Pearl", "chi1", 0},
+		{"Annihilus", "Weapon", "Buckshot", "chi2", 0},
+		{"Annihilus", "Weapon", "The Twins Anger", "twi1", 0},
+		{"Annihilus", "Weapon", "Thunderfury", "uld1", 0},
+		{"Annihilus", "Weapon", "Khalim's Hope", "uld2", 0},
 	};
+
+
+
+
+
 
 	//find duplicate item codes
 	/*
@@ -1403,7 +1465,7 @@ BOOL CALLBACK FinderDialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lP
 			switch (wParam) {
 				case IDC_DUMPBTN:{
 					int ret = DumpGames();
-				//	itemcodes::PrintPatchItemCodes();
+			//		itemcodes::PrintPatchItemCodes();
 					if (ret != ERROR_SUCCESS)
 						break;
 					//fallthrough to refresh button implementation
@@ -2382,7 +2444,7 @@ BOOL CALLBACK TabPage2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam
 						}
 						case NM_DBLCLK:{
 							find_item_in_tree((ItemData*)ListView_GetItemParam(GetDlgItem(hwnd, IDC_SEARCHRESULTS), ListView_GetCurSel(GetDlgItem(hwnd, IDC_SEARCHRESULTS))));
-
+							
 							break;
 						}
 					}
@@ -2754,10 +2816,10 @@ LRESULT CALLBACK kbhookProc(int code, WPARAM wParam, LPARAM lParam) {
 	if ((GetKeyState(VK_LWIN) & 0x8000) != 0) key += 256 * 8;
 	if ((GetKeyState(VK_RWIN) & 0x8000) != 0) key += 256 * 8;
 	if (wParam == WM_KEYDOWN || wParam == WM_SYSKEYDOWN) {
-		if (key == 602) {//ctrl + Z
+		if (key == 602 && GetForegroundWindow() == g_finder) {//ctrl + Z
 			trade::undo.undo();
 		}
-		else if (key == 601) {//ctrl + y
+		else if (key == 601 && GetForegroundWindow() == g_finder) {//ctrl + y
 			trade::undo.redo();
 		}
 	}

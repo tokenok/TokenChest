@@ -14,7 +14,7 @@
 #include "statview.h"
 #include "treeview.h"
 
-//#pragma warning(disable: 4503)
+#pragma warning(disable: 4503)
 
 using namespace std;
 
