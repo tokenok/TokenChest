@@ -646,3 +646,4 @@ Nephalem's Birthright|uld3
 Emblem of the Edyrem|uld4
 Conquerer of Crucible|ef19
 Warped|ef20
+Infernal Pearl|inpe

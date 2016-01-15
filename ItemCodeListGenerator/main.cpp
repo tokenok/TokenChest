@@ -16,6 +16,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/lexical_cast.hpp>
 
+#include "common/common.h"
 #include "resource.h"
 
 #pragma warning(disable: 4503)
@@ -28,84 +29,6 @@ HWND g_hwnd;
 string ConfigIni;
 
 const COLORREF g_cust_color = RGB(25, 25, 25);
-
-void SHOW_CONSOLE(bool show, bool noclose = false) {
-	static bool show_state = false;
-	if (show && !show_state) {
-		std::cout.clear();
-		FILE *stream;
-		AllocConsole();
-		AttachConsole(GetCurrentProcessId());
-		freopen_s(&stream, "CONOUT$", "w", stdout);
-		if (noclose)
-			EnableMenuItem(GetSystemMenu(GetConsoleWindow(), FALSE), SC_CLOSE, MF_GRAYED);
-	}
-	if (!show)
-		FreeConsole();
-	show_state = show;
-}
-vector<string> split_str(string str, const string& delimiter, int minlen = -1) {
-	vector<string> ret;
-	UINT pos = 0;
-	string token;
-	while ((pos = str.find(delimiter)) != std::string::npos) {
-		token = str.substr(0, pos);
-		if ((int)token.size() >= minlen)
-			ret.push_back(token);
-		str.erase(0, pos + delimiter.length());
-	}
-	if ((int)str.size() > 0)
-		ret.push_back(str);
-	return ret;
-}
-string int_to_str(int num, bool is_hex = false) {
-	cout.clear();
-	stringstream out;
-	out << (is_hex ? hex : dec) << num;
-	string return_value = (is_hex ? "0x" : "") + out.str();
-	return return_value;
-}
-int str_to_int(string str) {
-	cout.clear();
-	stringstream out(str);
-	int num;
-	out >> (str.find("0x") != string::npos ? hex : dec) >> num;
-	return num;
-}
-//LEAKS + warning (str_to_LPWSTR)
-LPWSTR str_to_LPWSTR(string s) {
-	LPWSTR m = new wchar_t[s.size() + 1];
-	copy(s.begin(), s.end(), m);
-	m[s.size()] = '\0';
-	return m;
-}
-string wstr_to_str(wstring ws) {
-	string ret(ws.begin(), ws.end());
-	return ret;
-}
-wstring str_to_wstr(string s) {
-	wstring ret(s.begin(), s.end());
-	return ret;
-}
-string wastr_to_str(wchar_t *wc, UINT size) {
-	char* ch = new char[size];
-	char DefChar = ' ';
-	WideCharToMultiByte(CP_ACP, 0, wc, -1, ch, size, &DefChar, NULL);
-	string text(ch);
-	delete[] ch;
-	return text;
-}
-std::string getexedir() {
-	TCHAR path[MAX_PATH];
-	GetModuleFileName(NULL, path, MAX_PATH);
-	string dir = wstr_to_str(path);
-	return dir.substr(0, dir.rfind('\\'));
-}
-RECT getclientrect(HWND wnd) {
-	RECT ret;
-	GetClientRect(wnd, &ret);
-	return ret;
-}
 
 enum quality {
 	QUAL_WHATEVER,

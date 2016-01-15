@@ -19,7 +19,7 @@ Death's Advance,lic3,0
 Hysteria,twi2,0
 Devil's Bargain,twi3,0
 Elder of Tristram,cai2,0
-Blade Barrier,uld4,0
+Emblem of the Edyrem,uld4,0
 @Misc
 Runic Arrows,aqv2,0
 Hellfire Arrows,aqv3,0
@@ -177,8 +177,8 @@ nv Iridescent Wings,ef18,0
 Scroll of Rune Upgrade,scru,0
 Scroll of Rune Downgrade,scrd,0
 nv Warped,ef20,0
-Enchantment Scroll,en38,0
-Enchantment Scroll,en39,0
+Scroll of Magic Damage,en38,0
+Scroll of the Horadrim,en39,0
 Crucible Admission Level 1,cru1,0
 Crucible Admission Level 2,cru2,0
 Crucible Admission Level 3,cru3,0
