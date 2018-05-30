@@ -16,7 +16,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/lexical_cast.hpp>
 
-#include "common/common.h"
+#include "C:\CPPlibs\common\f\common.h"
 #include "resource.h"
 
 #pragma warning(disable: 4503)
