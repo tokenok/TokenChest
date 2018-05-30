@@ -444,21 +444,23 @@ void read_itemcodes() {
 void LoadItemConfig() {
 	char szConfig[200];
 
-	for (int aNumber = 1;; aNumber++) {
-		ostringstream szNumber;
-		szNumber << aNumber;
+	ifstream infile;
+	infile.open("itemfilter.txt");
 
-		GetPrivateProfileStringA("Item Config", szNumber.str().c_str(), "", szConfig, 200, ConfigIni.c_str());
-		if (szConfig[0] == '\0') { printf("%d item configuration entries have been loaded", aNumber - 1); break; }
+	int linenum = 1;
+	while (infile.good()) {
+		string Config;
+		getline(infile, Config);
 
-		string Config(szConfig);
+		if (Config.size() == 0)
+			continue;
 
 		string::size_type i = Config.find(',');
-		if (i == string::npos) { printf("Error in configuration at line: %d", aNumber); continue; }
+		if (i == string::npos) { printf("Error in configuration at line: %d", linenum); continue; }
 		string ItemCode(Config.substr(0, i));
 
 		string::size_type i2 = Config.find(',', i + 1);
-		if (i2 == string::npos) { printf("Error in configuration at line: %d", aNumber); continue; }
+		if (i2 == string::npos) { printf("Error in configuration at line: %d", linenum); continue; }
 		string ItemQuality(Config.substr(i + 1, i2 - i - 1));
 
 		string ItemColor(Config.substr(i2 + 1));
@@ -472,10 +474,16 @@ void LoadItemConfig() {
 		hConfig.Color = TransColor(ItemColor.c_str());
 		//Log("%x, %d, %d",hConfig.Code,hConfig.Quality,hConfig.Color);
 		g_ItemArray.push_back(hConfig);
+
+		linenum++;
 	}
+
+	infile.close();
 }
 void SaveItemConfig(int start = 1) {
-	WritePrivateProfileStringA("Item Config", NULL, NULL, ConfigIni.c_str());//clear item config
+	ofstream outfile;
+	outfile.open("itemfilter.txt");
+
 	HWND edit = GetDlgItem(g_hwnd, IDC_RICHEDIT21);
 	int len = GetWindowTextLength(edit);
 	if (len == 0) return;
@@ -488,18 +496,21 @@ void SaveItemConfig(int start = 1) {
 		string code = lines[i].substr(lines[i].find('=') + 1, lines[i].find(',') - lines[i].find('=') - 1);
 		string qual = lines[i].substr(lines[i].find(',') + 1, lines[i].rfind(',') - lines[i].find(',') - 1);
 		string col = lines[i].substr(lines[i].rfind(',') + 1, string::npos);
+
 		boost::trim(code); boost::trim(qual); boost::trim(col);
 		boost::to_lower(code); boost::to_lower(qual); boost::to_lower(col);
 
-		string configline = code + "," + qual + "," + col;
-		WritePrivateProfileStringA("Item Config", boost::lexical_cast<string>(i + start).c_str(), configline.c_str(), ConfigIni.c_str());
+		string configline = code + ", " + qual + ", " + col;		
+
+		outfile << configline << '\n';
 	}
+
+	outfile.close();
 }
 
-void PrintBaseFilterCodes(HWND tree, int start = 1) {
+void PrintBaseFilterCodes(HWND tree) {
 	SetWindowText(GetDlgItem(GetParent(tree), IDC_RICHEDIT21), L"");
 
-	int c = start;
 	string output = "";
 
 	if (GetDlgCtrlID(tree) == IDC_ITEMCODEFILTERTREE) {
@@ -522,7 +533,7 @@ void PrintBaseFilterCodes(HWND tree, int start = 1) {
 				quality = "whatever";
 			
 			if (filter_itemtypes[i])
-				output += int_to_str(c++) + "=" + ic->code + "," + quality + "," + TransColor(ic->col) + "\r\n";
+				output += ic->code + ", " + quality + ", " + TransColor(ic->col) + "\r\n";
 		}
 	}
 
@@ -615,7 +626,7 @@ void InitTree(HWND tree, vector<string>& configlines) {
 				while (current != NULL && child == NULL) {
 					child = rec(tree, TreeView_GetChild(tree, current), code, list);
 					ItemCode* ic = ((ItemCode*)TreeView_GetItemParam(tree, current));
-					if ((TreeView_GetChild(tree, current) == NULL) && (((ItemCode*)TreeView_GetItemParam(tree, current))->code == code))
+					if ((TreeView_GetChild(tree, current) == NULL) && (ItemCode*)TreeView_GetItemParam(tree, current) && (((ItemCode*)TreeView_GetItemParam(tree, current))->code == code))
 						list->push_back(current);
 					current = TreeView_GetNextSibling(tree, current);
 				}
@@ -644,7 +655,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE/* hPrevInstance*/, LPSTR/* arg
 #ifdef _DEBUG
 	SHOW_CONSOLE(true);
 #endif
-	ConfigIni = getexedir() + "\\D2Ex.ini";
+	ConfigIni = getexedir() + "\\itemfilter.txt";
 
 	InitCommonControls();
 
@@ -985,12 +996,12 @@ BOOL CALLBACK DialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) 
 						auto t = [](HWND hwnd) {
 							this_thread::sleep_for(chrono::milliseconds(100));
 							SendMessage(hwnd, WM_COMMAND, IDC_RADIO1, (LPARAM)GetDlgItem(hwnd, IDC_RADIO1));
-							PrintBaseFilterCodes(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE), 1);
+							PrintBaseFilterCodes(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE));
 						};
 						thread b(t, hwnd);
 						b.detach();
 					}
-					PrintBaseFilterCodes(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE), 1);
+					PrintBaseFilterCodes(GetDlgItem(hwnd, IDC_ITEMCODEFILTERTREE));
 					break;
 				}
 				case IDC_SAVEBTN:{

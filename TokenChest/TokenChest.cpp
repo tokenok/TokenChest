@@ -21,6 +21,7 @@
 #include <map>
 #include <string>
 #include <fstream>
+#include <algorithm>
 #include <Richedit.h>
 #include <shellapi.h>
 #include <Shlwapi.h>
@@ -387,6 +388,7 @@ namespace itemcodes {
 		{"Annihilus", "Misc", "Puzzle Box", "puz2", 0},
 		{"Annihilus", "Misc", "Puzzle Box", "puz3", 0},
 		{"Annihilus", "Misc", "Puzzle Box", "puz4", 0},
+		{"Annihilus", "Misc", "Puzzle Box", "puz5", 0},
 		{"Annihilus", "Misc", "Madness Caster", "s1r1", 0},
 		{"Annihilus", "Misc", "Nightmare Caster", "s1r2", 0},
 		{"Annihilus", "Misc", "Horror Caster", "s1am", 0},
@@ -556,6 +558,43 @@ namespace itemcodes {
 		{"Annihilus", "Misc", "Horadric Jewel", "cai3", 0},
 		{"Annihilus", "Misc", "Nephalem's Birthright", "uld3", 0},
 		{"Annihilus", "Misc", "nv Conquerer of Crucible", "ef19", 0},
+		{"Annihilus", "Misc", "Mark of Trag'Oul", "puz6", 0},
+		{"Annihilus", "Misc", "The Oculus Ring", "spe4", 0},
+		{"Annihilus", "Misc", "Alkor's Shrunken Head", "spe5", 0},
+		{"Annihilus", "Misc", "Diablo's Rebirth", "sp10", 0},
+		{"Annihilus", "Misc", "Neo Annihilus", "sp11", 0},
+		{"Annihilus", "Misc", "Wrapped Gift", "chg1", 0},
+		{"Annihilus", "Misc", "Wrapped Gift", "chg2", 0},
+		{"Annihilus", "Misc", "Wrapped Gift", "chg3", 0},
+		{"Annihilus", "Misc", "Wrapped Gift", "chg4", 0},
+		{"Annihilus", "Misc", "Wrapped Gift", "chg5", 0},
+		{"Annihilus", "Misc", "Rudolph's Nose", "sp15", 0},
+		{"Annihilus", "Misc", "Mark of Sin", "puz7", 0},
+		{"Annihilus", "Misc", "Band of Sin", "sp17", 0},
+		{"Annihilus", "Misc", "Dark Matter", "ef21", 0},
+		{"Annihilus", "Misc", "Beach Ball", "ef22", 0},
+		{"Annihilus", "Misc", "Exploding Cow", "ef23", 0},
+		{"Annihilus", "Misc", "Cainnado", "ef25", 0},
+		{"Annihilus", "Misc", "Guts Throw", "ef27", 0},
+		{"Annihilus", "Misc", "Disco Maelstrom", "ef24", 0},
+		{"Annihilus", "Misc", "Snowy Vengeance", "ef28", 0},
+		{"Annihilus", "Misc", "Raise Santa", "ef26", 0},
+		{"Annihilus", "Misc", "Snow Effect", "ef29", 0},
+		{"Annihilus", "Misc", "Scroll of Fire Pierce", "en40", 0},
+		{"Annihilus", "Misc", "Scroll of Cold Pierce", "en41", 0},
+		{"Annihilus", "Misc", "Scroll of Lightning Pierce", "en42", 0},
+		{"Annihilus", "Misc", "Scroll of Poison Pierce", "en43", 0},
+		{"Annihilus", "Misc", "Scroll of Magic Pierce", "en44", 0},
+		{"Annihilus", "Misc", "Scroll of Physical Pierce", "en45", 0},
+		{"Annihilus", "Misc", "Scroll of Mortality", "en46", 0},
+		{"Annihilus", "Misc", "Scroll of Paradox", "en47", 0},
+		{"Annihilus", "Misc", "Bag of Fragments", "frbg", 0},
+		{"Annihilus", "Misc", "Scroll of Tera", "en48", 0},
+		{"Annihilus", "Misc", "Black Soulstone", "puz8", 0},
+		{"Annihilus", "Misc", "Standard of Hell", "std2", 0},
+		{"Annihilus", "Misc", "Mark of Lies", "puz9", 0},
+		{"Annihilus", "Misc", "Xephirian Amulet", "sp22", 0},
+		{"Annihilus", "Misc", "Obsidian Ring", "sp25", 0},
 		{"Annihilus", "Armor", "Knarst's Ribcage", "knrc", 0},
 		{"Annihilus", "Armor", "Moon of R'lyeh", "ctpe", 0},
 		{"Annihilus", "Armor", "The Husk of Kaalut", "huka", 0},
@@ -576,6 +615,20 @@ namespace itemcodes {
 		{"Annihilus", "Armor", "Devil's Bargain", "twi3", 0},
 		{"Annihilus", "Armor", "Elder of Tristram", "cai2", 0},
 		{"Annihilus", "Armor", "Emblem of the Edyrem", "uld4", 0},
+		{"Annihilus", "Armor", "Warmonger", "tra1", 0},
+		{"Annihilus", "Armor", "Trag-Oul's True Guise", "tra2", 0},
+		{"Annihilus", "Armor", "Sanctuary's Balance", "tra3", 0},
+		{"Annihilus", "Armor", "Corrupted Stormshield", "cto2", 0},
+		{"Annihilus", "Armor", "Corrupted Harlequin Crest", "cto3", 0},
+		{"Annihilus", "Armor", "Short Circlet", "spe1", 0},
+		{"Annihilus", "Armor", "Skull of the Unclean", "spe2", 0},
+		{"Annihilus", "Armor", "Leoric's Folly", "spe6", 0},
+		{"Annihilus", "Armor", "Crown of the Skeleton King", "spe7", 0},
+		{"Annihilus", "Armor", "Elf Slippers", "sp13", 0},
+		{"Annihilus", "Armor", "Azmodan's Shell", "sp16", 0},
+		{"Annihilus", "Armor", "Serpent's Deception", "sp21", 0},
+		{"Annihilus", "Armor", "Robes of the Reaper", "sp24", 0},
+		{"Annihilus", "Armor", "Wisdom's End", "sp26", 0},
 		{"Annihilus", "Weapon", "Short Circuit", "shci", 0},
 		{"Annihilus", "Weapon", "Frostmourne", "rnbl", 0},
 		{"Annihilus", "Weapon", "Ssshaa's Primordial Fang", "sfan", 0},
@@ -594,23 +647,18 @@ namespace itemcodes {
 		{"Annihilus", "Weapon", "The Twins Anger", "twi1", 0},
 		{"Annihilus", "Weapon", "Thunderfury", "uld1", 0},
 		{"Annihilus", "Weapon", "Khalim's Hope", "uld2", 0},
+		{"Annihilus", "Weapon", "Corrupted Lightsabre", "cto1", 0},
+		{"Annihilus", "Weapon", "Buster Sword", "spe3", 0},
+		{"Annihilus", "Weapon", "The Butcher's Cleaver", "spe8", 0},
+		{"Annihilus", "Weapon", "Touch of Death", "spe9", 0},
+		{"Annihilus", "Weapon", "Flame Horizon", "sp12", 0},
+		{"Annihilus", "Weapon", "North Pole Marker", "sp14", 0},
+		{"Annihilus", "Weapon", "Heart of Hell", "sp18", 0},
+		{"Annihilus", "Weapon", "The Deadly Sin", "sp19", 0},
+		{"Annihilus", "Weapon", "Zephyr", "sp20", 0},
+		{"Annihilus", "Weapon", "Oblivion", "sp23", 0},
 	};
 
-
-
-
-
-
-	//find duplicate item codes
-	/*
-	for (UINT i = 0; i < itemcodes::itemcodes.size(); i++) {
-		for (UINT j = 0; j < itemcodes::itemcodes.size(); j++) {
-			if (itemcodes::itemcodes[i].code == itemcodes::itemcodes[j].code && i != j) {
-				printf("dupe!: %s\n", itemcodes::itemcodes[i].code.c_str());
-			}
-		}
-	}
-	*/
 
 	//get real item codes on new patch
 	void PrintPatchItemCodes() {
@@ -752,6 +800,63 @@ void write_itemcodes(vector<ItemCode> &itemcodes) {
 		}		
 	}
 	file.close();
+}
+
+bool operator==(const ItemCode &lhs, const ItemCode &rhs) {
+	if (lhs.code == rhs.code)
+		return true;
+	return false;
+}
+
+void get_itemcode_diff() {
+	printf("%s", "scanning for duplicats...\n");
+
+	for (UINT i = 0; i < itemcodes::itemcodes.size(); i++) {
+		for (UINT j = 0; j < itemcodes::itemcodes.size(); j++) {
+			if (itemcodes::itemcodes[i].code == itemcodes::itemcodes[j].code && i != j) {
+				printf("dupe!: %s\n", itemcodes::itemcodes[i].code.c_str());
+			}
+		}
+	}
+
+	std::vector<ItemCode> t_itemcodes;
+	ifstream file;
+	file.open("realitemcodes.txt");
+	if (file.is_open()) {
+		while (file.good()) {
+			string line;
+			getline(file, line);
+			vector<string> sline = split_str(line, ",");
+			if (sline.size() == 2) {
+				ItemCode code;
+
+				static vector<string> exclude = {
+					"gld",
+					"rps",
+					"rpl",
+					"bps",
+					"bpl",
+				};
+
+				if (find(exclude.begin(), exclude.end(), sline[1]) != exclude.end() || sline[1][0] == ' ')
+					continue;
+
+				code.code = sline[1];
+				t_itemcodes.push_back(code);
+			}
+		}
+	}
+
+	vector<ItemCode> res;
+	
+	printf("%s", "Searching for missing item codes...\n");
+	for (int i = 0; i < t_itemcodes.size(); i++) {
+		if (find(itemcodes::itemcodes.begin(), itemcodes::itemcodes.end(), t_itemcodes[i]) == itemcodes::itemcodes.end()) {
+			printf("%s\n", t_itemcodes[i].code.c_str());
+		}
+	}
+	printf("%s", "Done\nPress any key to continue\n");
+	_getch();
 }
 
 void init_item_name_list(HWND hlist) {
@@ -1465,6 +1570,9 @@ BOOL CALLBACK FinderDialogProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lP
 			switch (wParam) {
 				case IDC_DUMPBTN:{
 					int ret = DumpGames();
+#ifdef _DEBUG
+					get_itemcode_diff();
+#endif
 			//		itemcodes::PrintPatchItemCodes();
 					if (ret != ERROR_SUCCESS)
 						break;

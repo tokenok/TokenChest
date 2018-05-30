@@ -410,7 +410,7 @@ Lucky Dice|cm4
 Frostmourne|rnbl
 King's Jewel of Blazing|jew 
 Flavie's Bullseye|aqv3
-Flavie's Bullseye|cqv3
+Flavie's Bullseye 2|cqv3
 Short Circuit|shci
 Knarst Amulet|knam
 Knarst's Ribcage|knrc
@@ -647,3 +647,91 @@ Emblem of the Edyrem|uld4
 Conquerer of Crucible|ef19
 Warped|ef20
 Infernal Pearl|inpe
+Warmonger|tra1
+Trag-Oul's True Guise|tra2
+Sanctuary's Balance|tra3
+Corrupted Lightsabre|cto1
+Corrupted Stormshield|cto2
+Corrupted Harlequin Crest|cto3
+Short Circlet|spe1
+Skull of the Unclean|spe2
+Buster Sword|spe3
+The Oculus Ring|spe4
+Alkor's Shrunken Head|spe5
+Scroll of Fire Pierce|en40
+Scroll of Cold Pierce|en41
+Scroll of Lightning Pierce|en42
+Scroll of Poison Pierce|en43
+Scroll of Magic Pierce|en44
+Scroll of Physical Pierce|en45
+Horadric Jewel|cai3
+Scroll of Mortality|en46
+Lazarus' Leathers|ulg 
+Scroll of Paradox|en47
+Dark Matter|ef21
+High Voltage|utb 
+Beach Ball|ef22
+Exploding Cow|ef23
+Disco Maelstrom|ef24
+Cainnado|ef25
+Candy Bar|hac1
+Spooky Ghost|hac2
+Jackolantern|hac3
+Candy Corn|hac4
+Leoric's Folly|spe6
+Crown of the Skeleton King|spe7
+The Butcher's Cleaver|spe8
+Touch of Death|spe9
+Diablo's Rebirth|sp10
+Neo Annihilus|sp11
+Flame Horizon|sp12
+Death's Fervor|7gw 
+Divine Retribution|urn 
+Arkaine's Wrath|upl 
+Titan's Grip|uhg 
+Bane of the Underworld|ush 
+Spear of Zeus|amf 
+Meshif's Travelers|uvb 
+Wizard's Ire|uvg 
+Relic of the Ancients|umc 
+Raise Santa|ef26
+Guts Throw|ef27
+Snowy Vengeance|ef28
+Snow Effect|ef29
+Elf Slippers|sp13
+North Pole Marker|sp14
+Rudolph's Nose|sp15
+Azmodan's Shell|sp16
+Band of Sin|sp17
+Heart of Hell|sp18
+The Deadly Sin|sp19
+Nephalem's Birthright|uld3
+Nephalem's Birthright|uld3
+Scroll of Tera|en48
+Khalim's Hope|uld2
+Khalim's Hope|uld2
+Khalim's Hope|uld2
+Etrayu|6lw 
+Elder of Tristram|cai2
+Elder of Tristram|cai2
+Zephyr|sp20
+Serpent's Deception|sp21
+Xephirian Amulet|sp22
+Xephirian Amulet|sp22
+Xephirian Amulet|sp22
+Xephirian Amulet|sp22
+Oblivion|sp23
+Robes of the Reaper|sp24
+Obsidian Ring|sp25
+Obsidian Ring|sp25
+Obsidian Ring|sp25
+Obsidian Ring|sp25
+Wisdom's End|sp26
+Korlic's Honor|bae 
+Cerebus Virus|drb 
+Khalim's Rage|7wa 
+Akarat's Legacy|pac 
+Cataclysm|7gd 
+Echoes of Arreat|7gd 
+Lycander's Resolve|7p7 
+Natures Peace|rin 

@@ -555,6 +555,15 @@ class inv_active_bmp_files {
 	}
 };
 
+VOID CALLBACK TimerProc1(HWND hwnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime) {
+	switch (idEvent) {
+		case 0:{
+			SendMessage(hwnd, WM_PAINT, NULL, NULL);
+			break;
+		}
+	}
+}
+
 BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 	static ItemData* _g_hover_item = NULL;
 	static bool _is_cursor_in_client = false;
@@ -839,8 +848,8 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 
 							//str, dex, vit, nrg, life, mana, stam, lvl
 							vector<int> stats = {STAT_STRENGTH, STAT_ENERGY, STAT_DEXTERITY, STAT_VITALITY,
-								STAT_CURRENT_LIFE, STAT_TOTAL_LIFE, STAT_CURRENT_MANA, STAT_TOTAL_MANA, 
-								STAT_CURRENT_STAMINA, STAT_TOTAL_STAMINA, STAT_PLAYER_LEVEL};
+								STAT_HITPOINTS, STAT_MAXHP, STAT_MANA, STAT_MAXMANA,
+								STAT_STAMINA, STAT_MAXSTAMINA, STAT_LEVEL};
 							for (UINT i = 0; i < stats.size(); i++) {
 								RECT rc = charstats->getStatInvPos(stats[i]);
 								std::string text = int_to_str(charstats->getStat(stats[i]));
@@ -851,9 +860,9 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 							bool indefbox = false;
 							if (pt.x < 311 && pt.x > 160 && pt.y > 192 && pt.y < 211) 
 								indefbox = true;
-							int totalblock = indefbox ? charstats->getStat(STAT_BLOCK_CHANCE) : charstats->getStat(STAT_DEFENSE);
+							int totalblock = indefbox ? charstats->getStat(STAT_TOBLOCK) : charstats->getStat(STAT_ARMORCLASS);
 							string blockstr = int_to_str(totalblock) + (indefbox ? "%" : "");
-							RECT blockrc = charstats->getStatInvPos(STAT_DEFENSE);
+							RECT blockrc = charstats->getStatInvPos(STAT_ARMORCLASS);
 							DrawText(hDCmem, str_to_wstr(blockstr).c_str(), blockstr.size(), &blockrc, DT_VCENTER | DT_CENTER | DT_NOCLIP);
 
 							//experience
@@ -875,11 +884,11 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 							bool inexpbox = false;
 							if (PtInRect(&rc, pt))
 								inexpbox = true;
-							if (charstats->getStat(STAT_PLAYER_LEVEL) > 0) {
-								if (charstats->getStat(STAT_PLAYER_LEVEL) >= 99)
+							if (charstats->getStat(STAT_LEVEL) > 0) {
+								if (charstats->getStat(STAT_LEVEL) >= 99)
 									text = "0";
 								else
-									text = uint_to_str(inexpbox ? lvlexp[charstats->getStat(STAT_PLAYER_LEVEL) - 1] - charstats->getStat(STAT_EXPERIENCE) : lvlexp[charstats->getStat(STAT_PLAYER_LEVEL) - 1]);
+									text = uint_to_str(inexpbox ? lvlexp[charstats->getStat(STAT_LEVEL) - 1] - charstats->getStat(STAT_EXPERIENCE) : lvlexp[charstats->getStat(STAT_LEVEL) - 1]);
 							}
 							else
 								text = "";
@@ -890,26 +899,26 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 							bool inresbox = false;
 							if (pt.x < 311 && pt.x > 172 && pt.y > 331 && pt.y < 422)
 								inresbox = true;
-							int fire = charstats->getStat(STAT_FIRE_RESIST) - 100;
-							int cold = charstats->getStat(STAT_COLD_RESIST) - 100;
-							int light = charstats->getStat(STAT_LIGHTNING_RESIST) - 100;
-							int poison = charstats->getStat(STAT_POISON_RESIST) - 100;
-							int	maxfire = charstats->getStat(STAT_MAX_FIRE_RESIST) + 75;
+							int fire = charstats->getStat(STAT_FIRERESIST) - 100;
+							int cold = charstats->getStat(STAT_COLDRESIST) - 100;
+							int light = charstats->getStat(STAT_LIGHTRESIST) - 100;
+							int poison = charstats->getStat(STAT_POISONRESIST) - 100;
+							int	maxfire = charstats->getStat(STAT_MAXFIRERESIST) + 75;
 							maxfire = inresbox ? fire : maxfire > 95 ? 95 : maxfire;
-							int maxcold = charstats->getStat(STAT_MAX_COLD_RESIST) + 75;
+							int maxcold = charstats->getStat(STAT_MAXCOLDRESIST) + 75;
 							maxcold = inresbox ? cold : maxcold > 95 ? 95 : maxcold;
-							int maxlight = charstats->getStat(STAT_MAX_LIGHTNING_RESIST) + 75;
+							int maxlight = charstats->getStat(STAT_MAXLIGHTRESIST) + 75;
 							maxlight = inresbox ? light : maxlight > 95 ? 95 : maxlight;
-							int maxpoison = charstats->getStat(STAT_MAX_POISON_RESIST) + 75;
+							int maxpoison = charstats->getStat(STAT_MAXPOISONRESIST) + 75;
 							maxpoison = inresbox ? poison : maxpoison > 95 ? 95 : maxpoison;
 							fire = fire > maxfire ? maxfire : fire;
 							cold = cold > maxcold ? maxcold : cold;
 							light = light > maxlight ? maxlight : light;
 							poison = poison > maxpoison ? maxpoison : poison;
-							RECT firerc = charstats->getStatInvPos(STAT_FIRE_RESIST);
-							RECT coldrc = charstats->getStatInvPos(STAT_COLD_RESIST);
-							RECT lightrc = charstats->getStatInvPos(STAT_LIGHTNING_RESIST);
-							RECT poisonrc = charstats->getStatInvPos(STAT_POISON_RESIST);
+							RECT firerc = charstats->getStatInvPos(STAT_FIRERESIST);
+							RECT coldrc = charstats->getStatInvPos(STAT_COLDRESIST);
+							RECT lightrc = charstats->getStatInvPos(STAT_LIGHTRESIST);
+							RECT poisonrc = charstats->getStatInvPos(STAT_POISONRESIST);
 							SetTextColor(hDCmem, inresbox ? RGB(176, 68, 52) : maxfire <= fire ? RGB(148, 128, 100) : RGB(196, 196, 196));
 							DrawText(hDCmem, str_to_wstr(int_to_str(fire)).c_str(), int_to_str(fire).size(), &firerc, DT_VCENTER | DT_CENTER | DT_NOCLIP);
 							SetTextColor(hDCmem, inresbox ? RGB(80, 80, 172) : maxcold <= cold ? RGB(148, 128, 100) : RGB(196, 196, 196));
@@ -1326,6 +1335,7 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 				startpoint = {GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam)};
 				selectionrc = {0, 0, 0, 0};
 				selectionlistcpy = selectionlist;
+				KillTimer(hwnd, 0);
 				RedrawWindow(hwnd, NULL, NULL, RDW_INVALIDATE);
 			}
 			break;
@@ -1584,7 +1594,9 @@ BOOL CALLBACK invProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 							}
 						}
 
-						SendMessage(hwnd, WM_PAINT, 0, 0);
+						if (dragcount == 8)
+							SetTimer(hwnd, 0, 8, TimerProc1);
+						//SendMessage(hwnd, WM_PAINT, 0, 0);
 					}
 					else {
 						string cur = item->store;

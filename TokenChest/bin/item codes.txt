@@ -20,6 +20,20 @@ Hysteria,twi2,0
 Devil's Bargain,twi3,0
 Elder of Tristram,cai2,0
 Emblem of the Edyrem,uld4,0
+Warmonger,tra1,0
+Trag-Oul's True Guise,tra2,0
+Sanctuary's Balance,tra3,0
+Corrupted Stormshield,cto2,0
+Corrupted Harlequin Crest,cto3,0
+Short Circlet,spe1,0
+Skull of the Unclean,spe2,0
+Leoric's Folly,spe6,0
+Crown of the Skeleton King,spe7,0
+Elf Slippers,sp13,0
+Azmodan's Shell,sp16,0
+Serpent's Deception,sp21,0
+Robes of the Reaper,sp24,0
+Wisdom's End,sp26,0
 @Misc
 Runic Arrows,aqv2,0
 Hellfire Arrows,aqv3,0
@@ -53,6 +67,7 @@ Puzzle Box,puz1,0
 Puzzle Box,puz2,0
 Puzzle Box,puz3,0
 Puzzle Box,puz4,0
+Puzzle Box,puz5,0
 Madness Caster,s1r1,0
 Nightmare Caster,s1r2,0
 Horror Caster,s1am,0
@@ -222,6 +237,43 @@ The Dark Wanderer,cai1,0
 Horadric Jewel,cai3,0
 Nephalem's Birthright,uld3,0
 nv Conquerer of Crucible,ef19,0
+Mark of Trag'Oul,puz6,0
+The Oculus Ring,spe4,0
+Alkor's Shrunken Head,spe5,0
+Diablo's Rebirth,sp10,0
+Neo Annihilus,sp11,0
+Wrapped Gift,chg1,0
+Wrapped Gift,chg2,0
+Wrapped Gift,chg3,0
+Wrapped Gift,chg4,0
+Wrapped Gift,chg5,0
+Rudolph's Nose,sp15,0
+Mark of Sin,puz7,0
+Band of Sin,sp17,0
+Dark Matter,ef21,0
+Beach Ball,ef22,0
+Exploding Cow,ef23,0
+Cainnado,ef25,0
+Guts Throw,ef27,0
+Disco Maelstrom,ef24,0
+Snowy Vengeance,ef28,0
+Raise Santa,ef26,0
+Snow Effect,ef29,0
+Scroll of Fire Pierce,en40,0
+Scroll of Cold Pierce,en41,0
+Scroll of Lightning Pierce,en42,0
+Scroll of Poison Pierce,en43,0
+Scroll of Magic Pierce,en44,0
+Scroll of Physical Pierce,en45,0
+Scroll of Mortality,en46,0
+Scroll of Paradox,en47,0
+Bag of Fragments,frbg,0
+Scroll of Tera,en48,0
+Black Soulstone,puz8,0
+Standard of Hell,std2,0
+Mark of Lies,puz9,0
+Xephirian Amulet,sp22,0
+Obsidian Ring,sp25,0
 @Weapon
 Short Circuit,shci,0
 Frostmourne,rnbl,0
@@ -241,6 +293,16 @@ Buckshot,chi2,0
 The Twins Anger,twi1,0
 Thunderfury,uld1,0
 Khalim's Hope,uld2,0
+Corrupted Lightsabre,cto1,0
+Buster Sword,spe3,0
+The Butcher's Cleaver,spe8,0
+Touch of Death,spe9,0
+Flame Horizon,sp12,0
+North Pole Marker,sp14,0
+Heart of Hell,sp18,0
+The Deadly Sin,sp19,0
+Zephyr,sp20,0
+Oblivion,sp23,0
 !Armor
 @Barbarian Helms
 Jawbone Cap,ba1,1

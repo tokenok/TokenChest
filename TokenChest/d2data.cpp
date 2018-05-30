@@ -120,3 +120,4 @@ CharacterData* get_character(string realm, string account, string character) {
 CharacterData* get_character(const ItemData* item) {
 	return get_character(item->realm, item->account, item->character);
 }
+

@@ -1208,6 +1208,8 @@ void DumpItem(DWORD itemp, int x, int y, int width = 0, int height = 0, int ida 
 	if (!(&item_data))
 		return;
 	const ItemTxt *txt = GetItemTxt(item);
+	if (!txt)
+		return;
 
 	//char newinvfile[30];
 	printf("\n%d;,%d;,%d;,%d;,%s;,%s;,%s;\n", width, height, txt->invwidth, txt->invheight, GetItemInvFile(item), txt->invu, txt->invs);
@@ -1791,21 +1793,46 @@ bool DumpPlayer(DWORD D2Client_base, const UnitAny *PlayerUnit) {
 		const StatArr *hm = ReadProcess(PlayerUnit->pStats + 0x48, &hm);
 		const Stat *hz = ReadProcess(hm->pStat, &hz, hm->wStatCount);
 		printf("-1:%d//character class\n", PlayerUnit->dwTxtFileNo);
-		std::vector<int> stat_ids = {20, 36, 37, 39, 43, 41, 45, 38, 40, 44, 42, 46, 34, 35, /*110,*/ 142, 148, 144, 146, 143, 145, 149, 147, 80, 105, 93, 96, 99, 85, /*27,*/ 74, 135, 136, 141};
+
+		static std::vector<int> stat_ids = 
+			{STAT_TOBLOCK, STAT_DAMAGERESIST, STAT_MAGICRESIST, 
+			STAT_FIRERESIST, STAT_COLDRESIST, STAT_LIGHTRESIST, STAT_POISONRESIST,
+			STAT_MAXMAGICRESIST, STAT_MAXFIRERESIST, STAT_MAXCOLDRESIST, STAT_MAXLIGHTRESIST, STAT_MAXPOISONRESIST, 
+			STAT_NORMAL_DAMAGE_REDUCTION, STAT_MAGIC_DAMAGE_REDUCTION, /*STAT_ITEM_POISONLENGTHRESIST,*/
+			STAT_ITEM_ABSORBFIRE_PERCENT, STAT_ITEM_ABSORBCOLD_PERCENT, STAT_ITEM_ABSORBLIGHT_PERCENT, STAT_ITEM_ABSORBMAGIC_PERCENT,
+			STAT_ITEM_ABSORBFIRE, STAT_ITEM_ABSORBLIGHT, STAT_ITEM_ABSORBCOLD, STAT_ITEM_ABSORBMAGIC,
+			STAT_ITEM_MAGICBONUS,
+			STAT_ITEM_FASTERCASTRATE, STAT_ITEM_FASTERATTACKRATE, STAT_ITEM_FASTERMOVEVELOCITY, STAT_ITEM_FASTERGETHITRATE,
+			STAT_ITEM_ADDEXPERIENCE, /*STAT_MANARECOVERYBONUS,*/
+			STAT_HPREGEN, 
+			STAT_ITEM_OPENWOUNDS, STAT_ITEM_CRUSHINGBLOW, STAT_ITEM_DEADLYSTRIKE
+		};
+		
 		int dex = 0, lvl = 0;
+
 		for (int i = 0; i < hm->wStatCount; ++i) {
 		/*	const ItemStatCostTxt *txt;
 			TxtGet(&txt, hz[i].wStatIndex);*/
-			if (hz[i].wStatIndex == 2)
+			if (hz[i].wStatIndex == STAT_DEXTERITY)
 				dex = hz[i].dwStatValue;
-			else if (hz[i].wStatIndex == 12)
+			else if (hz[i].wStatIndex == STAT_LEVEL)
 				lvl = hz[i].dwStatValue;
-			if (hz[i].wStatIndex == 20) {//block chance				
+			if (hz[i].wStatIndex == STAT_TOBLOCK) {//block chance			
 				int cls = PlayerUnit->dwTxtFileNo;
 				int block = hz[i].dwStatValue + (cls == 3 ? 30 : cls == 0 || cls == 4 || cls == 6 ? 25 : 20);
 				int totalblock = (block * (dex - 15)) / (lvl * 2);
 				totalblock = totalblock > 75 ? 75 : totalblock;
 				printf("%d:%d//%s\n", hz[i].wStatIndex, totalblock, ("Chance to Block: " + int_to_str(totalblock) + "%").c_str());
+			}
+			else if (strcmp(gameinfo->szRealmName, "D2PK") == 0 && 
+				(hz[i].wStatIndex == STAT_FIRERESIST 
+				|| hz[i].wStatIndex == STAT_COLDRESIST 
+				|| hz[i].wStatIndex == STAT_LIGHTRESIST 
+				|| hz[i].wStatIndex == STAT_POISONRESIST)) {
+				const char *desc = GetInvisibleStatDesc(hz[i].wStatIndex, hz[i].wSubIndex, hz[i].dwStatValue);
+				if (desc[0] == 0)
+					desc = GetStatDesc(hz[i].wStatIndex, hz[i].wSubIndex, hz[i].dwStatValue, 0);
+				printf("%d:%d//%s\n", hz[i].wStatIndex, hz[i].dwStatValue + 30, desc);
 			}
 			else {
 				const char *desc = GetInvisibleStatDesc(hz[i].wStatIndex, hz[i].wSubIndex, hz[i].dwStatValue);
@@ -1868,7 +1895,8 @@ DWORD getDumps() {
 
 #define TEST
 #define WRITEITEMS
-//#define WRITEITEMCODES
+#define WRITEITEMCODES
+//#define PRINTITEMS
 #ifdef _DEBUG
 #ifdef TEST
 
@@ -1895,19 +1923,26 @@ DWORD getDumps() {
 		char out[240];
 		std::string range = us.min == us.max ? int_to_str(us.min) : "[" + int_to_str(us.min) + "-" + int_to_str(us.max) + "]";
 
+		if (g_props.size() <= us.prop) {
+			printf("add more nums to unique props.txt");
+			return "-1";
+		}
+
 		if (g_props[us.prop].size() == 0) {
-			sprintf(out, "--------------Unknown %d, %d%s, %d, %d--------------", us.prop, us.par, us.par ? std::string("(" + std::string(GetSkillName(us.par)) + ")").c_str(): "", us.min, us.max);
+			sprintf(out, "--------------Unknown %d, %d%s, %d, %d--------------", us.prop, us.par, us.par ? std::string("(" + std::string(GetSkillName(us.par)) + ")").c_str() : "", us.min, us.max);
 			return std::string(out);
 		}
 		else if (us.prop <= 16
 			|| us.prop >= 27 && us.prop <= 116
-			|| us.prop >= 118 && us.prop <= 122
-			|| us.prop == 133
+			|| us.prop >= 118 && us.prop <= 120
+			|| us.prop == 138
+			|| us.prop == 139
 			|| us.prop >= 180 && us.prop <= 181
 			|| us.prop >= 232 && us.prop <= 235
 			|| us.prop == 242
 			|| us.prop >= 244 && us.prop <= 247
 			|| us.prop >= 251 && us.prop <= 255
+			|| us.prop == 258
 			|| us.prop == 264
 			|| us.prop == 268
 			|| us.prop >= 270 && us.prop <= 275
@@ -1917,10 +1952,14 @@ DWORD getDumps() {
 			|| us.prop >= 296 && us.prop <= 298
 			|| us.prop == 301
 			|| us.prop >= 322 && us.prop <= 327
+			|| us.prop == 332
 			|| us.prop == 336
 			|| us.prop == 337
 			|| us.prop >= 354 && us.prop <= 356
-			|| us.prop == 359)
+			|| us.prop == 359
+			|| us.prop == 377
+			|| us.prop == 379
+			)
 		{
 			sprintf(out, g_props[us.prop].c_str(), range.c_str());
 		}
@@ -1957,9 +1996,12 @@ DWORD getDumps() {
 		else if (us.prop == 123) {//class skill
 			const CharStatsTxt* cs_txt;
 			TxtGet(&cs_txt, GetSkillCharClass(us.par));
-			sprintf(out, g_props[us.prop].c_str(), range.c_str(), GetSkillName(us.par), getStringByNum(cs_txt->StrClassOnly));
+			if (cs_txt)
+				sprintf(out, g_props[us.prop].c_str(), range.c_str(), GetSkillName(us.par), getStringByNum(cs_txt->StrClassOnly));
+			/*else
+				sprintf(out, "error");*/
 		}
-		else if (us.prop == 124) {//%s %s //+ tab skill class only
+		else if (us.prop == 126 || us.prop == 128) {//%s %s //+ tab skill class only
 			const CharStatsTxt* cs_txt;
 			TxtGet(&cs_txt, us.par / 3);
 			char* s1 = getStringByNum(cs_txt->StrSkillTab[us.par % 3]);
@@ -1971,10 +2013,12 @@ DWORD getDumps() {
 			}
 			sprintf(out, g_props[us.prop].c_str(), c, getStringByNum(cs_txt->StrClassOnly));
 		}
-		else if (us.prop == 125 || us.prop == 265) {//Level %s %s Aura When Equipped OR oskill
+		else if (us.prop == 125 || us.prop == 129 || us.prop == 265) {//Level %s %s Aura When Equipped OR oskill
 			sprintf(out, g_props[us.prop].c_str(), range.c_str(), GetSkillName(us.par));
 		}
-		else if (us.prop >= 126 && us.prop <= 128 || us.prop >= 258 && us.prop <= 260 || us.prop == 333) {//%s%% Chance to cast level %s %s on ____
+		else if (us.prop >= 131 && us.prop <= 133 
+			|| us.prop >= 259 && us.prop <= 260 
+			|| us.prop == 333 || us.prop == 341) {//%s%% Chance to cast level %s %s on ____
 			sprintf(out, g_props[us.prop].c_str(), int_to_str(us.min).c_str(), int_to_str(us.max).c_str(), GetSkillName(us.par));
 		}
 		else if (us.prop >= 134 && us.prop <= 137 || us.prop == 140) {//Adds %s - %s f/l/m/c/_ damage
@@ -1989,7 +2033,7 @@ DWORD getDumps() {
 			sprintf(out, g_props[us.prop].c_str(), perlvl.substr(0, perlvl.find(".") + 3).c_str());
 		}
 		else if (us.prop == 179) {//Repairs 1 durability in %s seconds 
-			sprintf(out, g_props[us.prop].c_str(), int_to_str(100 / us.par).c_str());
+			sprintf(out, g_props[us.prop].c_str(), int_to_str(us.par != 0 ? 100 / us.par : 12).c_str());
 		}
 		else if (us.prop == 197 || us.prop == 198) {//stat based on time
 			sprintf(out, g_props[us.prop].c_str(), range.c_str(), us.par == 0 ? "During Daytime" : us.par == 1 ? "Near Dusk" : us.par == 2 ? "During Nighttime" : "Near Dawn");
@@ -2018,7 +2062,9 @@ DWORD getDumps() {
 		else if (us.prop == 276) {//Level %s Armor Penetration Aura When Equipped\n(Nearby Enemies have %s%% Reduced Physical Resistance)
 			sprintf(out, "Level %s Armor Penetration Aura When Equipped\n(Nearby Enemies have %s%% Reduced Physical Resistance)", range.c_str(), range.c_str());
 		}
-		else if (us.prop >= 277 && us.prop <= 279 || (us.prop >= 281 && us.prop <= 283) || (us.prop >= 285 && us.prop <= 288) || us.prop == 295 || us.prop == 318 || us.prop == 319 || us.prop == 320 || us.prop == 322 || us.prop == 357) {//%s%% x (Based on xstat)
+		else if (us.prop >= 277 && us.prop <= 279 || (us.prop >= 281 && us.prop <= 283) 
+			|| (us.prop >= 285 && us.prop <= 288) || us.prop == 295 || us.prop == 318
+			|| us.prop == 319 || us.prop == 320 || us.prop == 322 || us.prop == 357) {//%s%% x (Based on xstat)
 			char perlvlmin[8];
 			sprintf(perlvlmin, "%.2lf", (float)us.min * .03125);
 			char perlvlmax[8];
@@ -2032,7 +2078,9 @@ DWORD getDumps() {
 		else if (us.prop == 291) {//Level %s Bulwark Aura When Equipped\n(Nearby allies have %s%% Increased Damage Reduction and Block Chance)
 			sprintf(out, "Level %s Bulwark Aura When Equipped\n(Nearby allies have %s%% Increased Damage Reduction and Block Chance)", range.c_str(), range.c_str());
 		}
-		else if (us.prop == 289 || us.prop == 292 || us.prop == 299 || us.prop == 302 || us.prop == 329 || us.prop == 330 || us.prop == 331) {//no parameter stats (plain text)
+		else if (us.prop == 249 || us.prop == 289 || us.prop == 292 || us.prop == 299
+			|| us.prop == 302 || us.prop == 329 || us.prop == 330
+			|| us.prop == 331 || us.prop == 382 || us.prop == 383) {//no parameter stats (plain text)
 			sprintf(out, g_props[us.prop].c_str());
 		}
 		else if (us.prop == 300) {
@@ -2049,6 +2097,15 @@ DWORD getDumps() {
 		}
 		else if (us.prop == 347) {
 			sprintf(out, "-%s%% to Lightning Skill Damage\n-%s%% to Fire Skill Damage\n-%s%% to Cold Skill Damage\n-%s%% to Poison Skill Damage", range.c_str(), range.c_str(), range.c_str(), range.c_str());
+		}
+		else if (us.prop == 406) {
+			sprintf(out, "%s to Life\n%s to Mana", range.c_str(), range.c_str());
+		}
+		else if (us.prop == 407) {
+			sprintf(out, "%s%% Chance of Crushing Blow\n%s%%Deadly Strike\n%s%%Chance of Open Wounds", range.c_str(), range.c_str(), range.c_str());
+		}
+		else if (us.prop == 429) {
+			sprintf(out, "Increase Maximum Life %s%%\nIncrease Maximum Mana %s%%", range.c_str(), range.c_str());
 		}
 		else {
 			sprintf(out, "--------------%d, %s, %d, %d, %d--------------", us.prop, g_props[us.prop].c_str(), us.par, us.min, us.max);
@@ -2176,7 +2233,9 @@ DWORD getDumps() {
 
 			char tte[60];
 			sprintf(tte, "%s\n%.4s\n", txt->name, txt->base);
+#ifdef PRINTITEMS
 			printf(tte);
+#endif
 #ifdef WRITEITEMS
 			statout << tte;
 			char tte2[60];
@@ -2191,11 +2250,14 @@ DWORD getDumps() {
 			for (UINT j = 0; j < 19; j++) {
 				std::string s = getproptext(txt->props[j]);
 				if (s.size()) {
+#ifdef PRINTITEMS
 					printf("%s", s.c_str());
+
 					if (j > 8)
 						printf(" (%d item set bonus)", ((j - 9) / 2) + 2);
 					if (isnewline(txt->props[j]))
 						printf("\n");
+#endif
 #ifdef WRITEITEMS
 					statout << s;
 					if (j > 8) {
@@ -2206,6 +2268,7 @@ DWORD getDumps() {
 #endif
 				}
 
+#ifdef PRINTITEMS
 				UniqueStats us = txt->props[j];
 				if (us.prop == 279) {
 					printf("");
@@ -2216,10 +2279,13 @@ DWORD getDumps() {
 				TxtGet(&stat, us.prop);
 				if (stat && g_props[us.prop].size() == 0){
 					printf("");
-					getch();
+//					getch();
 				}
+#endif
 			}
+#ifdef PRINTITEMS
 			printf("\n");
+#endif
 #ifdef WRITEITEMS
 			statout << '\n';
 #endif
@@ -2233,7 +2299,9 @@ DWORD getDumps() {
 		
 			char tte[60];
 			sprintf(tte, "%s\n%.4s,%s\n", txt->name, txt->base, txt->invfile);
+#ifdef PRINTITEMS
 			printf(tte);
+#endif
 			if (std::string(txt->name).find("Hellrack") != std::string::npos)
 				printf("");
 #ifdef WRITEITEMS
@@ -2246,34 +2314,39 @@ DWORD getDumps() {
 			for (UINT j = 0; j < 12; j++) {
 				std::string s = getproptext(txt->props[j]);
 				if (s.size()) {
+#ifdef PRINTITEMS
 					printf("%s", s.c_str());
 					if (isnewline(txt->props[j]))
 						printf("\n");
+#endif
 #ifdef WRITEITEMS					
 					statout << s;
 					if (isnewline(txt->props[j]))
 						statout << '\n';
 #endif
 				}
-
+#ifdef PRINTITEMS
 				UniqueStats us = txt->props[j];
-				if (us.prop == 279) {
+				if (us.prop == 300) {
 					printf("");
-				//	getch();
+//					getch();
 				}
 				const ItemStatCostTxt *stat;
 				TxtGet(&stat, us.prop);
 				if (stat && g_props[us.prop].size() == 0) {
 					printf("");
-					getch();
+//					getch();
 				}
+#endif
 			}
+#ifdef PRINTITEMS
 			printf("\n");
+#endif
 #ifdef WRITEITEMS
 			statout << '\n';
 #endif
 		}
-		_getch();
+	//	_getch();
 #ifdef WRITEITEMS
 	}
 	statout.close();
